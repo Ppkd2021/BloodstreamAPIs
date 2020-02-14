@@ -1,0 +1,131 @@
+2020-02-08 14:43:45 DEBUG ----------------------------------------------------------------------------------------------------
+2020-02-08 14:43:45 DEBUG Suite name: Default suite
+2020-02-08 14:43:46 DEBUG login invoked
+2020-02-08 14:43:46 DEBUG authValue: Basic SU1fQURNSU46
+2020-02-08 14:43:48 DEBUG LoginToken: SU1fQURNSU46NGhSSVNmOWJhbhZSRVNUU0VSVkVSQ0FMTA==
+2020-02-08 14:43:48 DEBUG ----------------------------------------------------------------------------------------------------
+2020-02-08 14:43:48 DEBUG donationInfo.Donations Entered
+2020-02-08 14:43:48 DEBUG ----------------------------------------------------------------------------------------------------
+2020-02-08 14:43:48 DEBUG DataHandler Invoked
+2020-02-08 14:43:48 DEBUG workbookName: donationInfo   sheetName: Donations   testName: Assert200
+2020-02-08 14:43:48 DEBUG Test case starts from row number : 6
+2020-02-08 14:43:48 DEBUG Total number of columns: 5
+2020-02-08 14:43:48 DEBUG Total number of rows: 1
+2020-02-08 14:43:48 DEBUG DataHandler Exited
+2020-02-08 14:43:48 DEBUG ----------------------------------------------------------------------------------------------------
+2020-02-08 14:43:48 DEBUG Assert200 Invoked
+2020-02-08 14:43:49 DEBUG ----------------------------------------------------------------------------------------------------
+2020-02-08 14:43:49 DEBUG DataHandler Invoked
+2020-02-08 14:43:49 DEBUG workbookName: donationInfo   sheetName: Donations   testName: FlagName
+2020-02-08 14:43:49 DEBUG Test case starts from row number : 1
+2020-02-08 14:43:49 DEBUG Total number of columns: 5
+2020-02-08 14:43:49 DEBUG Total number of rows: 1
+2020-02-08 14:43:49 DEBUG DataHandler Exited
+2020-02-08 14:43:49 DEBUG ----------------------------------------------------------------------------------------------------
+2020-02-08 14:43:49 DEBUG FlagName Invoked
+2020-02-08 14:43:50 DEBUG Default suite Finished
+2020-02-08 14:43:50 DEBUG ----------------------------------------------------------------------------------------------------
+2020-02-08 14:45:16 DEBUG ----------------------------------------------------------------------------------------------------
+2020-02-08 14:45:16 DEBUG testinfo.gridLayout Entered
+2020-02-08 14:45:16 DEBUG ----------------------------------------------------------------------------------------------------
+2020-02-08 14:45:16 DEBUG DataHandler Invoked
+2020-02-08 14:45:16 DEBUG workbookName: testinfo   sheetName: gridLayout   testName: TestGet200
+2020-02-08 14:45:16 DEBUG Test case starts from row number : 1
+2020-02-08 14:45:16 DEBUG Total number of columns: 4
+2020-02-08 14:45:16 DEBUG Total number of rows: 0
+2020-02-08 14:45:16 DEBUG DataHandler Exited
+2020-02-08 14:45:16 DEBUG ----------------------------------------------------------------------------------------------------
+2020-02-08 14:45:16 DEBUG ----------------------------------------------------------------------------------------------------
+2020-02-08 14:45:16 DEBUG DataHandler Invoked
+2020-02-08 14:45:16 DEBUG workbookName: testinfo   sheetName: gridLayout   testName: TestGet401
+2020-02-08 14:45:16 DEBUG Test case starts from row number : 5
+2020-02-08 14:45:16 DEBUG Total number of columns: 4
+2020-02-08 14:45:16 DEBUG Total number of rows: 0
+2020-02-08 14:45:16 DEBUG DataHandler Exited
+2020-02-08 14:45:16 DEBUG ----------------------------------------------------------------------------------------------------
+2020-02-08 14:45:16 DEBUG ----------------------------------------------------------------------------------------------------
+2020-02-08 14:45:16 DEBUG DataHandler Invoked
+2020-02-08 14:45:16 DEBUG workbookName: testinfo   sheetName: gridLayout   testName: Testet200
+2020-02-08 14:47:16 DEBUG ----------------------------------------------------------------------------------------------------
+2020-02-08 14:47:16 DEBUG Suite invoked
+2020-02-08 14:47:16 DEBUG Directory: C:\Users\Katyald\Desktop\BloodstreamAPI
+2020-02-08 14:47:16 DEBUG Configuration exited
+2020-02-08 14:47:16 DEBUG ----------------------------------------------------------------------------------------------------
+2020-02-08 14:47:16 DEBUG ----------------------------------------------------------------------------------------------------
+2020-02-08 14:47:16 DEBUG Suite name: Default suite
+2020-02-08 14:47:16 DEBUG login invoked
+2020-02-08 14:47:16 DEBUG authValue: Basic SU1fQURNSU46
+2020-02-08 14:47:18 DEBUG LoginToken: SU1fQURNSU46WXBmcTNmQWs2VBZSRVNUU0VSVkVSQ0FMTA==
+2020-02-08 14:47:18 DEBUG ----------------------------------------------------------------------------------------------------
+2020-02-08 14:47:18 DEBUG donationInfo.Donations Entered
+2020-02-08 14:47:18 DEBUG ----------------------------------------------------------------------------------------------------
+2020-02-08 14:47:18 DEBUG DataHandler Invoked
+2020-02-08 14:47:18 DEBUG workbookName: donationInfo   sheetName: Donations   testName: Assert200
+2020-02-08 14:47:18 DEBUG Test case starts from row number : 6
+2020-02-08 14:47:18 DEBUG Total number of columns: 5
+2020-02-08 14:47:18 DEBUG Total number of rows: 1
+2020-02-08 14:47:18 DEBUG DataHandler Exited
+2020-02-08 14:47:18 DEBUG ----------------------------------------------------------------------------------------------------
+2020-02-08 14:47:18 DEBUG Assert200 Invoked
+2020-02-08 14:47:19 DEBUG ----------------------------------------------------------------------------------------------------
+2020-02-08 14:47:19 DEBUG DataHandler Invoked
+2020-02-08 14:47:19 DEBUG workbookName: donationInfo   sheetName: Donations   testName: FlagName
+2020-02-08 14:47:19 DEBUG Test case starts from row number : 1
+2020-02-08 14:47:19 DEBUG Total number of columns: 5
+2020-02-08 14:47:19 DEBUG Total number of rows: 1
+2020-02-08 14:47:19 DEBUG DataHandler Exited
+2020-02-08 14:47:19 DEBUG ----------------------------------------------------------------------------------------------------
+2020-02-08 14:47:19 DEBUG FlagName Invoked
+2020-02-08 14:47:20 DEBUG Default suite Finished
+2020-02-08 14:47:20 DEBUG ----------------------------------------------------------------------------------------------------
+2020-02-08 14:48:53 DEBUG ----------------------------------------------------------------------------------------------------
+2020-02-08 14:48:53 DEBUG testinfo.gridLayout Entered
+2020-02-08 14:48:53 DEBUG ----------------------------------------------------------------------------------------------------
+2020-02-08 14:48:53 DEBUG DataHandler Invoked
+2020-02-08 14:48:53 DEBUG workbookName: testinfo   sheetName: gridLayout   testName: TestGet200
+2020-02-08 14:48:53 DEBUG Test case starts from row number : 1
+2020-02-08 14:48:53 DEBUG Total number of columns: 4
+2020-02-08 14:48:53 DEBUG Total number of rows: 0
+2020-02-08 14:48:53 DEBUG DataHandler Exited
+2020-02-08 14:48:53 DEBUG ----------------------------------------------------------------------------------------------------
+2020-02-08 14:48:53 DEBUG ----------------------------------------------------------------------------------------------------
+2020-02-08 14:48:53 DEBUG DataHandler Invoked
+2020-02-08 14:48:53 DEBUG workbookName: testinfo   sheetName: gridLayout   testName: TestGet401
+2020-02-08 14:48:53 DEBUG Test case starts from row number : 5
+2020-02-08 14:48:53 DEBUG Total number of columns: 4
+2020-02-08 14:48:53 DEBUG Total number of rows: 0
+2020-02-08 14:48:53 DEBUG DataHandler Exited
+2020-02-08 14:48:53 DEBUG ----------------------------------------------------------------------------------------------------
+2020-02-08 14:48:53 DEBUG ----------------------------------------------------------------------------------------------------
+2020-02-08 14:48:53 DEBUG DataHandler Invoked
+2020-02-08 14:48:53 DEBUG workbookName: testinfo   sheetName: gridLayout   testName: Testet200
+2020-02-08 14:50:20 DEBUG ----------------------------------------------------------------------------------------------------
+2020-02-08 14:50:20 DEBUG Suite invoked
+2020-02-08 14:50:20 DEBUG Directory: C:\Users\Katyald\Desktop\BloodstreamAPI
+2020-02-08 14:50:20 DEBUG Configuration exited
+2020-02-08 14:50:20 DEBUG ----------------------------------------------------------------------------------------------------
+2020-02-08 14:50:20 DEBUG ----------------------------------------------------------------------------------------------------
+2020-02-08 14:50:20 DEBUG Suite name: Default suite
+2020-02-08 14:50:20 DEBUG login invoked
+2020-02-08 14:50:20 DEBUG authValue: Basic SU1fQURNSU46
+2020-02-08 14:50:22 DEBUG LoginToken: SU1fQURNSU46RExMa3hlVms2cxZSRVNUU0VSVkVSQ0FMTA==
+2020-02-08 14:50:22 DEBUG ----------------------------------------------------------------------------------------------------
+2020-02-08 14:50:22 DEBUG testinfo.gridLayout Entered
+2020-02-08 14:50:22 DEBUG ----------------------------------------------------------------------------------------------------
+2020-02-08 14:50:22 DEBUG DataHandler Invoked
+2020-02-08 14:50:22 DEBUG workbookName: testinfo   sheetName: gridLayout   testName: TestGet200
+2020-02-08 14:50:23 DEBUG Test case starts from row number : 1
+2020-02-08 14:50:23 DEBUG Total number of columns: 4
+2020-02-08 14:50:23 DEBUG Total number of rows: 0
+2020-02-08 14:50:23 DEBUG DataHandler Exited
+2020-02-08 14:50:23 DEBUG ----------------------------------------------------------------------------------------------------
+2020-02-08 14:50:23 DEBUG ----------------------------------------------------------------------------------------------------
+2020-02-08 14:50:23 DEBUG DataHandler Invoked
+2020-02-08 14:50:23 DEBUG workbookName: testinfo   sheetName: gridLayout   testName: TestGet401
+2020-02-08 14:50:23 DEBUG Test case starts from row number : 5
+2020-02-08 14:50:23 DEBUG Total number of columns: 4
+2020-02-08 14:50:23 DEBUG Total number of rows: 0
+2020-02-08 14:50:23 DEBUG DataHandler Exited
+2020-02-08 14:50:23 DEBUG ----------------------------------------------------------------------------------------------------
+2020-02-08 14:50:23 DEBUG ----------------------------------------------------------------------------------------------------
+2020-02-08 14:50:23 DEBUG DataHandler Invoked

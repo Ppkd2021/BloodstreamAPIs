@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [Bloodstream Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="plugins.HtmlReport"/>
+  </listeners>
+  <test parallel="none" name="Test(failed)">
+    <classes>
+      <class name="bloodstream.Suite">
+        <methods>
+          <include name="PostSuitProcess"/>
+          <include name="BloodstreamLogin"/>
+        </methods>
+      </class> <!-- bloodstream.Suite -->
+      <class name="donationInfo.donations">
+        <methods>
+          <include name="PostTestProcess"/>
+          <include name="TestExample" invocation-numbers="0 1"/>
+          <include name="PreTestProcess"/>
+        </methods>
+      </class> <!-- donationInfo.donations -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Bloodstream Suite] -->

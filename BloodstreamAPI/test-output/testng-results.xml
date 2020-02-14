@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-02-12T15:18:59Z" name="Default suite" finished-at="2020-02-12T15:19:05Z" duration-ms="5653">
+    <groups>
+    </groups>
+    <test started-at="2020-02-12T15:18:59Z" name="Default test" finished-at="2020-02-12T15:19:05Z" duration-ms="5653">
+      <class name="donationInfo.Donations">
+        <test-method is-config="true" signature="BloodstreamLogin(org.testng.ITestContext)[pri:0, instance:donationInfo.Donations@158a8276]" started-at="2020-02-12T20:48:55Z" name="BloodstreamLogin" finished-at="2020-02-12T20:48:59Z" duration-ms="4687" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@9e30f9a]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BloodstreamLogin -->
+        <test-method is-config="true" signature="PreTestProcess()[pri:0, instance:donationInfo.Donations@158a8276]" started-at="2020-02-12T20:48:59Z" name="PreTestProcess" finished-at="2020-02-12T20:48:59Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PreTestProcess -->
+        <test-method signature="Assert200(java.util.Hashtable)[pri:0, instance:donationInfo.Donations@158a8276]" started-at="2020-02-12T20:49:00Z" name="Assert200" data-provider="dataProvider" finished-at="2020-02-12T20:49:02Z" duration-ms="1861" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Sort=, PageSize=, Page=, EndPoint=/testInfo/orderTests, GroupStatus=all}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Assert200 -->
+        <test-method signature="FlagName(java.util.Hashtable)[pri:0, instance:donationInfo.Donations@158a8276]" started-at="2020-02-12T20:49:02Z" name="FlagName" data-provider="dataProvider" finished-at="2020-02-12T20:49:05Z" duration-ms="3258" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{DonationID=PPKDError22, Flagname=P - Pipetting error, sort=, EndPoint=/testInfo/orderTests, GroupStatus=all}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FlagName -->
+        <test-method is-config="true" signature="PostSuitProcess(org.testng.ITestContext)[pri:0, instance:donationInfo.Donations@158a8276]" started-at="2020-02-12T20:49:05Z" name="PostSuitProcess" finished-at="2020-02-12T20:49:05Z" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@9e30f9a]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PostSuitProcess -->
+      </class> <!-- donationInfo.Donations -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

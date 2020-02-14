@@ -1,0 +1,73 @@
+package testinfo;
+
+import static io.restassured.RestAssured.given;
+
+import java.lang.reflect.Array;
+import java.util.Hashtable;
+import java.util.List;
+
+import org.testng.Assert;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+import com.fasterxml.jackson.databind.util.JSONPObject;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonObject;
+
+import bloodstream.Suite;
+import io.restassured.path.json.JsonPath;
+import io.restassured.response.Response;
+
+import utilities.DataHandler;
+import utilities.config;
+
+
+
+
+public class gridLayout extends Suite
+{
+	@BeforeTest
+	public void PreTestProcess() 
+	{
+		config.log.debug(new String(new char[100]).replace("\0", "-"));
+		config.log.debug(this.getClass().getName()+ " Entered");
+	}
+	@Test(dataProviderClass = DataHandler.class,dataProvider="dataProvider")
+	public void TestGet200(Hashtable<String,String> dataTable) {
+		
+		config.log.debug(new Object() {}.getClass().getEnclosingMethod().getName()+ " Invoked");
+		String Authorization = config.property.getProperty("LoginToken");
+		String endpoint = dataTable.get("EndPoint");
+	   given().relaxedHTTPSValidation().
+				header("Authorization",Authorization).param("GroupStatus",dataTable.get("GroupStatus")).// Use this to add headers
+				when().get(endpoint).then().      // Use this to specify the API path
+				assertThat().statusCode(200); 				
+		 }
+	
+
+	
+	@Test(dataProviderClass = DataHandler.class,dataProvider="dataProvider")
+	public void TestGet401(Hashtable<String,String> dataTable)
+	{
+		config.log.debug(new Object() {}.getClass().getEnclosingMethod().getName()+ " Invoked");
+		String Endpoint = dataTable.get("EndPoint");
+		String Authorization = "Invalid_Token";
+		
+		given().relaxedHTTPSValidation().
+		header("Authorization",Authorization). 
+		when().get(Endpoint).then().     
+		assertThat().statusCode(401);	
+	}
+	
+	
+	
+	@AfterTest
+	public void PostTestProcess() 
+	{
+		config.log.debug(this.getClass().getName()+ "  Exited");
+		config.log.debug(new String(new char[100]).replace("\0", "-"));
+		}
+
+
+	}

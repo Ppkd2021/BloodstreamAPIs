@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Bloodstream Suite">
+	<listeners>
+        <listener class-name="plugins.HtmlReport"/>
+  	</listeners>
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="bloodstream.Suite"/>
+      <class name="donationInfo.Donations"/>
+      <class name="testinfo.gridLayout"/>
+    </classes>
+  </test> 
+</suite>
