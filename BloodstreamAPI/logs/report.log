@@ -1,14 +1,42 @@
-2020-02-18 17:07:13 DEBUG Assert400 Invoked
-2020-02-18 17:07:14 DEBUG ----------------------------------------------------------------------------------------------------
-2020-02-18 17:07:14 DEBUG DataHandler Invoked
-2020-02-18 17:07:14 DEBUG workbookName: testinfo   sheetName: GetgridLayout   testName: Assert401
-2020-02-18 17:07:14 DEBUG Test case starts from row number : 18
-2020-02-18 17:07:14 DEBUG Total number of columns: 5
-2020-02-18 17:07:14 DEBUG Total number of rows: 1
-2020-02-18 17:07:14 DEBUG DataHandler Exited
-2020-02-18 17:07:14 DEBUG ----------------------------------------------------------------------------------------------------
-2020-02-18 17:07:14 DEBUG Assert401 Invoked
-2020-02-18 17:07:14 DEBUG testinfo.GetgridLayout  Exited
-2020-02-18 17:07:14 DEBUG ----------------------------------------------------------------------------------------------------
-2020-02-18 17:07:14 DEBUG Bloodstream Suite Finished
-2020-02-18 17:07:14 DEBUG ----------------------------------------------------------------------------------------------------
+2020-02-18 17:17:38 DEBUG Total number of rows: 0
+2020-02-18 17:17:38 DEBUG DataHandler Exited
+2020-02-18 17:17:38 DEBUG ----------------------------------------------------------------------------------------------------
+2020-02-18 17:17:38 DEBUG ----------------------------------------------------------------------------------------------------
+2020-02-18 17:17:38 DEBUG DataHandler Invoked
+2020-02-18 17:17:38 DEBUG workbookName: donationInfo   sheetName: groupStatusCount   testName: Assert401
+2020-02-18 17:17:38 DEBUG Test case starts from row number : 9
+2020-02-18 17:17:38 DEBUG Total number of columns: 0
+2020-02-18 17:17:38 DEBUG Total number of rows: 0
+2020-02-18 17:17:38 DEBUG DataHandler Exited
+2020-02-18 17:17:38 DEBUG ----------------------------------------------------------------------------------------------------
+2020-02-18 17:17:38 DEBUG ----------------------------------------------------------------------------------------------------
+2020-02-18 17:17:38 DEBUG DataHandler Invoked
+2020-02-18 17:17:38 DEBUG workbookName: testinfo   sheetName: GetgridLayout   testName: Assert200
+2020-02-18 17:17:38 DEBUG Test case starts from row number : 10
+2020-02-18 17:17:38 DEBUG Total number of columns: 5
+2020-02-18 17:17:38 DEBUG Total number of rows: 1
+2020-02-18 17:17:38 DEBUG DataHandler Exited
+2020-02-18 17:17:38 DEBUG ----------------------------------------------------------------------------------------------------
+2020-02-18 17:17:38 DEBUG Assert200 Invoked
+2020-02-18 17:17:41 DEBUG ----------------------------------------------------------------------------------------------------
+2020-02-18 17:17:41 DEBUG DataHandler Invoked
+2020-02-18 17:17:41 DEBUG workbookName: testinfo   sheetName: GetgridLayout   testName: Assert400
+2020-02-18 17:17:41 DEBUG Test case starts from row number : 14
+2020-02-18 17:17:41 DEBUG Total number of columns: 5
+2020-02-18 17:17:41 DEBUG Total number of rows: 1
+2020-02-18 17:17:41 DEBUG DataHandler Exited
+2020-02-18 17:17:41 DEBUG ----------------------------------------------------------------------------------------------------
+2020-02-18 17:17:41 DEBUG Assert400 Invoked
+2020-02-18 17:17:43 DEBUG ----------------------------------------------------------------------------------------------------
+2020-02-18 17:17:43 DEBUG DataHandler Invoked
+2020-02-18 17:17:43 DEBUG workbookName: testinfo   sheetName: GetgridLayout   testName: Assert401
+2020-02-18 17:17:43 DEBUG Test case starts from row number : 18
+2020-02-18 17:17:43 DEBUG Total number of columns: 5
+2020-02-18 17:17:43 DEBUG Total number of rows: 1
+2020-02-18 17:17:43 DEBUG DataHandler Exited
+2020-02-18 17:17:43 DEBUG ----------------------------------------------------------------------------------------------------
+2020-02-18 17:17:43 DEBUG Assert401 Invoked
+2020-02-18 17:17:44 DEBUG testinfo.GetgridLayout  Exited
+2020-02-18 17:17:44 DEBUG ----------------------------------------------------------------------------------------------------
+2020-02-18 17:17:44 DEBUG Bloodstream Suite Finished
+2020-02-18 17:17:44 DEBUG ----------------------------------------------------------------------------------------------------
