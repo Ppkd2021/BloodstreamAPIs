@@ -23,7 +23,7 @@ public class groupStatusCount {
 		public void Assert200(Hashtable<String,String> dataTable) {
 			
 			config.log.debug(new Object() {}.getClass().getEnclosingMethod().getName()+ " Invoked");
-			String Authorization = config.property.getProperty("loginToken");
+			String Authorization = config.property.getProperty("LoginToken");
 			String endpoint = dataTable.get("EndPoint");
 			
 		   given().relaxedHTTPSValidation().

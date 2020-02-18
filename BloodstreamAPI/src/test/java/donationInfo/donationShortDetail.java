@@ -23,9 +23,9 @@ public class donationShortDetail {
 		public void Assert200(Hashtable<String,String> dataTable) {
 			
 			config.log.debug(new Object() {}.getClass().getEnclosingMethod().getName()+ " Invoked");
-			String Authorization = config.property.getProperty("loginToken");
+			String Authorization = config.property.getProperty("LoginToken");
 			String endpoint = dataTable.get("EndPoint");
-			
+			System.out.println(Authorization);
 		   given().relaxedHTTPSValidation().
 		   header("Authorization",Authorization).
 		   param("donationId",dataTable.get("donationId")).
@@ -39,7 +39,7 @@ public class donationShortDetail {
           public void Assert400(Hashtable<String,String> dataTable) {
 			
 			config.log.debug(new Object() {}.getClass().getEnclosingMethod().getName()+ " Invoked");
-			String Authorization = config.property.getProperty("loginToken");
+			String Authorization = config.property.getProperty("LoginToken");
 			String endpoint = dataTable.get("EndPoint");
 		    given().relaxedHTTPSValidation().
 		    header("Authorization",Authorization).

@@ -8,6 +8,8 @@ import java.util.Base64;
 import org.testng.ITestContext;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Test;
+
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 
@@ -22,7 +24,7 @@ public class Suite
 		config.log.debug("Suite name: "+ctx.getCurrentXmlTest().getSuite().getName());
 		login();
 	}
-	
+	@Test
 	
 	public void login()
 	{
@@ -33,11 +35,12 @@ public class Suite
 		String authValue = "Basic "+getCredential();
 		config.log.debug("authValue: "+authValue);
 		
-		Response response = given().relaxedHTTPSValidation().header("Authorization",authValue).post(config.property.getProperty("LoginToken"));
-		String LoginToken = response.header("LoginHash");
+		Response response = given().relaxedHTTPSValidation().header("Authorization",authValue)
+				.post(config.property.getProperty("Login")).then().assertThat().statusCode(200).extract().response();
+		String loginToken = response.header("LoginHash");
 		
-		config.property.setProperty("LoginToken","Basic "+LoginToken );
-		config.log.debug("LoginToken: "+LoginToken);
+		config.property.setProperty("LoginToken","Basic "+loginToken );
+		config.log.debug("LoginToken: "+loginToken);
 		
 		try 
 		{
