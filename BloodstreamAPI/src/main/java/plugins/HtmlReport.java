@@ -49,7 +49,7 @@ public class HtmlReport implements IReporter {
             }
             Properties props = new Properties();
             try {
-				FileOutputStream fos = new FileOutputStream(outputDirectory+"//testresult.properties");
+				FileOutputStream fos = new FileOutputStream(outputDirectory+"//APItest.properties");
 				props.setProperty("TotalTestPassed",  Integer.toString(testpassed));
 		        props.setProperty("TotalTestSkipped",  Integer.toString(testskipped));
 		        props.setProperty("TotalTestFailed",  Integer.toString(testfailed));
