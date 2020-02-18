@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test(failed)">
     <classes>
-      <class name="donationInfo.donations">
+      <class name="donationInfo.donationShortDetail">
         <methods>
-          <include name="PostSuitProcess"/>
-          <include name="BloodstreamLogin"/>
+          <include name="Assert400" invocation-numbers="0"/>
+          <include name="Assert200" invocation-numbers="0"/>
           <include name="Assert401" invocation-numbers="0"/>
           <include name="PreTestProcess"/>
         </methods>
-      </class> <!-- donationInfo.donations -->
+      </class> <!-- donationInfo.donationShortDetail -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,111 +1,29 @@
-2020-02-18 18:27:56 DEBUG donationInfo.groupStatusCount Entered
-2020-02-18 18:27:56 DEBUG login invoked
-2020-02-18 18:27:56 DEBUG authValue: Basic SU1fQURNSU46
-2020-02-18 18:27:58 DEBUG LoginToken: SU1fQURNSU46N3lET1Q1QzFTQRZSRVNUU0VSVkVSQ0FMTA==
-2020-02-18 18:27:58 DEBUG login invoked
-2020-02-18 18:27:58 DEBUG authValue: Basic SU1fQURNSU46
-2020-02-18 18:27:59 DEBUG LoginToken: SU1fQURNSU46c0gzZVQ1VzFTORZSRVNUU0VSVkVSQ0FMTA==
-2020-02-18 18:27:59 DEBUG ----------------------------------------------------------------------------------------------------
-2020-02-18 18:27:59 DEBUG DataHandler Invoked
-2020-02-18 18:27:59 DEBUG workbookName: donationInfo   sheetName: donations   testName: Assert200
-2020-02-18 18:27:59 DEBUG Test case starts from row number : 3
-2020-02-18 18:27:59 DEBUG Total number of columns: 5
-2020-02-18 18:27:59 DEBUG Total number of rows: 1
-2020-02-18 18:27:59 DEBUG DataHandler Exited
-2020-02-18 18:27:59 DEBUG ----------------------------------------------------------------------------------------------------
-2020-02-18 18:27:59 DEBUG Assert200 Invoked
-2020-02-18 18:28:04 DEBUG ----------------------------------------------------------------------------------------------------
-2020-02-18 18:28:04 DEBUG DataHandler Invoked
-2020-02-18 18:28:04 DEBUG workbookName: donationInfo   sheetName: donations   testName: Assert400
-2020-02-18 18:28:04 DEBUG Test case starts from row number : 7
-2020-02-18 18:28:04 DEBUG Total number of columns: 5
-2020-02-18 18:28:04 DEBUG Total number of rows: 1
-2020-02-18 18:28:04 DEBUG DataHandler Exited
-2020-02-18 18:28:04 DEBUG ----------------------------------------------------------------------------------------------------
-2020-02-18 18:28:04 DEBUG Assert400 Invoked
-2020-02-18 18:28:05 DEBUG ----------------------------------------------------------------------------------------------------
-2020-02-18 18:28:05 DEBUG DataHandler Invoked
-2020-02-18 18:28:05 DEBUG workbookName: donationInfo   sheetName: donations   testName: Assert401
-2020-02-18 18:28:05 DEBUG Test case starts from row number : 11
-2020-02-18 18:28:05 DEBUG Total number of columns: 5
-2020-02-18 18:28:05 DEBUG Total number of rows: 1
-2020-02-18 18:28:05 DEBUG DataHandler Exited
-2020-02-18 18:28:05 DEBUG ----------------------------------------------------------------------------------------------------
-2020-02-18 18:28:05 DEBUG Assert401 Invoked
-2020-02-18 18:28:07 DEBUG ----------------------------------------------------------------------------------------------------
-2020-02-18 18:28:07 DEBUG DataHandler Invoked
-2020-02-18 18:28:07 DEBUG workbookName: donationInfo   sheetName: donationShortDetail   testName: Assert200
-2020-02-18 18:28:07 DEBUG Test case starts from row number : 1
-2020-02-18 18:28:07 DEBUG Total number of columns: 5
-2020-02-18 18:28:07 DEBUG Total number of rows: 1
-2020-02-18 18:28:07 DEBUG DataHandler Exited
-2020-02-18 18:28:07 DEBUG ----------------------------------------------------------------------------------------------------
-2020-02-18 18:28:07 DEBUG Assert200 Invoked
-2020-02-18 18:28:08 DEBUG ----------------------------------------------------------------------------------------------------
-2020-02-18 18:28:08 DEBUG DataHandler Invoked
-2020-02-18 18:28:08 DEBUG workbookName: donationInfo   sheetName: donationShortDetail   testName: Assert400
-2020-02-18 18:28:08 DEBUG Test case starts from row number : 5
-2020-02-18 18:28:08 DEBUG Total number of columns: 5
-2020-02-18 18:28:08 DEBUG Total number of rows: 1
-2020-02-18 18:28:08 DEBUG DataHandler Exited
-2020-02-18 18:28:08 DEBUG ----------------------------------------------------------------------------------------------------
-2020-02-18 18:28:08 DEBUG Assert400 Invoked
-2020-02-18 18:28:09 DEBUG ----------------------------------------------------------------------------------------------------
-2020-02-18 18:28:09 DEBUG DataHandler Invoked
-2020-02-18 18:28:09 DEBUG workbookName: donationInfo   sheetName: donationShortDetail   testName: Assert401
-2020-02-18 18:28:09 DEBUG Test case starts from row number : 9
-2020-02-18 18:28:09 DEBUG Total number of columns: 5
-2020-02-18 18:28:09 DEBUG Total number of rows: 1
-2020-02-18 18:28:09 DEBUG DataHandler Exited
-2020-02-18 18:28:09 DEBUG ----------------------------------------------------------------------------------------------------
-2020-02-18 18:28:09 DEBUG Assert401 Invoked
-2020-02-18 18:28:11 DEBUG ----------------------------------------------------------------------------------------------------
-2020-02-18 18:28:11 DEBUG DataHandler Invoked
-2020-02-18 18:28:11 DEBUG workbookName: donationInfo   sheetName: groupStatusCount   testName: Assert200
-2020-02-18 18:28:11 DEBUG Test case starts from row number : 1
-2020-02-18 18:28:11 DEBUG Total number of columns: 0
-2020-02-18 18:28:11 DEBUG Total number of rows: 0
-2020-02-18 18:28:11 DEBUG DataHandler Exited
-2020-02-18 18:28:11 DEBUG ----------------------------------------------------------------------------------------------------
-2020-02-18 18:28:11 DEBUG ----------------------------------------------------------------------------------------------------
-2020-02-18 18:28:11 DEBUG DataHandler Invoked
-2020-02-18 18:28:11 DEBUG workbookName: donationInfo   sheetName: groupStatusCount   testName: Assert401
-2020-02-18 18:28:11 DEBUG Test case starts from row number : 9
-2020-02-18 18:28:11 DEBUG Total number of columns: 0
-2020-02-18 18:28:11 DEBUG Total number of rows: 0
-2020-02-18 18:28:11 DEBUG DataHandler Exited
-2020-02-18 18:28:11 DEBUG ----------------------------------------------------------------------------------------------------
-2020-02-18 18:28:11 DEBUG ----------------------------------------------------------------------------------------------------
-2020-02-18 18:28:11 DEBUG DataHandler Invoked
-2020-02-18 18:28:11 DEBUG workbookName: testinfo   sheetName: GetgridLayout   testName: Assert200
-2020-02-18 18:28:11 DEBUG Test case starts from row number : 10
-2020-02-18 18:28:11 DEBUG Total number of columns: 5
-2020-02-18 18:28:11 DEBUG Total number of rows: 1
-2020-02-18 18:28:11 DEBUG DataHandler Exited
-2020-02-18 18:28:11 DEBUG ----------------------------------------------------------------------------------------------------
-2020-02-18 18:28:11 DEBUG Assert200 Invoked
-2020-02-18 18:28:14 DEBUG ----------------------------------------------------------------------------------------------------
-2020-02-18 18:28:14 DEBUG DataHandler Invoked
-2020-02-18 18:28:14 DEBUG workbookName: testinfo   sheetName: GetgridLayout   testName: Assert400
-2020-02-18 18:28:14 DEBUG Test case starts from row number : 14
-2020-02-18 18:28:14 DEBUG Total number of columns: 5
-2020-02-18 18:28:14 DEBUG Total number of rows: 1
-2020-02-18 18:28:14 DEBUG DataHandler Exited
-2020-02-18 18:28:14 DEBUG ----------------------------------------------------------------------------------------------------
-2020-02-18 18:28:14 DEBUG Assert400 Invoked
-2020-02-18 18:28:15 DEBUG ----------------------------------------------------------------------------------------------------
-2020-02-18 18:28:15 DEBUG DataHandler Invoked
-2020-02-18 18:28:15 DEBUG workbookName: testinfo   sheetName: GetgridLayout   testName: Assert401
-2020-02-18 18:28:15 DEBUG Test case starts from row number : 18
-2020-02-18 18:28:15 DEBUG Total number of columns: 5
-2020-02-18 18:28:15 DEBUG Total number of rows: 1
-2020-02-18 18:28:15 DEBUG DataHandler Exited
-2020-02-18 18:28:15 DEBUG ----------------------------------------------------------------------------------------------------
-2020-02-18 18:28:15 DEBUG Assert401 Invoked
-2020-02-18 18:28:17 DEBUG login invoked
-2020-02-18 18:28:17 DEBUG authValue: Basic SU1fQURNSU46
-2020-02-18 18:28:18 DEBUG LoginToken: SU1fQURNSU46TDl3YVhTUzFTaBZSRVNUU0VSVkVSQ0FMTA==
-2020-02-18 18:28:18 DEBUG testinfo.GetgridLayout  Exited
-2020-02-18 18:28:18 DEBUG ----------------------------------------------------------------------------------------------------
-2020-02-18 18:28:18 DEBUG Bloodstream Suite Finished
-2020-02-18 18:28:18 DEBUG ----------------------------------------------------------------------------------------------------
+2020-02-18 18:40:51 DEBUG ----------------------------------------------------------------------------------------------------
+2020-02-18 18:40:51 DEBUG Assert400 Invoked
+2020-02-18 18:40:51 DEBUG ----------------------------------------------------------------------------------------------------
+2020-02-18 18:40:51 DEBUG DataHandler Invoked
+2020-02-18 18:40:51 DEBUG workbookName: donationInfo   sheetName: donationShortDetail   testName: Assert401
+2020-02-18 18:40:51 DEBUG Test case starts from row number : 9
+2020-02-18 18:40:51 DEBUG Total number of columns: 5
+2020-02-18 18:40:51 DEBUG Total number of rows: 1
+2020-02-18 18:40:51 DEBUG DataHandler Exited
+2020-02-18 18:40:51 DEBUG ----------------------------------------------------------------------------------------------------
+2020-02-18 18:40:51 DEBUG Assert401 Invoked
+2020-02-18 18:45:42 DEBUG ----------------------------------------------------------------------------------------------------
+2020-02-18 18:45:42 DEBUG donationInfo.groupStatusCount Entered
+2020-02-18 18:45:42 DEBUG ----------------------------------------------------------------------------------------------------
+2020-02-18 18:45:42 DEBUG DataHandler Invoked
+2020-02-18 18:45:42 DEBUG workbookName: donationInfo   sheetName: groupStatusCount   testName: Assert200
+2020-02-18 18:45:43 DEBUG Test case starts from row number : 1
+2020-02-18 18:45:43 DEBUG Total number of columns: 0
+2020-02-18 18:45:43 DEBUG Total number of rows: 0
+2020-02-18 18:45:43 DEBUG DataHandler Exited
+2020-02-18 18:45:43 DEBUG ----------------------------------------------------------------------------------------------------
+2020-02-18 18:45:43 DEBUG ----------------------------------------------------------------------------------------------------
+2020-02-18 18:45:43 DEBUG DataHandler Invoked
+2020-02-18 18:45:43 DEBUG workbookName: donationInfo   sheetName: groupStatusCount   testName: Assert401
+2020-02-18 18:45:43 DEBUG Test case starts from row number : 9
+2020-02-18 18:45:43 DEBUG Total number of columns: 0
+2020-02-18 18:45:43 DEBUG Total number of rows: 0
+2020-02-18 18:45:43 DEBUG DataHandler Exited
+2020-02-18 18:45:43 DEBUG ----------------------------------------------------------------------------------------------------

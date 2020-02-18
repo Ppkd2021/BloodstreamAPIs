@@ -24,7 +24,7 @@ public class Suite
 		config.log.debug("Suite name: "+ctx.getCurrentXmlTest().getSuite().getName());
 		login();
 	}
-	@Test
+	
 	
 	public void login()
 	{
