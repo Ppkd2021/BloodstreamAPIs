@@ -34,7 +34,7 @@ public class donations extends Suite {
 		public void Assert200(Hashtable<String,String> dataTable) {
 			
 			config.log.debug(new Object() {}.getClass().getEnclosingMethod().getName()+ " Invoked");
-			String Authorization = config.property.getProperty("LoginToken");
+			String Authorization = config.property.getProperty("loginToken");
 			String endpoint = dataTable.get("EndPoint");
 			
 		   given().relaxedHTTPSValidation().
@@ -48,7 +48,7 @@ public class donations extends Suite {
           public void Assert400(Hashtable<String,String> dataTable) {
 			
 			config.log.debug(new Object() {}.getClass().getEnclosingMethod().getName()+ " Invoked");
-			String Authorization = config.property.getProperty("LoginToken");
+			String Authorization = config.property.getProperty("loginToken");
 			String endpoint = dataTable.get("EndPoint");
 		    given().relaxedHTTPSValidation().
 			header("Authorization",Authorization).param("GroupStatus",dataTable.get("GroupStatus")).// Use this to add headers

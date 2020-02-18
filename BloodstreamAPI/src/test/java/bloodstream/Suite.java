@@ -27,14 +27,13 @@ public class Suite
 	public void login()
 	{
 		RestAssured.baseURI = config.property.getProperty("LocalServer");
-		RestAssured.port =  Integer.parseInt(config.property.getProperty("Port"));
 		RestAssured.basePath = config.property.getProperty("BasePath");
 		config.log.debug("login invoked");
 		
 		String authValue = "Basic "+getCredential();
 		config.log.debug("authValue: "+authValue);
 		
-		Response response = given().header("Authorization",authValue).post(config.property.getProperty("LoginToken"));
+		Response response = given().relaxedHTTPSValidation().header("Authorization",authValue).post(config.property.getProperty("LoginToken"));
 		String LoginToken = response.header("LoginHash");
 		
 		config.property.setProperty("LoginToken","Basic "+LoginToken );
