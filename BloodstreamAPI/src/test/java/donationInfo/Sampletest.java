@@ -8,6 +8,7 @@ import com.google.gson.JsonParser;
 
 import static io.restassured.RestAssured.given;
 import java.util.Hashtable;
+import java.util.List;
 
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
@@ -111,6 +112,35 @@ public class Sampletest extends Suite
 			//For asserting Strings
 			Assert.assertTrue(donationId.equalsIgnoreCase("ITZ-6440001"));
 		}
+	}
+	@Test(dataProviderClass = DataHandler.class,dataProvider="dataProvider")
+	public void FlagName(Hashtable<String,String> dataTable) {
+		
+		config.log.debug(new Object() {}.getClass().getEnclosingMethod().getName()+ " Invoked");
+		String Authorization = config.property.getProperty("LoginToken");
+		String endpoint = dataTable.get("EndPoint");
+		String donationid = dataTable.get("DonationID");
+		String flagname = dataTable.get("Flagname");
+		Response response = given().relaxedHTTPSValidation().
+				header("Authorization",Authorization).param("GroupStatus",dataTable.get("GroupStatus")).// Use this to add headers
+				when().get(endpoint).then().      // Use this to specify the API path
+				extract().response();
+		String respon = response.asString();
+		
+		JsonPath x=new JsonPath(respon);
+		int i=0;
+		List orders = x.getList("data.content");
+		
+		for( i=0;i<orders.size();i++) {
+			if(x.get("data.content["+i+"].TubeID".toString()).equals(donationid)){
+				break;
+				
+			}
+			
+		}
+		
+	Assert.assertTrue(flagname.equals(x.get("data.content["+i+"].FlagName".toString())));
+		 }
 	}
 
 	

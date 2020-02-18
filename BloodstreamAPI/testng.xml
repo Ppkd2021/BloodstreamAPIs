@@ -7,8 +7,10 @@
   <test thread-count="5" name="Test">
     <classes>
       <class name="bloodstream.Suite"/>
-      <class name="donationInfo.Donations"/>
-      <class name="testinfo.gridLayout"/>
+      <class name="donationInfo.donations"/>
+      <class name="donationInfo.donationShortDetail"/>
+       <class name="donationInfo.groupStatusCount"/>
+      <class name="testinfo.GetgridLayout"/>
     </classes>
   </test> 
 </suite>

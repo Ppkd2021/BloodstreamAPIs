@@ -13,7 +13,6 @@ import io.restassured.response.Response;
 
 public class Suite 
 {
-	
 	@BeforeSuite
 	public void BloodstreamLogin(ITestContext ctx)
 	{
@@ -28,17 +27,18 @@ public class Suite
 	public void login()
 	{
 		RestAssured.baseURI = config.property.getProperty("LocalServer");
-		//RestAssured.port =  Integer.parseInt(config.property.getProperty("Port"));
+		RestAssured.port =  Integer.parseInt(config.property.getProperty("Port"));
 		RestAssured.basePath = config.property.getProperty("BasePath");
 		config.log.debug("login invoked");
+		
 		String authValue = "Basic "+getCredential();
 		config.log.debug("authValue: "+authValue);
-		String login = "/session/loginToken";
-		Response response = given().relaxedHTTPSValidation().header("Authorization",authValue).post(login);
-		String loginToken = response.header("LoginHash");
 		
-		config.property.setProperty("LoginToken","Basic "+loginToken );
-		config.log.debug("LoginToken: "+loginToken);
+		Response response = given().header("Authorization",authValue).post(config.property.getProperty("LoginToken"));
+		String LoginToken = response.header("LoginHash");
+		
+		config.property.setProperty("LoginToken","Basic "+LoginToken );
+		config.log.debug("LoginToken: "+LoginToken);
 		
 		try 
 		{

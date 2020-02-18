@@ -22,10 +22,7 @@ import io.restassured.response.Response;
 import utilities.DataHandler;
 import utilities.config;
 
-
-
-
-public class gridLayout extends Suite
+public class GetgridLayout extends Suite
 {
 	@BeforeTest
 	public void PreTestProcess() 
@@ -34,21 +31,34 @@ public class gridLayout extends Suite
 		config.log.debug(this.getClass().getName()+ " Entered");
 	}
 	@Test(dataProviderClass = DataHandler.class,dataProvider="dataProvider")
-	public void TestGet200(Hashtable<String,String> dataTable) {
+	public void Assert200(Hashtable<String,String> dataTable) {
 		
 		config.log.debug(new Object() {}.getClass().getEnclosingMethod().getName()+ " Invoked");
 		String Authorization = config.property.getProperty("LoginToken");
 		String endpoint = dataTable.get("EndPoint");
 	   given().relaxedHTTPSValidation().
-				header("Authorization",Authorization).param("GroupStatus",dataTable.get("GroupStatus")).// Use this to add headers
-				when().get(endpoint).then().      // Use this to specify the API path
-				assertThat().statusCode(200); 				
+	  header("Authorization",Authorization).
+	  param("GroupStatus",dataTable.get("GroupStatus")).// Use this to add headers
+	 when().get(endpoint).then().      // Use this to specify the API path
+	 assertThat().statusCode(200); 				
 		 }
 	
-
 	
 	@Test(dataProviderClass = DataHandler.class,dataProvider="dataProvider")
-	public void TestGet401(Hashtable<String,String> dataTable)
+	public void Assert400(Hashtable<String,String> dataTable)
+	{
+		config.log.debug(new Object() {}.getClass().getEnclosingMethod().getName()+ " Invoked");
+		String Endpoint = dataTable.get("EndPoint");
+		String Authorization = "LoginToken";
+		
+		given().relaxedHTTPSValidation().
+		header("Authorization",Authorization). 
+		when().get(Endpoint).then().     
+		assertThat().statusCode(401);	
+	}
+	
+	@Test(dataProviderClass = DataHandler.class,dataProvider="dataProvider")
+	public void Assert401(Hashtable<String,String> dataTable)
 	{
 		config.log.debug(new Object() {}.getClass().getEnclosingMethod().getName()+ " Invoked");
 		String Endpoint = dataTable.get("EndPoint");
