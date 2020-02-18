@@ -55,7 +55,7 @@ public class HtmlReport implements IReporter {
 		        props.setProperty("TotalTestFailed",  Integer.toString(testfailed));
 		        props.setProperty("TotalTests",  Integer.toString(totaltests));
 		        try {
-					props.store(fos, "Properties file generated from Java program");
+					props.store(fos,"");
 				} catch (IOException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
