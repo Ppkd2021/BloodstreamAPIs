@@ -22,7 +22,7 @@ import io.restassured.response.Response;
 import utilities.DataHandler;
 import utilities.config;
 
-public class GetgridLayout extends Suite
+public class getgridLayout extends Suite
 {
 	@BeforeTest
 	public void PreTestProcess() 

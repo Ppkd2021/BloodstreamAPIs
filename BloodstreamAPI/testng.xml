@@ -12,8 +12,9 @@
       <class name="donationInfo.groupStatusCount"/>
       <class name="donationInfo.orderTests"/>
       <class name="donationInfo.orderTestsStatusHistory"/>
-      <class name="testinfo.GetgridLayout"/>
+      <class name="testinfo.getgridLayout"/>
       <class name="testinfo.orderTests"/> 
+      <class name="testinfo.poolDetails"/> 
     </classes>
   </test> 
 </suite>
