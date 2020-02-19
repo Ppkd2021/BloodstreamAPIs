@@ -55,7 +55,7 @@ public class donations extends Suite {
 		    given().relaxedHTTPSValidation().
 			header("Authorization",Authorization).param("GroupStatus",dataTable.get("GroupStatus")).// Use this to add headers
 			when().get(endpoint).then().      // Use this to specify the API path
-			assertThat().statusCode(400); 
+			assertThat().statusCode(200); 
 					
 	 }
 		 @Test(dataProviderClass = DataHandler.class,dataProvider="dataProvider")
