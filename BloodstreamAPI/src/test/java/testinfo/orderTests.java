@@ -22,7 +22,7 @@ import io.restassured.response.Response;
 import utilities.DataHandler;
 import utilities.config;
 
-public class GetgridLayout extends Suite
+public class orderTests extends Suite
 {
 	@BeforeTest
 	public void PreTestProcess() 
@@ -38,7 +38,7 @@ public class GetgridLayout extends Suite
 		String endpoint = dataTable.get("EndPoint");
 	   given().relaxedHTTPSValidation().
 	  header("Authorization",Authorization).
-	  param("gridName",dataTable.get("gridName")).
+	  param("GroupStatus",dataTable.get("GroupStatus")).
 	 when().get(endpoint).then().      
 	 assertThat().statusCode(200); 				
 		 }
@@ -53,7 +53,7 @@ public class GetgridLayout extends Suite
 		
 		given().relaxedHTTPSValidation().
 		header("Authorization",Authorization). 
-		param("gridName",dataTable.get("gridName")).
+		param("GroupStatus",dataTable.get("GroupStatus")).
 		when().get(Endpoint).then().     
 		assertThat().statusCode(401);	
 	}
@@ -66,8 +66,8 @@ public class GetgridLayout extends Suite
 		String Authorization = "Invalid_Token";
 		
 		given().relaxedHTTPSValidation().
-		header("Authorization",Authorization). 
-		param("gridName",dataTable.get("gridName")).
+		header("Authorization",Authorization).
+		param("GroupStatus",dataTable.get("GroupStatus")).
 		when().get(Endpoint).then().     
 		assertThat().statusCode(401);	
 	}

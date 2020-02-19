@@ -13,6 +13,7 @@
       <class name="donationInfo.orderTests"/>
       <class name="donationInfo.orderTestsStatusHistory"/>
       <class name="testinfo.GetgridLayout"/>
+      <class name="testinfo.orderTests"/> 
     </classes>
   </test> 
 </suite>
