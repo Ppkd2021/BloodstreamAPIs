@@ -8,6 +8,8 @@ import java.util.Base64;
 import org.testng.ITestContext;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Test;
+
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 
@@ -27,18 +29,18 @@ public class Suite
 	public void login()
 	{
 		RestAssured.baseURI = config.property.getProperty("LocalServer");
-		RestAssured.port =  Integer.parseInt(config.property.getProperty("Port"));
 		RestAssured.basePath = config.property.getProperty("BasePath");
 		config.log.debug("login invoked");
 		
 		String authValue = "Basic "+getCredential();
 		config.log.debug("authValue: "+authValue);
 		
-		Response response = given().header("Authorization",authValue).post(config.property.getProperty("LoginToken"));
-		String LoginToken = response.header("LoginHash");
+		Response response = given().relaxedHTTPSValidation().header("Authorization",authValue)
+				.post(config.property.getProperty("Login")).then().assertThat().statusCode(200).extract().response();
+		String loginToken = response.header("LoginHash");
 		
-		config.property.setProperty("LoginToken","Basic "+LoginToken );
-		config.log.debug("LoginToken: "+LoginToken);
+		config.property.setProperty("LoginToken","Basic "+loginToken );
+		config.log.debug("LoginToken: "+loginToken);
 		
 		try 
 		{

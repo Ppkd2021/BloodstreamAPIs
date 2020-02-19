@@ -25,7 +25,7 @@ public class donationShortDetail {
 			config.log.debug(new Object() {}.getClass().getEnclosingMethod().getName()+ " Invoked");
 			String Authorization = config.property.getProperty("LoginToken");
 			String endpoint = dataTable.get("EndPoint");
-			
+			System.out.println(Authorization);
 		   given().relaxedHTTPSValidation().
 		   header("Authorization",Authorization).
 		   param("donationId",dataTable.get("donationId")).
@@ -46,7 +46,7 @@ public class donationShortDetail {
 		    param("donationId",dataTable.get("donationId")).
 			param("requestId",dataTable.get("requestId")).
 			when().get(endpoint).then().     
-			assertThat().statusCode(400); 
+			assertThat().statusCode(200); 
 					
 	 }
 		  @Test(dataProviderClass = DataHandler.class,dataProvider="dataProvider")
