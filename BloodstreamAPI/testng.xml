@@ -15,6 +15,7 @@
       <class name="testinfo.getgridLayout"/>
       <class name="testinfo.orderTests"/> 
       <class name="testinfo.poolDetails"/> 
+      <class name="testinfo.poolConstituents"/> 
     </classes>
   </test> 
 </suite>
