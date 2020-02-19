@@ -12,11 +12,15 @@
       <class name="donationInfo.groupStatusCount"/>
       <class name="donationInfo.orderTests"/>
       <class name="donationInfo.orderTestsStatusHistory"/>
-      <class name="testinfo.getgridLayout"/>
+      
+      
       <class name="testinfo.orderTests"/> 
       <class name="testinfo.poolDetails"/> 
       <class name="testinfo.poolConstituents"/> 
       <class name="testinfo.groupStatusCount"/> 
+      
+      <class name="gridLayout.getTestInfoGridLayout"/>
+      <class name="gridLayout.getDonationInfoGridLayout"/>
     </classes>
   </test> 
 </suite>

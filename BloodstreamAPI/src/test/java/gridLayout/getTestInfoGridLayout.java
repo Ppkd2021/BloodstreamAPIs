@@ -1,29 +1,18 @@
-package testinfo;
+package gridLayout;
 
 import static io.restassured.RestAssured.given;
 
-import java.lang.reflect.Array;
 import java.util.Hashtable;
-import java.util.List;
 
-import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import com.fasterxml.jackson.databind.util.JSONPObject;
-import com.google.gson.JsonArray;
-import com.google.gson.JsonObject;
-
-import bloodstream.Suite;
-import io.restassured.path.json.JsonPath;
-import io.restassured.response.Response;
-
 import utilities.DataHandler;
 import utilities.config;
 
-public class getgridLayout extends Suite
-{
+public class getTestInfoGridLayout {
+	
 	@BeforeTest
 	public void PreTestProcess() 
 	{
@@ -82,4 +71,6 @@ public class getgridLayout extends Suite
 		}
 
 
-	}
+	
+
+}
