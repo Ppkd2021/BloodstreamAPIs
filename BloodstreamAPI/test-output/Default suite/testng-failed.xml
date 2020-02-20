@@ -3,14 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="donationInfo.orderTests">
+      <class name="donationInfo.putgridLayout">
         <methods>
           <include name="Assert400" invocation-numbers="0"/>
           <include name="PreTestProcess"/>
-          <include name="Assert200" invocation-numbers="0"/>
           <include name="Assert401" invocation-numbers="0"/>
+          <include name="Assert200" invocation-numbers="0"/>
         </methods>
-      </class> <!-- donationInfo.orderTests -->
+      </class> <!-- donationInfo.putgridLayout -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

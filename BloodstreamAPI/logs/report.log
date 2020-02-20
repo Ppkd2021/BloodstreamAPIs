@@ -1,104 +1,142 @@
-2020-02-19 19:12:29 DEBUG ----------------------------------------------------------------------------------------------------
-2020-02-19 19:12:29 DEBUG DataHandler Invoked
-2020-02-19 19:12:29 DEBUG workbookName: testinfo   sheetName: poolConstituents   testName: Assert401
-2020-02-19 19:12:29 DEBUG Test case starts from row number : 9
-2020-02-19 19:12:29 DEBUG Total number of columns: 5
-2020-02-19 19:12:29 DEBUG Total number of rows: 1
-2020-02-19 19:12:29 DEBUG DataHandler Exited
-2020-02-19 19:12:29 DEBUG ----------------------------------------------------------------------------------------------------
-2020-02-19 19:12:29 DEBUG Assert401 Invoked
-2020-02-19 19:12:31 DEBUG ----------------------------------------------------------------------------------------------------
-2020-02-19 19:12:31 DEBUG DataHandler Invoked
-2020-02-19 19:12:31 DEBUG workbookName: testinfo   sheetName: groupStatusCount   testName: Assert200
-2020-02-19 19:12:31 DEBUG Test case starts from row number : 1
-2020-02-19 19:12:31 DEBUG Total number of columns: 5
-2020-02-19 19:12:31 DEBUG Total number of rows: 1
-2020-02-19 19:12:31 DEBUG DataHandler Exited
-2020-02-19 19:12:31 DEBUG ----------------------------------------------------------------------------------------------------
-2020-02-19 19:12:31 DEBUG Assert200 Invoked
-2020-02-19 19:12:32 DEBUG ----------------------------------------------------------------------------------------------------
-2020-02-19 19:12:32 DEBUG DataHandler Invoked
-2020-02-19 19:12:32 DEBUG workbookName: testinfo   sheetName: groupStatusCount   testName: Assert400
-2020-02-19 19:12:32 DEBUG Test case starts from row number : 5
-2020-02-19 19:12:32 DEBUG Total number of columns: 5
-2020-02-19 19:12:32 DEBUG Total number of rows: 1
-2020-02-19 19:12:32 DEBUG DataHandler Exited
-2020-02-19 19:12:32 DEBUG ----------------------------------------------------------------------------------------------------
-2020-02-19 19:12:32 DEBUG Assert400 Invoked
-2020-02-19 19:12:34 DEBUG ----------------------------------------------------------------------------------------------------
-2020-02-19 19:12:34 DEBUG DataHandler Invoked
-2020-02-19 19:12:34 DEBUG workbookName: testinfo   sheetName: groupStatusCount   testName: Assert401
-2020-02-19 19:12:34 DEBUG Test case starts from row number : 9
-2020-02-19 19:12:34 DEBUG Total number of columns: 5
-2020-02-19 19:12:34 DEBUG Total number of rows: 1
-2020-02-19 19:12:34 DEBUG DataHandler Exited
-2020-02-19 19:12:34 DEBUG ----------------------------------------------------------------------------------------------------
-2020-02-19 19:12:34 DEBUG Assert401 Invoked
-2020-02-19 19:12:36 DEBUG ----------------------------------------------------------------------------------------------------
-2020-02-19 19:12:36 DEBUG DataHandler Invoked
-2020-02-19 19:12:36 DEBUG workbookName: gridLayout   sheetName: getTestInfoGridLayout   testName: Assert200
-2020-02-19 19:12:36 DEBUG Test case starts from row number : 1
-2020-02-19 19:12:36 DEBUG Total number of columns: 5
-2020-02-19 19:12:36 DEBUG Total number of rows: 1
-2020-02-19 19:12:36 DEBUG DataHandler Exited
-2020-02-19 19:12:36 DEBUG ----------------------------------------------------------------------------------------------------
-2020-02-19 19:12:36 DEBUG Assert200 Invoked
-2020-02-19 19:12:37 DEBUG ----------------------------------------------------------------------------------------------------
-2020-02-19 19:12:37 DEBUG DataHandler Invoked
-2020-02-19 19:12:37 DEBUG workbookName: gridLayout   sheetName: getTestInfoGridLayout   testName: Assert400
-2020-02-19 19:12:37 DEBUG Test case starts from row number : 5
-2020-02-19 19:12:37 DEBUG Total number of columns: 5
-2020-02-19 19:12:37 DEBUG Total number of rows: 1
-2020-02-19 19:12:37 DEBUG DataHandler Exited
-2020-02-19 19:12:37 DEBUG ----------------------------------------------------------------------------------------------------
-2020-02-19 19:12:37 DEBUG Assert400 Invoked
-2020-02-19 19:12:38 DEBUG ----------------------------------------------------------------------------------------------------
-2020-02-19 19:12:38 DEBUG DataHandler Invoked
-2020-02-19 19:12:38 DEBUG workbookName: gridLayout   sheetName: getTestInfoGridLayout   testName: Assert401
-2020-02-19 19:12:38 DEBUG Test case starts from row number : 9
-2020-02-19 19:12:38 DEBUG Total number of columns: 5
-2020-02-19 19:12:38 DEBUG Total number of rows: 1
-2020-02-19 19:12:38 DEBUG DataHandler Exited
-2020-02-19 19:12:38 DEBUG ----------------------------------------------------------------------------------------------------
-2020-02-19 19:12:38 DEBUG Assert401 Invoked
-2020-02-19 19:12:40 DEBUG ----------------------------------------------------------------------------------------------------
-2020-02-19 19:12:40 DEBUG DataHandler Invoked
-2020-02-19 19:12:40 DEBUG workbookName: gridLayout   sheetName: getDonationInfoGridLayout   testName: Assert200
-2020-02-19 19:12:40 DEBUG Test case starts from row number : 1
-2020-02-19 19:12:40 DEBUG Total number of columns: 5
-2020-02-19 19:12:40 DEBUG Total number of rows: 1
-2020-02-19 19:12:40 DEBUG DataHandler Exited
-2020-02-19 19:12:40 DEBUG ----------------------------------------------------------------------------------------------------
-2020-02-19 19:12:40 DEBUG Assert200 Invoked
-2020-02-19 19:12:41 DEBUG ----------------------------------------------------------------------------------------------------
-2020-02-19 19:12:41 DEBUG DataHandler Invoked
-2020-02-19 19:12:41 DEBUG workbookName: gridLayout   sheetName: getDonationInfoGridLayout   testName: Assert400
-2020-02-19 19:12:41 DEBUG Test case starts from row number : 5
-2020-02-19 19:12:41 DEBUG Total number of columns: 5
-2020-02-19 19:12:41 DEBUG Total number of rows: 1
-2020-02-19 19:12:41 DEBUG DataHandler Exited
-2020-02-19 19:12:41 DEBUG ----------------------------------------------------------------------------------------------------
-2020-02-19 19:12:41 DEBUG Assert400 Invoked
-2020-02-19 19:12:42 DEBUG ----------------------------------------------------------------------------------------------------
-2020-02-19 19:12:42 DEBUG DataHandler Invoked
-2020-02-19 19:12:42 DEBUG workbookName: gridLayout   sheetName: getDonationInfoGridLayout   testName: Assert401
-2020-02-19 19:12:42 DEBUG Test case starts from row number : 9
-2020-02-19 19:12:42 DEBUG Total number of columns: 5
-2020-02-19 19:12:42 DEBUG Total number of rows: 1
-2020-02-19 19:12:42 DEBUG DataHandler Exited
-2020-02-19 19:12:42 DEBUG ----------------------------------------------------------------------------------------------------
-2020-02-19 19:12:42 DEBUG Assert401 Invoked
-2020-02-19 19:12:44 DEBUG gridLayout.getDonationInfoGridLayout  Exited
-2020-02-19 19:12:44 DEBUG ----------------------------------------------------------------------------------------------------
-2020-02-19 19:12:44 DEBUG gridLayout.getTestInfoGridLayout  Exited
-2020-02-19 19:12:44 DEBUG ----------------------------------------------------------------------------------------------------
-2020-02-19 19:12:44 DEBUG testinfo.groupStatusCount  Exited
-2020-02-19 19:12:44 DEBUG ----------------------------------------------------------------------------------------------------
-2020-02-19 19:12:44 DEBUG testinfo.orderTests  Exited
-2020-02-19 19:12:44 DEBUG ----------------------------------------------------------------------------------------------------
-2020-02-19 19:12:44 DEBUG testinfo.poolConstituents  Exited
-2020-02-19 19:12:44 DEBUG ----------------------------------------------------------------------------------------------------
-2020-02-19 19:12:44 DEBUG testinfo.poolDetails  Exited
-2020-02-19 19:12:44 DEBUG ----------------------------------------------------------------------------------------------------
-2020-02-19 19:12:44 DEBUG Bloodstream Suite Finished
-2020-02-19 19:12:44 DEBUG ----------------------------------------------------------------------------------------------------
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:53:44 ERROR java.lang.NullPointerException
+2020-02-20 11:
