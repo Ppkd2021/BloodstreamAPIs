@@ -13,17 +13,12 @@ import utilities.config;
 
 public class putDonationInfogridLayout {
 
-	@BeforeTest
-	public void PreTestProcess() 
-	{
-		//config.log.debug(new String(new char[100]).replace("\0", "-"));
-		//config.log.debug(this.getClass().getName()+ " Entered");
-	}
+	
 	//Validate 200 Status code 
 		@Test(dataProviderClass = DataHandler.class,dataProvider="dataProvider")
 		public void Assert200(Hashtable<String,String> dataTable) {
-			File file = new File(System.getProperty("user.dir")+"//payload//global.properties");
-			config.log.debug(new Object() {}.getClass().getEnclosingMethod().getName()+ " Invoked");
+			File file = new File(System.getProperty("user.dir")+"//payloads//JsonPayload.json");
+			//config.log.debug(new Object() {}.getClass().getEnclosingMethod().getName()+ " Invoked");
 			String Authorization = config.property.getProperty("LoginToken");
 			String endpoint = dataTable.get("EndPoint");
 			
@@ -55,7 +50,7 @@ public class putDonationInfogridLayout {
 		  @Test(dataProviderClass = DataHandler.class,dataProvider="dataProvider")
           public void Assert401(Hashtable<String,String> dataTable) {
   			
-  			config.log.debug(new Object() {}.getClass().getEnclosingMethod().getName()+ " Invoked");
+  			//config.log.debug(new Object() {}.getClass().getEnclosingMethod().getName()+ " Invoked");
   			String Authorization = config.property.getProperty("InvalidToken");
   			String endpoint = dataTable.get("EndPoint");
   		    given().relaxedHTTPSValidation().

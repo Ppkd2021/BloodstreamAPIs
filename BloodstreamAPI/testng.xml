@@ -6,13 +6,23 @@
   	</listeners>
   <test thread-count="5" name="Test">
     <classes>
-      <class name="bloodstream.Suite"/>
+       <class name="bloodstream.Suite"/>
       <class name="donationInfo.donations"/>
      <class name="donationInfo.donationShortDetail"/>
       <class name="donationInfo.groupStatusCount"/>
       <class name="donationInfo.orderTests"/>
       <class name="donationInfo.orderTestsStatusHistory"/>
+     <class name="testinfo.orderTests"/> 
+      <class name="testinfo.poolDetails"/> 
+      <class name="testinfo.poolConstituents"/> 
+      <class name="testinfo.groupStatusCount"/> 
+    
       
+      <class name="gridLayout.getTestInfoGridLayout"/>
+      <class name="gridLayout.getDonationInfoGridLayout"/>
+ <class name="gridLayout.putDonationInfogridLayout"/>
+    
+  
       
      
       

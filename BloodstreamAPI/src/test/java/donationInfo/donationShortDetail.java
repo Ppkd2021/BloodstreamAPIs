@@ -12,12 +12,12 @@ import utilities.config;
 
 public class donationShortDetail {
 	
-	@BeforeTest
+	/*@BeforeTest
 	public void PreTestProcess() 
 	{
 		//config.log.debug(new String(new char[100]).replace("\0", "-"));
 		//config.log.debug(this.getClass().getName()+ " Entered");
-	}
+	}*/
 	//Validate 200 Status code 
 		@Test(dataProviderClass = DataHandler.class,dataProvider="dataProvider")
 		public void Assert200(Hashtable<String,String> dataTable) {

@@ -35,7 +35,7 @@ public class Sampletest extends Suite
 	public void TestExample(Hashtable<String,String> dataTable)
 	{
 		// Log the test method name; Log file: logs/report.log
-		config.log.debug(new Object() {}.getClass().getEnclosingMethod().getName()+ " Invoked");
+		//config.log.debug(new Object() {}.getClass().getEnclosingMethod().getName()+ " Invoked");
 		
 		//Load the data from Global.Properties file and Excel-sheet
 		//Use this to access Global Properties
@@ -54,7 +54,7 @@ public class Sampletest extends Suite
 		String Sort = dataTable.get("Sort");
 		
 		// Log the data extracted before making the API request
-		config.log.debug("GroupStatus: "+GroupStatus+" PageSize: "+PageSize+" Page: "+Page+" Sort: "+Sort);
+		//config.log.debug("GroupStatus: "+GroupStatus+" PageSize: "+PageSize+" Page: "+Page+" Sort: "+Sort);
 		
 		RestAssured.baseURI = config.property.getProperty("LocalServer");
 		RestAssured.port =  Integer.parseInt(config.property.getProperty("Port"));

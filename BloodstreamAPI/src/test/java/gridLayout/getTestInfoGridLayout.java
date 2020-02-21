@@ -13,12 +13,7 @@ import utilities.config;
 
 public class getTestInfoGridLayout {
 	
-	@BeforeTest
-	public void PreTestProcess() 
-	{
-		//config.log.debug(new String(new char[100]).replace("\0", "-"));
-		//config.log.debug(this.getClass().getName()+ " Entered");
-	}
+	
 	@Test(dataProviderClass = DataHandler.class,dataProvider="dataProvider")
 	public void Assert200(Hashtable<String,String> dataTable) {
 		
@@ -63,13 +58,6 @@ public class getTestInfoGridLayout {
 	
 	
 	
-	@AfterTest
-	public void PostTestProcess() 
-	{
-		//config.log.debug(this.getClass().getName()+ "  Exited");
-		//config.log.debug(new String(new char[100]).replace("\0", "-"));
-		}
-
 
 	
 

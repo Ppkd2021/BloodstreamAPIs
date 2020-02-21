@@ -8,7 +8,7 @@ import org.apache.logging.log4j.Logger;
 public final class config 
 {
 	public static Properties property=new Properties();
-	public static Logger log =LogManager.getLogger(config.class.getName());
+	//public static Logger log =LogManager.getLogger(config.class.getName());
 	public static FileInputStream inputStream = null;
 	public static ExcelReader excel = null;
 	
@@ -26,7 +26,7 @@ public final class config
 			}
 			catch (Exception ex)
 			{
-				log.error(ex);
+				//log.error(ex);
 			}
 		}
 		//log.debug("Directory: "+System.getProperty("user.dir"));

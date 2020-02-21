@@ -30,17 +30,17 @@ public class Suite
 	{
 		RestAssured.baseURI = config.property.getProperty("LocalServer");
 		RestAssured.basePath = config.property.getProperty("BasePath");
-		config.log.debug("login invoked");
+		//config.log.debug("login invoked");
 		
 		String authValue = "Basic "+getCredential();
-		config.log.debug("authValue: "+authValue);
+		//config.log.debug("authValue: "+authValue);
 		
 		Response response = given().relaxedHTTPSValidation().header("Authorization",authValue)
 				.post(config.property.getProperty("Login")).then().assertThat().statusCode(200).extract().response();
 		String loginToken = response.header("LoginHash");
 		
 		config.property.setProperty("LoginToken","Basic "+loginToken );
-		config.log.debug("LoginToken: "+loginToken);
+		//config.log.debug("LoginToken: "+loginToken);
 		
 		try 
 		{
@@ -52,7 +52,7 @@ public class Suite
 		} 
 		catch (Exception ex) 
 		{
-			config.log.error(ex.toString());
+			//config.log.error(ex.toString());
         }
 	}
 	
@@ -66,11 +66,11 @@ public class Suite
 		return encodeCredential;
 	}
 	
-	@AfterSuite
+	/*@AfterSuite
 	public void PostSuitProcess(ITestContext ctx) 
 	{
 		config.log.debug(ctx.getCurrentXmlTest().getSuite().getName()+" Finished");
 		config.log.debug(new String(new char[100]).replace("\0", "-"));	
-	}
+	}*/
 	
 }

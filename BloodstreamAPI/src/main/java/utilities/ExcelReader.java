@@ -28,7 +28,7 @@ public class ExcelReader {
 		} 
 		catch (Exception ex) 
 		{
-			config.log.error(ex);
+			//config.log.error(ex);
 		} 
 		
 	}
@@ -66,7 +66,7 @@ public class ExcelReader {
 		sheet = workbook.getSheetAt(index);
 		row=sheet.getRow(0);
 		for(int i=0;i<row.getLastCellNum();i++){
-			config.log.debug(row.getCell(i).getStringCellValue().trim());
+			//config.log.debug(row.getCell(i).getStringCellValue().trim());
 			if(row.getCell(i).getStringCellValue().trim().equals(colName.trim()))
 				col_Num=i;
 		}
@@ -114,7 +114,7 @@ public class ExcelReader {
 		}
 		catch(Exception ex){
 			
-			config.log.error(ex);
+			//config.log.error(ex);
 			return "row "+rowNum+" or column "+colName +" does not exist in xls";
 		}
 	}
@@ -172,7 +172,7 @@ public class ExcelReader {
 		}
 		catch(Exception ex){
 			
-			config.log.error(ex);
+			//config.log.error(ex);
 			return "row "+rowNum+" or column "+colNum +" does not exist  in xls";
 		}
 	}
