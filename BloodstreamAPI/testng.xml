@@ -14,15 +14,7 @@
       <class name="donationInfo.orderTestsStatusHistory"/>
       
       
-      <class name="testinfo.orderTests"/> 
-      <class name="testinfo.poolDetails"/> 
-      <class name="testinfo.poolConstituents"/> 
-      <class name="testinfo.groupStatusCount"/> 
-      
-      <class name="gridLayout.getTestInfoGridLayout"/>
-      <class name="gridLayout.getDonationInfoGridLayout"/>
- <class name="gridLayout.putDonationInfogridLayout"/>
-      <class name="clientCode.getAssays"/>
+     
       
       
       

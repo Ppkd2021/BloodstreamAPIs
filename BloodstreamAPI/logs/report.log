@@ -1,135 +1,134 @@
-2020-02-21 12:03:46 DEBUG donationInfo.donations Entered
-2020-02-21 12:03:47 DEBUG ----------------------------------------------------------------------------------------------------
-2020-02-21 12:03:47 DEBUG donationInfo.groupStatusCount Entered
-2020-02-21 12:03:47 DEBUG ----------------------------------------------------------------------------------------------------
-2020-02-21 12:03:47 DEBUG donationInfo.orderTests Entered
-2020-02-21 12:03:47 DEBUG ----------------------------------------------------------------------------------------------------
-2020-02-21 12:03:47 DEBUG donationInfo.orderTestsStatusHistory Entered
-2020-02-21 12:03:47 DEBUG ----------------------------------------------------------------------------------------------------
-2020-02-21 12:03:47 DEBUG DataHandler Invoked
-2020-02-21 12:03:47 DEBUG workbookName: donationInfo   sheetName: donations   testName: Assert200
-2020-02-21 12:03:47 DEBUG Test case starts from row number : 1
-2020-02-21 12:03:47 DEBUG Total number of columns: 5
-2020-02-21 12:03:47 DEBUG Total number of rows: 1
-2020-02-21 12:03:47 DEBUG DataHandler Exited
-2020-02-21 12:03:47 DEBUG ----------------------------------------------------------------------------------------------------
-2020-02-21 12:03:47 DEBUG Assert200 Invoked
-2020-02-21 12:03:49 DEBUG ----------------------------------------------------------------------------------------------------
-2020-02-21 12:03:49 DEBUG DataHandler Invoked
-2020-02-21 12:03:49 DEBUG workbookName: donationInfo   sheetName: donations   testName: Assert400
-2020-02-21 12:03:49 DEBUG Test case starts from row number : 5
-2020-02-21 12:03:49 DEBUG Total number of columns: 5
-2020-02-21 12:03:49 DEBUG Total number of rows: 1
-2020-02-21 12:03:49 DEBUG DataHandler Exited
-2020-02-21 12:03:49 DEBUG ----------------------------------------------------------------------------------------------------
-2020-02-21 12:03:49 DEBUG Assert400 Invoked
-2020-02-21 12:03:50 DEBUG ----------------------------------------------------------------------------------------------------
-2020-02-21 12:03:50 DEBUG DataHandler Invoked
-2020-02-21 12:03:50 DEBUG workbookName: donationInfo   sheetName: donations   testName: Assert401
-2020-02-21 12:03:50 DEBUG Test case starts from row number : 9
-2020-02-21 12:03:50 DEBUG Total number of columns: 5
-2020-02-21 12:03:50 DEBUG Total number of rows: 1
-2020-02-21 12:03:50 DEBUG DataHandler Exited
-2020-02-21 12:03:50 DEBUG ----------------------------------------------------------------------------------------------------
-2020-02-21 12:03:50 DEBUG Assert401 Invoked
-2020-02-21 12:03:52 DEBUG ----------------------------------------------------------------------------------------------------
-2020-02-21 12:03:52 DEBUG DataHandler Invoked
-2020-02-21 12:03:52 DEBUG workbookName: donationInfo   sheetName: donationShortDetail   testName: Assert200
-2020-02-21 12:03:52 DEBUG Test case starts from row number : 1
-2020-02-21 12:03:52 DEBUG Total number of columns: 5
-2020-02-21 12:03:52 DEBUG Total number of rows: 1
-2020-02-21 12:03:52 DEBUG DataHandler Exited
-2020-02-21 12:03:52 DEBUG ----------------------------------------------------------------------------------------------------
-2020-02-21 12:03:52 DEBUG Assert200 Invoked
-2020-02-21 12:03:53 DEBUG ----------------------------------------------------------------------------------------------------
-2020-02-21 12:03:53 DEBUG DataHandler Invoked
-2020-02-21 12:03:53 DEBUG workbookName: donationInfo   sheetName: donationShortDetail   testName: Assert400
-2020-02-21 12:03:53 DEBUG Test case starts from row number : 5
-2020-02-21 12:03:53 DEBUG Total number of columns: 5
-2020-02-21 12:03:53 DEBUG Total number of rows: 1
-2020-02-21 12:03:53 DEBUG DataHandler Exited
-2020-02-21 12:03:53 DEBUG ----------------------------------------------------------------------------------------------------
-2020-02-21 12:03:53 DEBUG Assert400 Invoked
-2020-02-21 12:03:55 DEBUG ----------------------------------------------------------------------------------------------------
-2020-02-21 12:03:55 DEBUG DataHandler Invoked
-2020-02-21 12:03:55 DEBUG workbookName: donationInfo   sheetName: donationShortDetail   testName: Assert401
-2020-02-21 12:03:55 DEBUG Test case starts from row number : 9
-2020-02-21 12:03:55 DEBUG Total number of columns: 5
-2020-02-21 12:03:55 DEBUG Total number of rows: 1
-2020-02-21 12:03:55 DEBUG DataHandler Exited
-2020-02-21 12:03:55 DEBUG ----------------------------------------------------------------------------------------------------
-2020-02-21 12:03:55 DEBUG Assert401 Invoked
-2020-02-21 12:03:56 DEBUG ----------------------------------------------------------------------------------------------------
-2020-02-21 12:03:56 DEBUG DataHandler Invoked
-2020-02-21 12:03:56 DEBUG workbookName: donationInfo   sheetName: groupStatusCount   testName: Assert200
-2020-02-21 12:03:56 DEBUG Test case starts from row number : 1
-2020-02-21 12:03:56 DEBUG Total number of columns: 5
-2020-02-21 12:03:56 DEBUG Total number of rows: 1
-2020-02-21 12:03:56 DEBUG DataHandler Exited
-2020-02-21 12:03:56 DEBUG ----------------------------------------------------------------------------------------------------
-2020-02-21 12:03:56 DEBUG Assert200 Invoked
-2020-02-21 12:03:58 DEBUG ----------------------------------------------------------------------------------------------------
-2020-02-21 12:03:58 DEBUG DataHandler Invoked
-2020-02-21 12:03:58 DEBUG workbookName: donationInfo   sheetName: groupStatusCount   testName: Assert401
-2020-02-21 12:03:58 DEBUG Test case starts from row number : 6
-2020-02-21 12:03:58 DEBUG Total number of columns: 5
-2020-02-21 12:03:58 DEBUG Total number of rows: 1
-2020-02-21 12:03:58 DEBUG DataHandler Exited
-2020-02-21 12:03:58 DEBUG ----------------------------------------------------------------------------------------------------
-2020-02-21 12:03:58 DEBUG Assert401 Invoked
-2020-02-21 12:03:59 DEBUG ----------------------------------------------------------------------------------------------------
-2020-02-21 12:03:59 DEBUG DataHandler Invoked
-2020-02-21 12:03:59 DEBUG workbookName: donationInfo   sheetName: orderTests   testName: Assert200
-2020-02-21 12:03:59 DEBUG Test case starts from row number : 1
-2020-02-21 12:03:59 DEBUG Total number of columns: 5
-2020-02-21 12:03:59 DEBUG Total number of rows: 1
-2020-02-21 12:03:59 DEBUG DataHandler Exited
-2020-02-21 12:03:59 DEBUG ----------------------------------------------------------------------------------------------------
-2020-02-21 12:03:59 DEBUG Assert200 Invoked
-2020-02-21 12:04:00 DEBUG ----------------------------------------------------------------------------------------------------
-2020-02-21 12:04:00 DEBUG DataHandler Invoked
-2020-02-21 12:04:00 DEBUG workbookName: donationInfo   sheetName: orderTests   testName: Assert400
-2020-02-21 12:04:00 DEBUG Test case starts from row number : 10
-2020-02-21 12:04:00 DEBUG Total number of columns: 5
-2020-02-21 12:04:00 DEBUG Total number of rows: 1
-2020-02-21 12:04:00 DEBUG DataHandler Exited
-2020-02-21 12:04:00 DEBUG ----------------------------------------------------------------------------------------------------
-2020-02-21 12:04:00 DEBUG Assert400 Invoked
-2020-02-21 12:04:02 DEBUG ----------------------------------------------------------------------------------------------------
-2020-02-21 12:04:02 DEBUG DataHandler Invoked
-2020-02-21 12:04:02 DEBUG workbookName: donationInfo   sheetName: orderTests   testName: Assert401
-2020-02-21 12:04:02 DEBUG Test case starts from row number : 6
-2020-02-21 12:04:02 DEBUG Total number of columns: 5
-2020-02-21 12:04:02 DEBUG Total number of rows: 1
-2020-02-21 12:04:02 DEBUG DataHandler Exited
-2020-02-21 12:04:02 DEBUG ----------------------------------------------------------------------------------------------------
-2020-02-21 12:04:02 DEBUG Assert401 Invoked
-2020-02-21 12:04:03 DEBUG ----------------------------------------------------------------------------------------------------
-2020-02-21 12:04:03 DEBUG DataHandler Invoked
-2020-02-21 12:04:03 DEBUG workbookName: donationInfo   sheetName: orderTestsStatusHistory   testName: Assert200
-2020-02-21 12:04:03 DEBUG Test case starts from row number : 1
-2020-02-21 12:04:03 DEBUG Total number of columns: 5
-2020-02-21 12:04:03 DEBUG Total number of rows: 1
-2020-02-21 12:04:03 DEBUG DataHandler Exited
-2020-02-21 12:04:03 DEBUG ----------------------------------------------------------------------------------------------------
-2020-02-21 12:04:03 DEBUG Assert200 Invoked
-2020-02-21 12:04:05 DEBUG ----------------------------------------------------------------------------------------------------
-2020-02-21 12:04:05 DEBUG DataHandler Invoked
-2020-02-21 12:04:05 DEBUG workbookName: donationInfo   sheetName: orderTestsStatusHistory   testName: Assert400
-2020-02-21 12:04:05 DEBUG Test case starts from row number : 5
-2020-02-21 12:04:05 DEBUG Total number of columns: 5
-2020-02-21 12:04:05 DEBUG Total number of rows: 1
-2020-02-21 12:04:05 DEBUG DataHandler Exited
-2020-02-21 12:04:05 DEBUG ----------------------------------------------------------------------------------------------------
-2020-02-21 12:04:05 DEBUG Assert400 Invoked
-2020-02-21 12:04:06 DEBUG ----------------------------------------------------------------------------------------------------
-2020-02-21 12:04:06 DEBUG DataHandler Invoked
-2020-02-21 12:04:06 DEBUG workbookName: donationInfo   sheetName: orderTestsStatusHistory   testName: Assert401
-2020-02-21 12:04:06 DEBUG Test case starts from row number : 9
-2020-02-21 12:04:06 DEBUG Total number of columns: 5
-2020-02-21 12:04:06 DEBUG Total number of rows: 1
-2020-02-21 12:04:06 DEBUG DataHandler Exited
-2020-02-21 12:04:06 DEBUG ----------------------------------------------------------------------------------------------------
-2020-02-21 12:04:06 DEBUG Assert401 Invoked
-2020-02-21 12:04:08 DEBUG Bloodstream Suite Finished
-2020-02-21 12:04:08 DEBUG ----------------------------------------------------------------------------------------------------
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
+2020-02-21 12:07:29 ERROR java.lang.NullPointerException
