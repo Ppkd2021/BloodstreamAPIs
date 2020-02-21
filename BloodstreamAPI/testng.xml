@@ -20,7 +20,10 @@
       
       <class name="gridLayout.getTestInfoGridLayout"/>
       <class name="gridLayout.getDonationInfoGridLayout"/>
- <class name="gridLayout.putDonationInfogridLayout"/>
+     <class name="gridLayout.putDonationInfogridLayout"/>
+     <class name="gridLayout.putTestInfogridLayout"/>
+     
+     
     
   
       

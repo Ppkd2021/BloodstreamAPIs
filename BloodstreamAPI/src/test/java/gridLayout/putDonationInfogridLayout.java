@@ -17,7 +17,7 @@ public class putDonationInfogridLayout {
 	//Validate 200 Status code 
 		@Test(dataProviderClass = DataHandler.class,dataProvider="dataProvider")
 		public void Assert200(Hashtable<String,String> dataTable) {
-			File file = new File(System.getProperty("user.dir")+"//payloads//JsonPayload.json");
+			File file = new File(System.getProperty("user.dir")+"//payloads//putDonationInfogridLayout.json");
 			//config.log.debug(new Object() {}.getClass().getEnclosingMethod().getName()+ " Invoked");
 			String Authorization = config.property.getProperty("LoginToken");
 			String endpoint = dataTable.get("EndPoint");

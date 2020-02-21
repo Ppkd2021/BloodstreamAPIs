@@ -31,8 +31,7 @@ public class getAssays {
 			
 		   given().relaxedHTTPSValidation().
 		   header("Authorization",Authorization).
-		   param("donationId",dataTable.get("donationId")).
-		   param("requestId",dataTable.get("requestId")).
+		   
 		   when().get(endpoint).then().     
 		   assertThat().statusCode(200); 
 					
@@ -46,8 +45,7 @@ public class getAssays {
 			String endpoint = dataTable.get("EndPoint");
 		    given().relaxedHTTPSValidation().
 			header("Authorization",Authorization).
-			param("donationId",dataTable.get("donationId")).
-			param("requestId",dataTable.get("requestId")).
+			
 			when().get(endpoint).then().     
 			assertThat().statusCode(400); 
 					
@@ -60,7 +58,7 @@ public class getAssays {
   			String endpoint = dataTable.get("EndPoint");
   		    given().relaxedHTTPSValidation().
   			header("Authorization",Authorization).
-  			param("donationId",dataTable.get("donationId")).
+  			
  		   param("requestId",dataTable.get("requestId")).
   			when().get(endpoint).then().     
   			assertThat().statusCode(401); 
