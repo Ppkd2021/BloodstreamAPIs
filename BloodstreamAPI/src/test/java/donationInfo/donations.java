@@ -40,7 +40,7 @@ public class donations extends Suite {
 			String Authorization = config.property.getProperty("LoginToken");
 			String endpoint = dataTable.get("EndPoint");
 			given().relaxedHTTPSValidation().
-		   header("Authorization",Authorization).
+		   header("Authorization",Authorization).param("GroupStatus",dataTable.get("GroupStatus")).
 		   when().get(endpoint).then().      
 		   assertThat().statusCode(200); 
 					
