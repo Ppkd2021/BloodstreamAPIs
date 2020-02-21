@@ -26,8 +26,8 @@ public class Sampletest extends Suite
 	@BeforeTest
 	public void PreTestProcess() 
 	{
-		config.log.debug(new String(new char[100]).replace("\0", "-"));
-		config.log.debug(this.getClass().getName()+ " Entered");
+		//config.log.debug(new String(new char[100]).replace("\0", "-"));
+		//config.log.debug(this.getClass().getName()+ " Entered");
 	}
 
 	

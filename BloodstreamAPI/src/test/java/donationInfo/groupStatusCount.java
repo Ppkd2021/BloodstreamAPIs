@@ -15,14 +15,14 @@ public class groupStatusCount {
 	@BeforeTest
 	public void PreTestProcess() 
 	{
-		config.log.debug(new String(new char[100]).replace("\0", "-"));
-		config.log.debug(this.getClass().getName()+ " Entered");
+		//config.log.debug(new String(new char[100]).replace("\0", "-"));
+		//config.log.debug(this.getClass().getName()+ " Entered");
 	}
 	//Validate 200 Status code 
 		@Test(dataProviderClass = DataHandler.class,dataProvider="dataProvider")
 		public void Assert200(Hashtable<String,String> dataTable) {
 			
-			config.log.debug(new Object() {}.getClass().getEnclosingMethod().getName()+ " Invoked");
+			//config.log.debug(new Object() {}.getClass().getEnclosingMethod().getName()+ " Invoked");
 			String Authorization = config.property.getProperty("LoginToken");
 			String endpoint = dataTable.get("EndPoint");
 			
@@ -39,7 +39,7 @@ public class groupStatusCount {
 		  @Test(dataProviderClass = DataHandler.class,dataProvider="dataProvider")
           public void Assert401(Hashtable<String,String> dataTable) {
   			
-  			config.log.debug(new Object() {}.getClass().getEnclosingMethod().getName()+ " Invoked");
+  			//config.log.debug(new Object() {}.getClass().getEnclosingMethod().getName()+ " Invoked");
   			String Authorization = config.property.getProperty("InvalidToken");
   			String endpoint = dataTable.get("EndPoint");
   		    given().relaxedHTTPSValidation().

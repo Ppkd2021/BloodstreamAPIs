@@ -20,8 +20,8 @@ public class Suite
 	{
 		
 		config.init();
-		config.log.debug(new String(new char[100]).replace("\0", "-"));
-		config.log.debug("Suite name: "+ctx.getCurrentXmlTest().getSuite().getName());
+		//config.log.debug(new String(new char[100]).replace("\0", "-"));
+		//config.log.debug("Suite name: "+ctx.getCurrentXmlTest().getSuite().getName());
 		login();
 	}
 	

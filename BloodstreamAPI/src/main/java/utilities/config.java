@@ -14,8 +14,8 @@ public final class config
 	
 	public static void init()
 	{
-		log.debug(new String(new char[100]).replace("\0", "-"));	
-		log.debug("Suite invoked");
+		//log.debug(new String(new char[100]).replace("\0", "-"));	
+		//log.debug("Suite invoked");
 		if(inputStream==null)
 		{
 			try
@@ -29,9 +29,9 @@ public final class config
 				log.error(ex);
 			}
 		}
-		log.debug("Directory: "+System.getProperty("user.dir"));
-		log.debug("Configuration exited");
-		log.debug(new String(new char[100]).replace("\0", "-"));
+		//log.debug("Directory: "+System.getProperty("user.dir"));
+		//log.debug("Configuration exited");
+		//log.debug(new String(new char[100]).replace("\0", "-"));
 		
 	}
 
