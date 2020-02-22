@@ -28,7 +28,7 @@
       <class name="conclusionInfo.conclusions"/>
      
       <class name="clientCode.getAssays"/>
-    
+      <class name="clientCode.getPrefixes"/>
   
       
      
