@@ -29,6 +29,7 @@
      
       <class name="clientCode.getAssays"/>
       <class name="clientCode.getPrefixes"/>
+      <class name="clientCode.getClientSites"/>
   
       
      
