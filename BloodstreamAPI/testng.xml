@@ -23,6 +23,9 @@
      <class name="gridLayout.putDonationInfogridLayout"/>
      <class name="gridLayout.putTestInfogridLayout"/>
      
+      <class name="conclusions.approve"/>
+      <class name="worklistInfo.worklistCalibratorsControls"/>
+     
      
     
   
