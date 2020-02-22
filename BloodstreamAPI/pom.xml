@@ -41,7 +41,7 @@
         <directory>src/main/java/resources</directory>
         <filtering>true</filtering>
       </resource>
-      </resources>
+      </resources>	
   <pluginManagement>
   <plugins>
       <plugin>
@@ -49,6 +49,9 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <version>3.0.0-M4</version>
         <configuration>
+        
+        <useSystemClassLoader>false</useSystemClassLoader>
+     	
           <suiteXmlFiles>
             <suiteXmlFile>testng.xml</suiteXmlFile>
           </suiteXmlFiles>

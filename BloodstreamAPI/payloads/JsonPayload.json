@@ -1,0 +1,72 @@
+{
+  "gridName": "TestInformation",
+  "layout": [
+    {
+                    "columnName": "TubeID",
+                    "columnPosition": 1,
+                    "isVisible": 1,
+                    "isLocked": 1
+                },
+                {
+                    "columnName": "FlagName",
+                    "columnPosition": 6,
+                    "isVisible": 1,
+                    "isLocked": 0
+                },
+                {
+                    "columnName": "Location",
+                    "columnPosition": 3,
+                    "isVisible": 1,
+                    "isLocked": 0
+                },
+                {
+                    "columnName": "Priority",
+                    "columnPosition": 9,
+                    "isVisible": 0,
+                    "isLocked": 0
+                },
+                {
+                    "columnName": "Site",
+                    "columnPosition": 7,
+                    "isVisible": 1,
+                    "isLocked": 0
+                },
+                {
+                    "columnName": "TestInstrument",
+                    "columnPosition": 4,
+                    "isVisible": 1,
+                    "isLocked": 0
+                },
+                {
+                    "columnName": "WorklistID",
+                    "columnPosition": 8,
+                    "isVisible": 1,
+                    "isLocked": 0
+                },
+                
+                {
+                    "columnName": "PoolingInstrument",
+                    "columnPosition": 10,
+                    "isVisible": 0,
+                    "isLocked": 0
+                },
+                {
+                    "columnName": "Status",
+                    "columnPosition": 11,
+                    "isVisible": 0,
+                    "isLocked": 0
+                },
+                 {
+                    "columnName": "DateTimeOfOrderCreation",
+                    "columnPosition": 5,
+                    "isVisible": 1,
+                    "isLocked": 0
+                },
+                {
+                    "columnName": "Assay",
+                    "columnPosition": 2,
+                    "isVisible": 1,
+                    "isLocked": 0
+                }
+  ]
+}

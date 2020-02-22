@@ -20,6 +20,7 @@
       
       <class name="gridLayout.getTestInfoGridLayout"/>
       <class name="gridLayout.getDonationInfoGridLayout"/>
+<<<<<<< HEAD
      <class name="gridLayout.putDonationInfogridLayout"/>
      <class name="gridLayout.putTestInfogridLayout"/>
      
@@ -30,10 +31,14 @@
       <class name="clientCode.putAssays"/>
       <class name="clientCode.putPrefixes"/>
       <class name="clientCode.putClientSites"/>
+=======
+ <class name="gridLayout.putDonationInfogridLayout"/>
+>>>>>>> branch 'master' of https://github.com/Ppkd2021/BloodstreamAPIs
       <class name="clientCode.getAssays"/>
-      <class name="clientCode.getPrefixes"/>
-      <class name="clientCode.getClientSites"/>
       
+      <class name="gridLayout.getTestInfoGridLayout"/>
+      <class name="gridLayout.getDonationInfoGridLayout"/>
+ <class name="gridLayout.putDonationInfogridLayout"/>
   
       
      
