@@ -21,7 +21,11 @@
       <class name="gridLayout.getTestInfoGridLayout"/>
       <class name="gridLayout.getDonationInfoGridLayout"/>
  <class name="gridLayout.putDonationInfogridLayout"/>
-    
+      <class name="clientCode.getAssays"/>
+      
+      <class name="gridLayout.getTestInfoGridLayout"/>
+      <class name="gridLayout.getDonationInfoGridLayout"/>
+ <class name="gridLayout.putDonationInfogridLayout"/>
   
       
      
