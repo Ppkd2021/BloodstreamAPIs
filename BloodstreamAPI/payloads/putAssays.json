@@ -1,0 +1,36 @@
+{
+    "version": 12,
+    "assays": [
+    	{
+        "name": "Ultrio Elite",
+        
+        "action": "add"
+      },
+      {
+        "name": "Parvo/HAV",
+        
+        "action": "add"
+      },
+      {
+        "name": "WNV",
+        "useLysate": true,
+        "action": "add"
+      },
+      {
+        "name": "ZIKV",
+        "useLysate": false
+      },
+      {
+        "name": "DENV",
+        "useLysate": false
+      },
+      {
+        "name": "Babesia",
+        "useLysate": false
+      },
+	  {
+        "name": "Assayxyz",
+        "useLysate": false
+      }
+    ]
+  }
