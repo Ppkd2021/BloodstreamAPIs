@@ -27,6 +27,7 @@
       <class name="worklistInfo.worklistCalibratorsControls"/>
       <class name="conclusionInfo.conclusions"/>
      
+      <class name="clientCode.getAssays"/>
     
   
       
