@@ -29,6 +29,7 @@
      
       <class name="clientCode.putAssays"/>
       <class name="clientCode.putPrefixes"/>
+      <class name="clientCode.putClientSites"/>
       <class name="clientCode.getAssays"/>
       <class name="clientCode.getPrefixes"/>
       <class name="clientCode.getClientSites"/>
