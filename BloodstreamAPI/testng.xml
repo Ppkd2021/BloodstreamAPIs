@@ -26,17 +26,19 @@
       <class name="testinfo.poolConstituents"/>
       <class name="testinfo.poolDetails"/>
  
-      <class name="clientCode.getAssays"/>
-       <class name="clientCode.getPrefixes"/>
-        <class name="clientCode.getClientSites"/>
-
       <class name="worklistInfo.worklistCalibratorsControls"/>
       <class name="conclusionInfo.conclusions"/>
       <class name="conclusions.approve"/>
         
+        <class name="clientCode.getAssays"/>
+       <class name="clientCode.getPrefixes"/>
+        <class name="clientCode.getClientSites"/>
+        
      
+        
+      <class name="session.heartbeat"/>
+      <class name="session.logoff"/>
  
-    
     </classes>
   </test> 
 </suite>
