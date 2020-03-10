@@ -33,13 +33,13 @@ public class getDonationInfoGridLayout {
 	{
 		//config.log.debug(new Object() {}.getClass().getEnclosingMethod().getName()+ " Invoked");
 		String Endpoint = dataTable.get("EndPoint");
-		String Authorization = "LoginToken";
+		String Authorization = config.property.getProperty("LoginToken");
 		
 		given().relaxedHTTPSValidation().
 		header("Authorization",Authorization). 
 		param("gridName",dataTable.get("gridName")).
 		when().get(Endpoint).then().     
-		assertThat().statusCode(401);	
+		assertThat().statusCode(400);	
 	}
 	
 	@Test(dataProviderClass = DataHandler.class,dataProvider="dataProvider")

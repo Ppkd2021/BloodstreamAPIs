@@ -5,7 +5,6 @@ import static io.restassured.RestAssured.given;
 import java.io.File;
 import java.util.Hashtable;
 
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import utilities.DataHandler;
@@ -43,7 +42,7 @@ public class putDonationInfogridLayout {
 			param("gridName",dataTable.get("gridName")).
 			
 			when().get(Endpoint).then().     
-			assertThat().statusCode(200);	
+			assertThat().statusCode(400);	
 		}
 		
 	 

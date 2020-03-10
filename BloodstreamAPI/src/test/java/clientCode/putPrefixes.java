@@ -23,7 +23,7 @@ public class putPrefixes {
 		   given().relaxedHTTPSValidation().
 		   header("Authorization",Authorization).
 		   body(file).
-		   when().get(endpoint).then().     
+		   when().put(endpoint).then().     
 		   assertThat().statusCode(200); 
 					
 	 }
@@ -37,7 +37,7 @@ public class putPrefixes {
 		    given().relaxedHTTPSValidation().
 			header("Authorization",Authorization).
 			
-			when().get(endpoint).then().     
+			when().put(endpoint).then().     
 			assertThat().statusCode(400); 
 					
 	 }
@@ -51,7 +51,7 @@ public class putPrefixes {
   			header("Authorization",Authorization).
   			
  		   param("requestId",dataTable.get("requestId")).
-  			when().get(endpoint).then().     
+  			when().put(endpoint).then().     
   			assertThat().statusCode(401); 
   					
   			 }

@@ -1,57 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="3" passed="3" failed="0" skipped="0">
+<testng-results skipped="0" failed="0" total="0" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-02-21T14:15:43Z" name="Default suite" finished-at="2020-02-21T14:15:50Z" duration-ms="6990">
+  <suite name="Default suite" duration-ms="820" started-at="2020-02-24T06:46:22Z" finished-at="2020-02-24T06:46:23Z">
     <groups>
     </groups>
-    <test started-at="2020-02-21T14:15:43Z" name="Default test" finished-at="2020-02-21T14:15:50Z" duration-ms="6990">
-      <class name="donationInfo.donations">
-        <test-method is-config="true" signature="BloodstreamLogin(org.testng.ITestContext)[pri:0, instance:donationInfo.donations@17f7cd29]" started-at="2020-02-21T19:45:37Z" name="BloodstreamLogin" finished-at="2020-02-21T19:45:43Z" duration-ms="6348" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@76544c0a]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BloodstreamLogin -->
-        <test-method signature="Assert200(java.util.Hashtable)[pri:0, instance:donationInfo.donations@17f7cd29]" started-at="2020-02-21T19:45:46Z" name="Assert200" data-provider="dataProvider" finished-at="2020-02-21T19:45:47Z" duration-ms="1501" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Sort=, PageSize=, Page=, EndPoint=/donationInfo/donations, GroupStatus=all}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Assert200 -->
-        <test-method signature="Assert400(java.util.Hashtable)[pri:0, instance:donationInfo.donations@17f7cd29]" started-at="2020-02-21T19:45:47Z" name="Assert400" data-provider="dataProvider" finished-at="2020-02-21T19:45:49Z" duration-ms="1462" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Sort=, PageSize=, Page=, EndPoint=/donationInfo/donations, GroupStatus=all}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Assert400 -->
-        <test-method signature="Assert401(java.util.Hashtable)[pri:0, instance:donationInfo.donations@17f7cd29]" started-at="2020-02-21T19:45:49Z" name="Assert401" data-provider="dataProvider" finished-at="2020-02-21T19:45:50Z" duration-ms="1412" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Sort=, PageSize=, Page=, EndPoint=/donationInfo/donations, GroupStatus=all}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Assert401 -->
-      </class> <!-- donationInfo.donations -->
+    <test name="Default test" duration-ms="820" started-at="2020-02-24T06:46:22Z" finished-at="2020-02-24T06:46:23Z">
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

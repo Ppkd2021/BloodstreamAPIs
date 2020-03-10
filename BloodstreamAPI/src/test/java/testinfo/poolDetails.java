@@ -37,22 +37,19 @@ public class poolDetails extends Suite
 	 when().get(endpoint).then().      
 	 assertThat().statusCode(200); 				
 		 }
-	
-	
+
 	@Test(dataProviderClass = DataHandler.class,dataProvider="dataProvider")
-	public void Assert400(Hashtable<String,String> dataTable)
+	public void Assert404(Hashtable<String,String> dataTable)
 	{
 		//config.log.debug(new Object() {}.getClass().getEnclosingMethod().getName()+ " Invoked");
+		String Authorization = config.property.getProperty("LoginToken");
 		String Endpoint = dataTable.get("EndPoint");
-		String Authorization = "LoginToken";
-		
 		given().relaxedHTTPSValidation().
 		header("Authorization",Authorization). 
 		param("PoolID",dataTable.get("PoolID")).
 		when().get(Endpoint).then().     
-		assertThat().statusCode(401);	
+		assertThat().statusCode(404);	
 	}
-	
 	@Test(dataProviderClass = DataHandler.class,dataProvider="dataProvider")
 	public void Assert401(Hashtable<String,String> dataTable)
 	{
@@ -66,9 +63,4 @@ public class poolDetails extends Suite
 		when().get(Endpoint).then().     
 		assertThat().statusCode(401);	
 	}
-	
-	
-
-
-
-	}
+}

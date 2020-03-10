@@ -28,7 +28,7 @@ public class worklistCalibratorsControls {
  }
 
 	 @Test(dataProviderClass = DataHandler.class,dataProvider="dataProvider")
-      public void Assert400(Hashtable<String,String> dataTable) {
+      public void Assert404(Hashtable<String,String> dataTable) {
 		
 		//config.log.debug(new Object() {}.getClass().getEnclosingMethod().getName()+ " Invoked");
 		String Authorization = config.property.getProperty("LoginToken");
@@ -37,7 +37,7 @@ public class worklistCalibratorsControls {
 		header("Authorization",Authorization).
 		param("WorklistID",dataTable.get("WorklistID")).
 		when().get(endpoint).then().  
-		assertThat().statusCode(200); 
+		assertThat().statusCode(404); 
 				
  }
 	 @Test(dataProviderClass = DataHandler.class,dataProvider="dataProvider")

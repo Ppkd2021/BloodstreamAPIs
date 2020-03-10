@@ -23,8 +23,8 @@ public class putClientSites {
 		   given().relaxedHTTPSValidation().
 		   header("Authorization",Authorization).
 		   body(file).
-		   when().get(endpoint).then().     
-		   assertThat().statusCode(400); 
+		   when().put(endpoint).then().     
+		   assertThat().statusCode(200); 
 					//added
 	 }
 	
@@ -37,7 +37,7 @@ public class putClientSites {
 		    given().relaxedHTTPSValidation().
 			header("Authorization",Authorization).
 			
-			when().get(endpoint).then().     
+			when().put(endpoint).then().     
 			assertThat().statusCode(400); 
 					
 	 }
@@ -50,7 +50,7 @@ public class putClientSites {
   		    given().relaxedHTTPSValidation().
   			header("Authorization",Authorization).
   			
-  			when().get(endpoint).then().     
+  			when().put(endpoint).then().     
   			assertThat().statusCode(401); 
   					
   			 }

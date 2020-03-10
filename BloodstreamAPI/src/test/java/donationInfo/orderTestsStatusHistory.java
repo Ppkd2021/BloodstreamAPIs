@@ -23,9 +23,8 @@ public class orderTestsStatusHistory {
 		public void Assert200(Hashtable<String,String> dataTable) {
 			
 			//config.log.debug(new Object() {}.getClass().getEnclosingMethod().getName()+ " Invoked");
-			String Authorization = config.property.getProperty("LoginToken");
-			String endpoint = dataTable.get("EndPoint");
-			
+		   String Authorization = config.property.getProperty("LoginToken");
+		   String endpoint = dataTable.get("EndPoint");
 		   given().relaxedHTTPSValidation().
 		   header("Authorization",Authorization).
 		   param("donationId",dataTable.get("donationId")).
@@ -36,7 +35,7 @@ public class orderTestsStatusHistory {
 	 }
 	
 		@Test(dataProviderClass = DataHandler.class,dataProvider="dataProvider")
-          public void Assert400(Hashtable<String,String> dataTable) {
+          public void Assert404(Hashtable<String,String> dataTable) {
 			
 			//config.log.debug(new Object() {}.getClass().getEnclosingMethod().getName()+ " Invoked");
 			String Authorization = config.property.getProperty("LoginToken");
@@ -46,7 +45,7 @@ public class orderTestsStatusHistory {
 			param("donationId",dataTable.get("donationId")).
 			param("requestId",dataTable.get("requestId")).
 			when().get(endpoint).then().    
-			assertThat().statusCode(400); 
+			assertThat().statusCode(404); 
 					
 	 }
 		@Test(dataProviderClass = DataHandler.class,dataProvider="dataProvider")

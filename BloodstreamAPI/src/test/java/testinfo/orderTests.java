@@ -37,38 +37,29 @@ public class orderTests extends Suite
 	 when().get(endpoint).then().      
 	 assertThat().statusCode(200); 				
 		 }
-	
-	
+
 	@Test(dataProviderClass = DataHandler.class,dataProvider="dataProvider")
 	public void Assert400(Hashtable<String,String> dataTable)
 	{
 		//config.log.debug(new Object() {}.getClass().getEnclosingMethod().getName()+ " Invoked");
+		String Authorization = config.property.getProperty("LoginToken");
 		String Endpoint = dataTable.get("EndPoint");
-		String Authorization = "LoginToken";
-		
-		given().relaxedHTTPSValidation().
-		header("Authorization",Authorization). 
-		param("GroupStatus",dataTable.get("GroupStatus")).
+	    given().relaxedHTTPSValidation().
+		header("Authorization",Authorization).param("GroupStatus",dataTable.get("GroupStatus")).
 		when().get(Endpoint).then().     
-		assertThat().statusCode(401);	
+		assertThat().statusCode(400);	
 	}
-	
-	@Test(dataProviderClass = DataHandler.class,dataProvider="dataProvider")
-	public void Assert401(Hashtable<String,String> dataTable)
-	{
-	//	config.log.debug(new Object() {}.getClass().getEnclosingMethod().getName()+ " Invoked");
-		String Endpoint = dataTable.get("EndPoint");
-		String Authorization = "Invalid_Token";
-		
-		given().relaxedHTTPSValidation().
-		header("Authorization",Authorization).
-		param("GroupStatus",dataTable.get("GroupStatus")).
-		when().get(Endpoint).then().     
-		assertThat().statusCode(401);	
-	}
-	
-	
-	
-
-
-	}
+		@Test(dataProviderClass = DataHandler.class,dataProvider="dataProvider")
+		public void Assert401(Hashtable<String,String> dataTable)
+		{
+		//	config.log.debug(new Object() {}.getClass().getEnclosingMethod().getName()+ " Invoked");
+			String Endpoint = dataTable.get("EndPoint");
+			String Authorization = config.property.getProperty("InvalidToken");
+			
+			given().relaxedHTTPSValidation().
+			header("Authorization",Authorization).
+			param("GroupStatus",dataTable.get("GroupStatus")).
+			when().get(Endpoint).then().     
+			assertThat().statusCode(401);	
+		}
+		}

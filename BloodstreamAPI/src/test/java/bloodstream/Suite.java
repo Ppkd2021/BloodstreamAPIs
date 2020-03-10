@@ -6,10 +6,9 @@ import java.io.FileOutputStream;
 import java.io.OutputStream;
 import java.util.Base64;
 import org.testng.ITestContext;
-import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.Test;
 
+import org.testng.annotations.Test;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 

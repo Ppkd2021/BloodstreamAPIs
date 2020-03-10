@@ -1,4 +1,4 @@
-package conclusionInfo;
+package session;
 
 import static io.restassured.RestAssured.given;
 
@@ -9,33 +9,31 @@ import org.testng.annotations.Test;
 import utilities.DataHandler;
 import utilities.config;
 
-public class conclusions {
+public class logoff {
+	
 	@Test(dataProviderClass = DataHandler.class,dataProvider="dataProvider")
 	public void Assert200(Hashtable<String,String> dataTable) {
 		
-		
 		//config.log.debug(new Object() {}.getClass().getEnclosingMethod().getName()+ " Invoked");
-		String Authorization = config.property.getProperty("LoginToken");
-		String endpoint = dataTable.get("EndPoint");
-		given().relaxedHTTPSValidation().
+	   String Authorization = config.property.getProperty("LoginToken");
+	   String endpoint = dataTable.get("EndPoint");
+	   given().relaxedHTTPSValidation().
 	   header("Authorization",Authorization).
-	   param("GroupStatus",dataTable.get("GroupStatus")).
-	   when().get(endpoint).then().
+	   when().delete(endpoint).then().     
 	   assertThat().statusCode(200); 
 				
  }
 
 	 @Test(dataProviderClass = DataHandler.class,dataProvider="dataProvider")
-      public void Assert400(Hashtable<String,String> dataTable) {
+      public void Assert404(Hashtable<String,String> dataTable) {
 		
 		//config.log.debug(new Object() {}.getClass().getEnclosingMethod().getName()+ " Invoked");
 		String Authorization = config.property.getProperty("LoginToken");
 		String endpoint = dataTable.get("EndPoint");
 	    given().relaxedHTTPSValidation().
 		header("Authorization",Authorization).
-		param("GroupStatus",dataTable.get("GroupStatus")).
-		when().get(endpoint).then().  
-		assertThat().statusCode(400); 
+		when().get(endpoint).then().     
+		assertThat().statusCode(404); 
 				
  }
 	 @Test(dataProviderClass = DataHandler.class,dataProvider="dataProvider")
@@ -46,10 +44,11 @@ public class conclusions {
 			String endpoint = dataTable.get("EndPoint");
 		    given().relaxedHTTPSValidation().
 			header("Authorization",Authorization).
-			param("GroupStatus",dataTable.get("GroupStatus")).
-			when().get(endpoint).then().      
+			when().delete(endpoint).then().     
 			assertThat().statusCode(401); 
 					
 			 }
-
+		
 }
+
+

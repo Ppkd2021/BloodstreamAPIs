@@ -46,7 +46,7 @@ public class donationShortDetail {
 		    param("donationId",dataTable.get("donationId")).
 			param("requestId",dataTable.get("requestId")).
 			when().get(endpoint).then().     
-			assertThat().statusCode(200); 
+			assertThat().statusCode(400); 
 					
 	 }
 		  @Test(dataProviderClass = DataHandler.class,dataProvider="dataProvider")
