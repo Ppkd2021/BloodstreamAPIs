@@ -22,6 +22,7 @@
       <class name="donationInfo.orderTests"/>
       <class name="donationInfo.orderTestsStatusHistory"/>
     
+      <class name="testinfo.groupStatusCount"/>
       <class name="testinfo.orderTests"/> 
       <class name="testinfo.poolConstituents"/>
       <class name="testinfo.poolDetails"/>
