@@ -19,7 +19,7 @@ public class heartbeat {
 	   String endpoint = dataTable.get("EndPoint");
 	   given().relaxedHTTPSValidation().
 	   header("Authorization",Authorization).
-	   when().get(endpoint).then().     
+	   when().post(endpoint).then().     
 	   assertThat().statusCode(200); 
 				
  }
@@ -32,7 +32,7 @@ public class heartbeat {
 			String endpoint = dataTable.get("EndPoint");
 		    given().relaxedHTTPSValidation().
 			header("Authorization",Authorization).
-			when().get(endpoint).then().     
+			when().post(endpoint).then().     
 			assertThat().statusCode(401); 
 					
 			 }

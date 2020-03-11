@@ -37,7 +37,7 @@ public class getPrefixes {
   		    given().relaxedHTTPSValidation().
   			header("Authorization",Authorization).
   			when().get(endpoint).then().     
-			assertThat().statusCode(400); 
+			assertThat().statusCode(401); 
 					
 	 }
 		 }

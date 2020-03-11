@@ -34,9 +34,7 @@
         <class name="clientCode.getAssays"/>
        <class name="clientCode.getPrefixes"/>
         <class name="clientCode.getClientSites"/>
-        
-     
-        
+ 
       <class name="session.heartbeat"/>
       <class name="session.logoff"/>
  
