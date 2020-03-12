@@ -23,7 +23,7 @@ public class getAssays {
 	}
 	*/
 	//Validate 200 Status code 
-		@Test(dataProviderClass = DataHandler.class,dataProvider="dataProvider")
+		@Test(enabled = false,dataProviderClass = DataHandler.class,dataProvider="dataProvider")
 		public void Assert200(Hashtable<String,String> dataTable) {
 			
 			//config.log.debug(new Object() {}.getClass().getEnclosingMethod().getName()+ " Invoked");

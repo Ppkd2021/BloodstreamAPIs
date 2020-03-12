@@ -12,7 +12,7 @@ import utilities.config;
 public class logoff {
 	
 	 
-	 @Test(dataProviderClass = DataHandler.class,dataProvider="dataProvider")
+	 @Test(enabled = false, dataProviderClass = DataHandler.class,dataProvider="dataProvider")
      public void Assert401(Hashtable<String,String> dataTable) {
 			
 			//config.log.debug(new Object() {}.getClass().getEnclosingMethod().getName()+ " Invoked");

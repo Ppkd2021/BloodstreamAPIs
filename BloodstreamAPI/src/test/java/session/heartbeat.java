@@ -11,7 +11,7 @@ import utilities.config;
 
 public class heartbeat {
 	
-	@Test(dataProviderClass = DataHandler.class,dataProvider="dataProvider")
+	@Test(enabled = false,dataProviderClass = DataHandler.class,dataProvider="dataProvider")
 	public void Assert200(Hashtable<String,String> dataTable) {
 		
 		//config.log.debug(new Object() {}.getClass().getEnclosingMethod().getName()+ " Invoked");
