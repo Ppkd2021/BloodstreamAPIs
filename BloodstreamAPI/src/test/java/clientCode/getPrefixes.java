@@ -12,7 +12,7 @@ import utilities.config;
 public class getPrefixes {
 	
 	//Validate 200 Status code 
-		@Test(enabled = false,dataProviderClass = DataHandler.class,dataProvider="dataProvider")
+		@Test(dataProviderClass = DataHandler.class,dataProvider="dataProvider")
 		public void Assert200(Hashtable<String,String> dataTable) {
 			
 			//config.log.debug(new Object() {}.getClass().getEnclosingMethod().getName()+ " Invoked");

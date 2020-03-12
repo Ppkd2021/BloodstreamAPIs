@@ -3,12 +3,15 @@ package clientCode;
 import static io.restassured.RestAssured.given;
 
 import java.util.Hashtable;
+import bloodstream.Suite;
 
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import io.restassured.RestAssured;
 import utilities.DataHandler;
+import utilities.ExcelReader;
 import utilities.config;
 
 public class getAssays {
@@ -23,7 +26,8 @@ public class getAssays {
 	}
 	*/
 	//Validate 200 Status code 
-		@Test(enabled = false,dataProviderClass = DataHandler.class,dataProvider="dataProvider")
+		
+		@Test(dataProviderClass = DataHandler.class,dataProvider="dataProvider")
 		public void Assert200(Hashtable<String,String> dataTable) {
 			
 			//config.log.debug(new Object() {}.getClass().getEnclosingMethod().getName()+ " Invoked");
