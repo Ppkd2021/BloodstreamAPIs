@@ -14,7 +14,7 @@ import utilities.config;
 public class approve extends Suite {
 	
 
-	@Test(dataProviderClass = DataHandler.class,dataProvider="dataProvider")
+	@Test(enabled=false, dataProviderClass = DataHandler.class,dataProvider="dataProvider")
 	public void Assert200(Hashtable<String,String> dataTable) {
 		
 		
