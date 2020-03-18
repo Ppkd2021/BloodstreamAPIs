@@ -9,7 +9,13 @@
   <test thread-count="5" name="Test">
     <classes>
        <class name="bloodstream.Suite"/>
-
+       
+       <class name="Drop2defects.InvalidPaginationParam73560"/>
+       <class name="Drop2defects.FlagnameSorting74472"/>
+       <class name="Drop2defects.AssaySorting74979"/>
+       <class name="Drop2defects.PoolDetail75101"/>
+       <class name="Drop2defects.UnauthorizedUser75039"/>
+ 
       <class name="gridLayout.getTestInfoGridLayout"/>
       <class name="gridLayout.getDonationInfoGridLayout"/>
 
