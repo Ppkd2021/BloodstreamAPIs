@@ -9,27 +9,15 @@
   <test thread-count="5" name="Test">
     <classes>
         <class name="bloodstream.Suite"/>
-        <class name="clientCode.getAssays"/>
-      	<class name="clientCode.getPrefixes"/>
-     	<class name="clientCode.getClientSites"/>
-     	<class name="gridLayout.getTestInfoGridLayout"/>
-        <class name="gridLayout.getDonationInfoGridLayout"/>
-		<class name="gridLayout.putDonationInfogridLayout"/>
-     	<class name="gridLayout.putTestInfogridLayout"/>
-        <class name="testinfo.groupStatusCount"/>
-        <class name="testinfo.orderTests"/> 
-        <class name="testinfo.poolConstituents"/>
-        <class name="testinfo.poolDetails"/>
-        <class name="worklistInfo.worklistCalibratorsControls"/>
- 		<class name="conclusionInfo.conclusions"/>
-      	<class name="conclusions.approve"/>
-      	<class name="donationInfo.donations"/>
-        <class name="donationInfo.donationShortDetail"/>
-      	<class name="donationInfo.groupStatusCount"/>
-      	<class name="donationInfo.orderTests"/>
-      	<class name="donationInfo.orderTestsStatusHistory"/>
- 		
+        
+      <class name="Drop2defects.InvalidPaginationParam73560"/>
+       <class name="Drop2defects.FlagnameSorting74472"/>
+       <class name="Drop2defects.AssaySorting74979"/>
+       <class name="Drop2defects.PoolDetail75101"/>
       
+ 	   <class name="Drop2defects.StatusHistoryWithoutTests75017"/>
+      <class name="session.heartbeat"/>
+      <class name="session.logoff"/>
     </classes>
   </test> 
 </suite>
