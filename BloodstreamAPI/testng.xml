@@ -23,7 +23,11 @@
         <class name="worklistInfo.worklistCalibratorsControls"/>
  		<class name="conclusionInfo.conclusions"/>
       	<class name="conclusions.approve"/>
-      	
+      	<class name="donationInfo.donations"/>
+        <class name="donationInfo.donationShortDetail"/>
+      	<class name="donationInfo.groupStatusCount"/>
+      	<class name="donationInfo.orderTests"/>
+      	<class name="donationInfo.orderTestsStatusHistory"/>
  		
       
     </classes>
