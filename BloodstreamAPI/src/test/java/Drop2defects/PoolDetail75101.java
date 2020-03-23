@@ -24,18 +24,4 @@ public class PoolDetail75101 {
 		assertThat().statusCode(404);		
 	}
 
-
-	@Test(dataProviderClass = DataHandler.class,dataProvider="dataProvider")
-	public void TestInfoBlankPoolDetail(Hashtable<String,String> dataTable) {
-		
-		//config.log.debug(new Object() {}.getClass().getEnclosingMethod().getName()+ " Invoked");
-		String Authorization = config.property.getProperty("LoginToken");
-		String endpoint = dataTable.get("EndPoint");
-		given().relaxedHTTPSValidation().
-		header("Authorization",Authorization). 
-		param("PoolID",dataTable.get("PoolID")). 
-		when().get(endpoint).then().     
-		assertThat().statusCode(400); 
-				
-	}
 }

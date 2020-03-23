@@ -10,6 +10,8 @@ import utilities.DataHandler;
 import utilities.config;
 
 public class conclusions {
+	
+
 	@Test(dataProviderClass = DataHandler.class,dataProvider="dataProvider")
 	public void Assert200(Hashtable<String,String> dataTable) {
 		
@@ -22,11 +24,10 @@ public class conclusions {
 	   param("GroupStatus",dataTable.get("GroupStatus")).
 	   when().get(endpoint).then().
 	   assertThat().statusCode(200); 
-				
- }
-
+	}	
+	
 	 @Test(dataProviderClass = DataHandler.class,dataProvider="dataProvider")
-      public void Assert400(Hashtable<String,String> dataTable) {
+     public void Assert400(Hashtable<String,String> dataTable) {
 		
 		//config.log.debug(new Object() {}.getClass().getEnclosingMethod().getName()+ " Invoked");
 		String Authorization = config.property.getProperty("LoginToken");
@@ -36,10 +37,9 @@ public class conclusions {
 		param("GroupStatus",dataTable.get("GroupStatus")).
 		when().get(endpoint).then().  
 		assertThat().statusCode(400); 
-				
  }
-	 @Test(dataProviderClass = DataHandler.class,dataProvider="dataProvider")
-      public void Assert401(Hashtable<String,String> dataTable) {
+	@Test(dataProviderClass = DataHandler.class,dataProvider="dataProvider")
+    public void Assert401(Hashtable<String,String> dataTable) {
 			
 			//config.log.debug(new Object() {}.getClass().getEnclosingMethod().getName()+ " Invoked");
 			String Authorization = config.property.getProperty("InvalidToken");
@@ -51,5 +51,6 @@ public class conclusions {
 			assertThat().statusCode(401); 
 					
 			 }
-
+	
+	
 }

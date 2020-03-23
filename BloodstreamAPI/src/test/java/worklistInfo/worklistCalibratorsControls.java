@@ -24,11 +24,10 @@ public class worklistCalibratorsControls {
 	   param("WorklistID",dataTable.get("WorklistID")).
 	   when().get(endpoint).then().
 	   assertThat().statusCode(200); 
-				
- }
-
+	}	
+	
 	 @Test(dataProviderClass = DataHandler.class,dataProvider="dataProvider")
-      public void Assert404(Hashtable<String,String> dataTable) {
+     public void Assert404(Hashtable<String,String> dataTable) {
 		
 		//config.log.debug(new Object() {}.getClass().getEnclosingMethod().getName()+ " Invoked");
 		String Authorization = config.property.getProperty("LoginToken");
@@ -38,10 +37,9 @@ public class worklistCalibratorsControls {
 		param("WorklistID",dataTable.get("WorklistID")).
 		when().get(endpoint).then().  
 		assertThat().statusCode(404); 
-				
  }
-	 @Test(dataProviderClass = DataHandler.class,dataProvider="dataProvider")
-      public void Assert401(Hashtable<String,String> dataTable) {
+	@Test(dataProviderClass = DataHandler.class,dataProvider="dataProvider")
+    public void Assert401(Hashtable<String,String> dataTable) {
 			
 			//config.log.debug(new Object() {}.getClass().getEnclosingMethod().getName()+ " Invoked");
 			String Authorization = config.property.getProperty("InvalidToken");
@@ -53,7 +51,6 @@ public class worklistCalibratorsControls {
 			assertThat().statusCode(401); 
 					
 			 }
-		
+	
+	
 }
-
-
