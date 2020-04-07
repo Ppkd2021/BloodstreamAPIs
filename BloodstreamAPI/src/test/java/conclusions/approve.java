@@ -4,42 +4,41 @@ import static io.restassured.RestAssured.given;
 
 import java.io.File;
 import java.util.Hashtable;
+import java.util.concurrent.TimeUnit;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import ReusableCode.auth;
 import bloodstream.Suite;
+import io.restassured.http.ContentType;
+import io.restassured.response.Response;
 import utilities.DataHandler;
-import utilities.config;
 
 public class approve extends Suite {
 	
 
 	@Test(enabled=false, dataProviderClass = DataHandler.class,dataProvider="dataProvider")
 	public void Assert200(Hashtable<String,String> dataTable) {
+	File file = new File(System.getProperty("user.dir")+"//payloads//postApprove.json");
+	Response response = given().relaxedHTTPSValidation().
+	header("Authorization",auth.ValidAuth).body(file).when().post(dataTable.get("EndPoint")).then().assertThat().statusCode(200).and().contentType(ContentType.JSON).extract().response(); 
+	Assert.assertTrue(response.getTimeIn(TimeUnit.SECONDS)<=10,"Response Time is not within limit");
+	System.out.println(response.getTimeIn(TimeUnit.SECONDS));
+
 		
 		
-		File file = new File(System.getProperty("user.dir")+"//payloads//postApprove.json");
-		String Authorization = config.property.getProperty("LoginToken");
-		String endpoint = dataTable.get("EndPoint");
-		given().relaxedHTTPSValidation().
-	   header("Authorization",Authorization).
-	   body(file).
-	   when().post(endpoint).then().
-	   assertThat().statusCode(200);
-			
  }
 
 	 @Test(dataProviderClass = DataHandler.class,dataProvider="dataProvider")
       public void Assert401(Hashtable<String,String> dataTable) {
 			
-			//config.log.debug(new Object() {}.getClass().getEnclosingMethod().getName()+ " Invoked");
-			String Authorization = config.property.getProperty("InvalidToken");
-			String endpoint = dataTable.get("EndPoint");
-		    given().relaxedHTTPSValidation().
-			header("Authorization",Authorization).// Use this to add headers
-			when().post(endpoint).then().      // Use this to specify the API path
-			assertThat().statusCode(401); 
-					
-			 }
+	  File file = new File(System.getProperty("user.dir")+"//payloads//postApprove.json");
+	  Response response = given().relaxedHTTPSValidation().
+	  header("Authorization",auth.InvalidAuth).body(file).when().post(dataTable.get("EndPoint")).
+	  then().assertThat().statusCode(401).extract().response();  
+	  Assert.assertTrue(response.getTimeIn(TimeUnit.SECONDS)<=10,"Response Time is not within limit");
+	  System.out.println(response.getTimeIn(TimeUnit.SECONDS));
+	 }
 		
 }

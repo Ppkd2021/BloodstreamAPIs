@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Bloodstream Suite">
+<suite name="Bloodstream Suite" time-out="10000">
 
 	<listeners>
         <listener class-name="plugins.HtmlReport"/>
@@ -8,16 +8,14 @@
 
   <test thread-count="5" name="Test">
     <classes>
-        <class name="bloodstream.Suite"/>
-        
-      <class name="Drop2defects.InvalidPaginationParam73560"/>
-       <class name="Drop2defects.FlagnameSorting74472"/>
-       <class name="Drop2defects.AssaySorting74979"/>
-       <class name="Drop2defects.PoolDetail75101"/>
-      
- 	   <class name="Drop2defects.StatusHistoryWithoutTests75017"/>
-      <class name="session.heartbeat"/>
-      <class name="session.logoff"/>
+      <class name="bloodstream.Suite"/>
+      <class name="ReusableCode.auth"/>
+     
+     
+     <class name="clientCode.getClientSites"/>
+     <class name="clientCode.getPrefixes"/>
+     <class name="clientCode.getAssays"/>
+     
     </classes>
   </test> 
 </suite>

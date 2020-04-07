@@ -1,0 +1,45 @@
+{
+            "Version": 4,
+            "CalibrationExpiration": {
+                "UseTime": true,
+                "Critical": 15,
+                "Warning": 30,
+                "Soon": 60
+            },
+            "Fluids": {
+                "UseTime": false,
+                "Critical": 15,
+                "Warning": 30,
+                "Soon": 60
+            },
+            "MTU": {
+                "UseTime": false,
+                "Critical": 15,
+                "Warning": 30,
+                "Soon": 60
+            },
+            "Maintenance": {
+                "UseTime": false,
+                "Critical": 15,
+                "Warning": 30,
+                "Soon": 60
+            },
+            "Reagents": {
+                "UseTime": true,
+                "Critical": 15,
+                "Warning": 30,
+                "Soon": 60
+            },
+            "Tips": {
+                "UseTime": false,
+                "Critical": 15,
+                "Warning": 30,
+                "Soon": 60
+            },
+            "Waste": {
+                "UseTime": false,
+                "Critical": 15,
+                "Warning": 30,
+                "Soon": 60
+            }
+        }
