@@ -1,44 +1,45 @@
 package conclusions;
-
 import static io.restassured.RestAssured.given;
 
 import java.io.File;
 import java.util.Hashtable;
-import java.util.concurrent.TimeUnit;
 
-import org.testng.Assert;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import ReusableCode.auth;
 import bloodstream.Suite;
-import io.restassured.http.ContentType;
-import io.restassured.response.Response;
+import io.restassured.RestAssured;
+import io.restassured.specification.ResponseSpecification;
 import utilities.DataHandler;
-
 public class approve extends Suite {
-	
+	 
+public static ResponseSpecification responseSpec;
+	 @BeforeTest
+	 public void BeforeTest(){
+		{
+			RestAssured.useRelaxedHTTPSValidation(); 
+		}
+	 }
+	 
 
 	@Test(enabled=false, dataProviderClass = DataHandler.class,dataProvider="dataProvider")
 	public void Assert200(Hashtable<String,String> dataTable) {
+		
 	File file = new File(System.getProperty("user.dir")+"//payloads//postApprove.json");
-	Response response = given().relaxedHTTPSValidation().
-	header("Authorization",auth.ValidAuth).body(file).when().post(dataTable.get("EndPoint")).then().assertThat().statusCode(200).and().contentType(ContentType.JSON).extract().response(); 
-	Assert.assertTrue(response.getTimeIn(TimeUnit.SECONDS)<=10,"Response Time is not within limit");
-	System.out.println(response.getTimeIn(TimeUnit.SECONDS));
+	responseSpec = auth.reuseAssert200();
+	given().header("Authorization",auth.ValidAuth).body(file).when().post(dataTable.get("EndPoint")).then().spec(responseSpec);
 
-		
-		
- }
+	}
 
 	 @Test(dataProviderClass = DataHandler.class,dataProvider="dataProvider")
       public void Assert401(Hashtable<String,String> dataTable) {
 			
 	  File file = new File(System.getProperty("user.dir")+"//payloads//postApprove.json");
-	  Response response = given().relaxedHTTPSValidation().
-	  header("Authorization",auth.InvalidAuth).body(file).when().post(dataTable.get("EndPoint")).
-	  then().assertThat().statusCode(401).extract().response();  
-	  Assert.assertTrue(response.getTimeIn(TimeUnit.SECONDS)<=10,"Response Time is not within limit");
-	  System.out.println(response.getTimeIn(TimeUnit.SECONDS));
-	 }
+	  auth.reuseAssert401();
+	  given().header("Authorization",auth.InvalidAuth).body(file).when().post(dataTable.get("EndPoint")).then().spec(responseSpec);
+	 	
+		
+	}
 		
 }

@@ -1,53 +1,50 @@
 package donationInfo;
 
 import static io.restassured.RestAssured.given;
+import static org.hamcrest.Matchers.is;
 
 import java.util.Hashtable;
-import java.util.concurrent.TimeUnit;
 
-import org.hamcrest.core.Is;
-import org.testng.Assert;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import ReusableCode.auth;
-import io.restassured.http.ContentType;
-import io.restassured.response.Response;
+import io.restassured.RestAssured;
+import io.restassured.specification.ResponseSpecification;
 import utilities.DataHandler;
 
 public class orderTests {
+public static ResponseSpecification responseSpec;	
 
-	
-		@Test(dataProviderClass = DataHandler.class,dataProvider="dataProvider")
-		public void Assert200(Hashtable<String,String> dataTable) {
-			
-			 Response response = given().relaxedHTTPSValidation().
-			 header("Authorization",auth.ValidAuth).param("donationId",dataTable.get("donationId")).param("requestId",dataTable.get("requestId")).when().get(dataTable.get("EndPoint")).
-			 then().assertThat().statusCode(200).and().contentType(ContentType.JSON).
-			 assertThat().body("messages.message[0]", Is.is("Successful")).extract().response();  
-			 Assert.assertTrue(response.getTimeIn(TimeUnit.SECONDS)<=10,"Response Time is not within limit");
-			 System.out.println(response.getTimeIn(TimeUnit.SECONDS));
-					
+	@BeforeTest
+	 public void BeforeTest(){
+		{
+			RestAssured.useRelaxedHTTPSValidation(); 
+		}
 	 }
 	
-		 @Test(dataProviderClass = DataHandler.class,dataProvider="dataProvider")
-          public void Assert404(Hashtable<String,String> dataTable) {
+	@Test(dataProviderClass = DataHandler.class,dataProvider="dataProvider")
+	public void Assert200(Hashtable<String,String> dataTable) {
+		responseSpec =auth.reuseAssert200();	
+	given().header("Authorization",auth.ValidAuth).param("donationId",dataTable.get("donationId")).
+	param("requestId",dataTable.get("requestId")).when().get(dataTable.get("EndPoint")).
+	 then().body("result",is(true)).spec(responseSpec);
+}
+	
+	
+	@Test(dataProviderClass = DataHandler.class,dataProvider="dataProvider")
+     public void Assert404(Hashtable<String,String> dataTable) {
+	responseSpec =auth.reuseAssert404();	
+	 given().header("Authorization",auth.ValidAuth).param("donationId",dataTable.get("donationId")).param("requestId",dataTable.get("requestId")).when().get(dataTable.get("EndPoint")).
+	 then().body("result",is(false)).spec(responseSpec);
+ }
+		 
+	 @Test(dataProviderClass = DataHandler.class,dataProvider="dataProvider")
+      public void Assert401(Hashtable<String,String> dataTable) {
+		 responseSpec = auth.reuseAssert401();	
+  	  given().header("Authorization",auth.InvalidAuth).param("donationId",dataTable.get("donationId")).param("requestId",dataTable.get("requestId")).when().get(dataTable.get("EndPoint")).
+	  then().spec(responseSpec);
 			
-			 Response response = given().relaxedHTTPSValidation().
-			 header("Authorization",auth.ValidAuth).param("donationId",dataTable.get("donationId")).param("requestId",dataTable.get("requestId")).when().get(dataTable.get("EndPoint")).
-			 then().assertThat().statusCode(404).extract().response();  
-			 Assert.assertTrue(response.getTimeIn(TimeUnit.SECONDS)<=10,"Response Time is not within limit");
-			 System.out.println(response.getTimeIn(TimeUnit.SECONDS));
-					
-	 }
-		 @Test(dataProviderClass = DataHandler.class,dataProvider="dataProvider")
-          public void Assert401(Hashtable<String,String> dataTable) {
-  			
-			 Response response = given().relaxedHTTPSValidation().
-			 header("Authorization",auth.InvalidAuth).param("donationId",dataTable.get("donationId")).param("requestId",dataTable.get("requestId")).when().get(dataTable.get("EndPoint")).
-			 then().assertThat().statusCode(401).extract().response();  
-			 Assert.assertTrue(response.getTimeIn(TimeUnit.SECONDS)<=10,"Response Time is not within limit");
-			 System.out.println(response.getTimeIn(TimeUnit.SECONDS));
-  					
-  			 }
+	}
   		
 }

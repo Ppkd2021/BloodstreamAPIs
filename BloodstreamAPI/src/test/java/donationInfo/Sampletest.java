@@ -6,7 +6,11 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
+import ReusableCode.auth;
+
 import static io.restassured.RestAssured.given;
+import static org.hamcrest.Matchers.hasItems;
+
 import java.util.Hashtable;
 import java.util.List;
 
@@ -152,3 +156,42 @@ public class Sampletest extends Suite
 	}*/
 	}
 }
+
+
+
+
+
+
+/*
+@BeforeTest
+public void BeforeTest(){
+	{
+		RestAssured.useRelaxedHTTPSValidation(); 
+	}
+}
+	@Test(dataProviderClass = DataHandler.class,dataProvider="dataProvider")
+	public void Assert200(Hashtable<String,String> dataTable) {
+		
+	Response response = given().relaxedHTTPSValidation().
+	header("Authorization",auth.ValidAuth).when().get(dataTable.get("EndPoint")).then().
+	body("data.content.assays.name", hasItems("Babesia","DENV","HEV","Parvo/HAV","Ultrio Elite","WNV","ZIKV")).extract().response();
+	JsonPath jsonPathEvaluator = response.jsonPath();
+	jsonPathEvaluator.get("data.content.assays.name");
+	System.out.println("assays is: " + jsonPathEvaluator.get("data.content.assays.name"));		
+   auth.reuseAssert200();
+	}
+
+	
+	@Test(dataProviderClass = DataHandler.class,dataProvider="dataProvider")
+	public void Assert401(Hashtable<String,String> dataTable)
+	{
+		
+		given().header("Authorization",auth.InvalidAuth).when().get(dataTable.get("EndPoint")).then();
+		auth.reuseAssert401();
+		
+		}
+
+
+}
+
+*/

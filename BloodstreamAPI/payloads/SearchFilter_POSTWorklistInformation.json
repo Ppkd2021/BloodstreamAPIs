@@ -1,0 +1,164 @@
+{
+    "gridName": "WorklistInformation",
+    "filterName": "",
+    "layout": {
+       "DateRange": [
+                    {
+                        "Key": "Last 24 hours",
+                        "Checked": 0
+                    },
+                    {
+                        "Key": "Last 7 days",
+                        "Checked": 0
+                    },
+                    {
+                        "Key": "Last 14 days",
+                        "Checked": 1
+                    },
+                    {
+                        "Key": "Last 30 days",
+                        "Checked": 0
+                    },
+                    {
+                        "Key": "Custom Range",
+                        "Checked": 0,
+                        "FromDate": "",
+                        "ToDate": ""
+                    }
+                ],
+                "Assays": [
+                    {
+                        "Key": "Babesia ",
+                        "Checked": true
+                    },
+                    {
+                        "Key": "DENV",
+                        "Checked": true
+                    },
+                    {
+                        "Key": "HEV",
+                        "Checked": 1
+                    },
+                    {
+                        "Key": "Parvo/HAV",
+                        "Checked": false
+                    },
+                    {
+                        "Key": "Ultrio Elite",
+                        "Checked": 0
+                    },
+                    {
+                        "Key": "WNV",
+                        "Checked": 0
+                    },
+                    {
+                        "Key": "ZIKV",
+                        "Checked": 0
+                    },
+                    {
+                        "Key": "dHBV",
+                        "Checked": 0
+                    },
+                    {
+                        "Key": "dHCV",
+                        "Checked": 0
+                    },
+                    {
+                        "Key": "dHIV",
+                        "Checked": 0
+                    },
+                    {
+                        "Key": "dede",
+                        "Checked": 0
+                    }
+                ],
+                "EQCStatus": [
+                    {
+                        "Key": "Pending",
+                        "Checked": true
+                    },
+                    {
+                        "Key": "Pass",
+                        "Checked": 0
+                    },
+                    {
+                        "Key": "Fail",
+                        "Checked": 0
+                    },
+                    {
+                        "Key": "N/A",
+                        "Checked": 0
+                    }
+                ],
+                "InstrumentControlStatus": [
+                    {
+                        "Key": "Pending",
+                        "Checked": 1
+                    },
+                    {
+                        "Key": "Pass",
+                        "Checked": 0
+                    },
+                    {
+                        "Key": "Fail",
+                        "Checked": 0
+                    },
+                    {
+                        "Key": "N/A",
+                        "Checked": 0
+                    }
+                ],
+                "CalibratorStatus": [
+                    {
+                        "Key": "Pending",
+                        "Checked": 0
+                    },
+                    {
+                        "Key": "Pass",
+                        "Checked": 0
+                    },
+                    {
+                        "Key": "Fail",
+                        "Checked": 0
+                    },
+                    {
+                        "Key": "N/A",
+                        "Checked": 0
+                    }
+                ],
+                "Instrument": [
+                    {
+                        "Key": "Panther",
+                        "Checked": 0
+                    },
+                    {
+                        "Key": "PP101",
+                        "Checked": 0
+                    }
+                ],
+                "RunStatus": [
+                    {
+                        "Key": "Pending",
+                        "Checked": 0
+                    },
+                    {
+                        "Key": "Valid",
+                        "Checked": 0
+                    },
+                    {
+                        "Key": "Invalid",
+                        "Checked": 0
+                    },
+                    {
+                        "Key": "Retain Reactive",
+                        "Checked": 0
+                    },
+                    {
+                        "Key": "Mixed",
+                        "Checked": 0
+                    }
+                ]
+            }
+            
+        
+    }

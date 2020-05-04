@@ -1,22 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Bloodstream Suite" time-out="10000">
-
+ 
 	<listeners>
         <listener class-name="plugins.HtmlReport"/>
   	</listeners>
 
-  <test thread-count="5" name="Test">
+  
+<test thread-count="5" name="Test">
     <classes>
-      <class name="bloodstream.Suite"/>
-      <class name="ReusableCode.auth"/>
-     
-     
-     <class name="clientCode.getClientSites"/>
-     <class name="clientCode.getPrefixes"/>
-     <class name="clientCode.getAssays"/>
-     
+     <class name="ReusableCode.auth"/>
+      
+      <class name="clientCode.getAssays"/>
+      <class name="clientCode.putAssays"/>
+       <class name="clientCode.getClientSites"/>
+        <class name="clientCode.putClientSites"/>
+         <class name="clientCode.getPrefixes"/>
+         <class name="clientCode.putPrefixes"/>
+
+<class name="CustomFilterList.ConclToApprove"/>
+           
+       <class name="CustomFilterList.DonationInfo"/>
+          <class name="CustomFilterList.TestInfo"/>
+          <class name="CustomFilterList.WorklistDetail"/>
+          <class name="CustomFilterList.WorklistOverview"/>
+
+
+
+<class name="donationInfo.donations"/>
+           <class name="donationInfo.donationShortDetail"/>   
+          <class name="donationInfo.groupStatusCount"/>
+ <class name="donationInfo.orderTestsStatusHistory"/>
+    <class name="donationInfo.orderTests"/>
+
+    <class name="testinfo.groupStatusCount"/>
+      <class name="testinfo.orderTests"/>
+          
+           
     </classes>
   </test> 
 </suite>
+
 

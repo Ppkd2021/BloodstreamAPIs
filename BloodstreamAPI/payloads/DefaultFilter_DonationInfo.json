@@ -1,0 +1,210 @@
+{
+    "gridName": "DonationInformation",
+    "filterName": "Defaultfilter",
+    "layout": {
+               "DateRange": [
+                    {
+                        "Key": "Last 24 hours",
+                        "Checked": 0
+                    },
+                    {
+                        "Key": "Last 7 days",
+                        "Checked": 1
+                    },
+                    {
+                        "Key": "Last 14 days",
+                        "Checked": 0
+                    },
+                    {
+                        "Key": "Last 30 days",
+                        "Checked": 0
+                    },
+                    {
+                        "Key": "Custom Range",
+                        "Checked": 0,
+                        "FromDate": "",
+                        "ToDate": ""
+                    }
+                ],
+                "Assays": [
+                    {
+                        "Key": "Babesia ",
+                        "Checked": 1
+                    },
+                    {
+                        "Key": "DENV",
+                        "Checked": 1
+                    },
+                    {
+                        "Key": "HEV",
+                        "Checked": 1
+                    },
+                    {
+                        "Key": "Parvo/HAV",
+                        "Checked": 0
+                    },
+                    {
+                        "Key": "Ultrio Elite",
+                        "Checked": 0
+                    },
+                    {
+                        "Key": "WNV",
+                        "Checked": 0
+                    },
+                    {
+                        "Key": "ZIKV",
+                        "Checked": 0
+                    },
+                    {
+                        "Key": "dHBV",
+                        "Checked": 0
+                    },
+                    {
+                        "Key": "dHCV",
+                        "Checked": 0
+                    },
+                    {
+                        "Key": "dHIV",
+                        "Checked": 0
+                    },
+                    {
+                        "Key": "dede",
+                        "Checked": 0
+                    }
+                ],
+                "Clients": [
+                    {
+                        "Key": "*",
+                        "Checked": 0
+                    },
+                    {
+                        "Key": "ABV",
+                        "Checked": 0
+                    },
+                    {
+                        "Key": "BNV",
+                        "Checked": 0
+                    },
+                    {
+                        "Key": "CDF",
+                        "Checked": 0
+                    },
+                    {
+                        "Key": "CDF12",
+                        "Checked": 0
+                    },
+                    {
+                        "Key": "COM",
+                        "Checked": 0
+                    },
+                    {
+                        "Key": "D3",
+                        "Checked": 0
+                    },
+                    {
+                        "Key": "GHS",
+                        "Checked": 0
+                    },
+                    {
+                        "Key": "KKD",
+                        "Checked": 0
+                    },
+                    {
+                        "Key": "KLT",
+                        "Checked": 0
+                    },
+                    {
+                        "Key": "LMS",
+                        "Checked": 0
+                    },
+                    {
+                        "Key": "PPKD",
+                        "Checked": 0
+                    },
+                    {
+                        "Key": "UNT",
+                        "Checked": 0
+                    },
+                    {
+                        "Key": "VPN",
+                        "Checked": 0
+                    }
+                ],
+                "Status": [
+                    {
+                        "Key": "Donation Received",
+                        "Checked": 0
+                    },
+                    {
+                        "Key": "Pending Preparation",
+                        "Checked": 0
+                    },
+                    {
+                        "Key": "Pending Test",
+                        "Checked": 0
+                    },
+                    {
+                        "Key": "In Test",
+                        "Checked": 0
+                    },
+                    {
+                        "Key": "Reactive Pool Received",
+                        "Checked": 0
+                    },
+                    {
+                        "Key": "Reactive Test Received",
+                        "Checked": 0
+                    },
+                    {
+                        "Key": "Results Pending Approval",
+                        "Checked": 0
+                    },
+                    {
+                        "Key": "All Tests Approved",
+                        "Checked": 0
+                    },
+                    {
+                        "Key": "All Tests Exported",
+                        "Checked": 0
+                    }
+                ],
+                "Priority": [
+                    {
+                        "Key": "Routine",
+                        "Checked": 0
+                    },
+                    {
+                        "Key": "STAT",
+                        "Checked": 0
+                    },
+                    {
+                        "Key": "Other",
+                        "Checked": 0
+                    }
+                ],
+                "Flags": [
+                    {
+                        "Key": "Pipetting error(P)",
+                        "Checked": 0
+                    },
+                    {
+                        "Key": "Skipped error(S)",
+                        "Checked": 0
+                    },
+                    {
+                        "Key": "Unmixed error(U)",
+                        "Checked": 0
+                    },
+                    {
+                        "Key": "Duplicate pool",
+                        "Checked": 0
+                    },
+                    {
+                        "Key": "Inconsistent pool",
+                        "Checked": 0
+                    }
+                ]
+            }
+          
+        }
+    

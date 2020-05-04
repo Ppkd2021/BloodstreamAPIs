@@ -40,7 +40,7 @@ public class Suite
 		//config.log.debug("authValue: "+authValue);
 		
 		Response response = given().relaxedHTTPSValidation().header("Authorization",authValue)
-				.post(config.property.getProperty("Login")).then().assertThat().statusCode(200).extract().response();
+		.post(config.property.getProperty("Login")).then().assertThat().statusCode(200).extract().response();
 		String loginToken = response.header("LoginHash");
 		
 		config.property.setProperty("LoginToken","Basic "+loginToken );

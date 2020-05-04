@@ -1,11 +1,11 @@
 package utilities;
 import java.lang.reflect.Method;
+import java.util.HashMap;
 import java.util.Hashtable;
 import utilities.config;
 
 import org.testng.annotations.DataProvider;
-
-	 
+ 
 
 public class DataHandler
 {

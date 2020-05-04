@@ -4,12 +4,24 @@ import static io.restassured.RestAssured.given;
 
 import java.util.Hashtable;
 
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import io.restassured.RestAssured;
+import io.restassured.specification.ResponseSpecification;
 import utilities.DataHandler;
 import utilities.config;
 
 public class UnauthorizedUser75039 {
+public static ResponseSpecification responseSpec;	
+
+	@BeforeTest
+	 public void BeforeTest(){
+		{
+			RestAssured.useRelaxedHTTPSValidation(); 
+		}
+	 }
+	
 	@Test(dataProviderClass = DataHandler.class,dataProvider="dataProvider")
 	public void UnauthorizedAccess(Hashtable<String,String> dataTable) {
 		
