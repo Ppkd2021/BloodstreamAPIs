@@ -1,11 +1,11 @@
 {
     "gridName": "WorklistConclusions",
-    "filterName": "",
+    "filterName": "WC1234**",
     "layout": {
-    "DateRange": [
+     "DateRange": [
                     {
                         "Key": "Last 24 hours",
-                        "Checked": 1
+                        "Checked": 0
                     },
                     {
                         "Key": "Last 7 days",
@@ -17,7 +17,7 @@
                     },
                     {
                         "Key": "Last 30 days",
-                        "Checked": 0
+                        "Checked": 1
                     },
                     {
                         "Key": "Custom Range",
@@ -59,19 +59,19 @@
                 "Flags": [
                     {
                         "Key": "Pipetting error(P)",
-                        "Checked": 1
+                        "Checked": 0
                     },
                     {
                         "Key": "Skipped error(S)",
-                        "Checked": 1
+                        "Checked": 0
                     },
                     {
                         "Key": "Unmixed error(U)",
-                        "Checked": 1
+                        "Checked": 0
                     },
                     {
                         "Key": "Duplicate pool",
-                        "Checked": 1
+                        "Checked": 0
                     },
                     {
                         "Key": "Inconsistent pool",
@@ -101,5 +101,6 @@
                     }
                 ]
             }
-            
+          
         }
+    

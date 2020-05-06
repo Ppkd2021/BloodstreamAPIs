@@ -1,15 +1,15 @@
 {
     "gridName": "TestInformation",
-    "filterName": "",
+    "filterName": "testing1230*",
     "layout": {
-           "DateRange": [
+            "DateRange": [
                     {
                         "Key": "Last 24 hours",
                         "Checked": 0
                     },
                     {
                         "Key": "Last 7 days",
-                        "Checked": 0
+                        "Checked": 1
                     },
                     {
                         "Key": "Last 14 days",
@@ -17,7 +17,7 @@
                     },
                     {
                         "Key": "Last 30 days",
-                        "Checked": true
+                        "Checked": 0
                     },
                     {
                         "Key": "Custom Range",
@@ -49,7 +49,7 @@
                     },
                     {
                         "Key": "WNV",
-                        "Checked": true
+                        "Checked": 0
                     },
                     {
                         "Key": "ZIKV",
@@ -75,26 +75,22 @@
                 "Clients": [
                     {
                         "Key": "*",
-                        "Checked": 1
+                        "Checked": 0
                     },
                     {
                         "Key": "ABV",
-                        "Checked": 1
+                        "Checked": 0
                     },
                     {
                         "Key": "BNV",
-                        "Checked": 0
+                        "Checked": 1
                     },
                     {
                         "Key": "CDF",
-                        "Checked": 0
+                        "Checked": 1
                     },
                     {
                         "Key": "CDF12",
-                        "Checked": 0
-                    },
-                    {
-                        "Key": "COM",
                         "Checked": 0
                     },
                     {
@@ -103,7 +99,7 @@
                     },
                     {
                         "Key": "GHS",
-                        "Checked": 0
+                        "Checked": 1
                     },
                     {
                         "Key": "KKD",
@@ -115,14 +111,10 @@
                     },
                     {
                         "Key": "LMS",
-                        "Checked": 0
+                        "Checked": 1
                     },
                     {
                         "Key": "PPKD",
-                        "Checked": 0
-                    },
-                    {
-                        "Key": "UNT",
                         "Checked": 0
                     },
                     {
@@ -149,7 +141,7 @@
                     },
                     {
                         "Key": "Pending Test",
-                        "Checked": false
+                        "Checked": 0
                     },
                     {
                         "Key": "Assay Loaded",
@@ -169,7 +161,7 @@
                     },
                     {
                         "Key": "Approved",
-                        "Checked": false
+                        "Checked": 0
                     },
                     {
                         "Key": "Exported",
@@ -241,5 +233,6 @@
                     }
                 ]
             }
-           
+            
         }
+    

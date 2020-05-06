@@ -1,6 +1,6 @@
 {
     "gridName": "WorklistInformation",
-    "filterName": "",
+    "filterName": "WO1234**",
     "layout": {
        "DateRange": [
                     {
@@ -9,11 +9,11 @@
                     },
                     {
                         "Key": "Last 7 days",
-                        "Checked": 0
+                        "Checked": 1
                     },
                     {
                         "Key": "Last 14 days",
-                        "Checked": 1
+                        "Checked": 0
                     },
                     {
                         "Key": "Last 30 days",
@@ -29,19 +29,19 @@
                 "Assays": [
                     {
                         "Key": "Babesia ",
-                        "Checked": true
+                        "Checked": 0
                     },
                     {
                         "Key": "DENV",
-                        "Checked": true
+                        "Checked": 0
                     },
                     {
                         "Key": "HEV",
-                        "Checked": 1
+                        "Checked": 0
                     },
                     {
                         "Key": "Parvo/HAV",
-                        "Checked": false
+                        "Checked": 0
                     },
                     {
                         "Key": "Ultrio Elite",
@@ -75,7 +75,7 @@
                 "EQCStatus": [
                     {
                         "Key": "Pending",
-                        "Checked": true
+                        "Checked": 0
                     },
                     {
                         "Key": "Pass",
@@ -93,7 +93,7 @@
                 "InstrumentControlStatus": [
                     {
                         "Key": "Pending",
-                        "Checked": 1
+                        "Checked": 0
                     },
                     {
                         "Key": "Pass",
@@ -159,6 +159,7 @@
                     }
                 ]
             }
-            
-        
-    }
+           
+        }
+    
+    

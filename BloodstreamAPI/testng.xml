@@ -27,6 +27,7 @@
 
 
 
+
 <class name="donationInfo.donations"/>
            <class name="donationInfo.donationShortDetail"/>   
           <class name="donationInfo.groupStatusCount"/>
@@ -36,7 +37,11 @@
     <class name="testinfo.groupStatusCount"/>
       <class name="testinfo.orderTests"/>
           
-           
+     <class name="POST_GET_DELETE_Filter.ConcApproveGrid"/>
+       <class name="POST_GET_DELETE_Filter.TestGrid"/>
+           <class name="POST_GET_DELETE_Filter.WorklistInfGrid"/>
+            <class name="POST_GET_DELETE_Filter.WorklistConcGrid"/>
+            
     </classes>
   </test> 
 </suite>
