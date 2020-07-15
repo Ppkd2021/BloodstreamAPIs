@@ -29,7 +29,7 @@ public static ResponseSpecification responseSpec;
 	
 
 	 @Test(dataProviderClass = DataHandler.class,dataProvider="dataProvider")
-	 public void Assert200(Hashtable<String,String> dataTable) {
+	 public void Assert200(Hashtable<String,String> dataTable) throws Exception {
 		
 		    responseSpec = auth.reuseAssert200();
 	        File file = new File(System.getProperty("user.dir")+"//payloads//CustomFilter_DonationInfo.json");

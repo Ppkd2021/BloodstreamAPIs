@@ -1,19 +1,19 @@
 {
     "gridName": "TestInformation",
-    "filterName": "testing1230*",
+    "filterName": "123$",
     "layout": {
-            "DateRange": [
+       "DateRange": [
                     {
                         "Key": "Last 24 hours",
                         "Checked": 0
                     },
                     {
                         "Key": "Last 7 days",
-                        "Checked": 1
+                        "Checked": 0
                     },
                     {
                         "Key": "Last 14 days",
-                        "Checked": 0
+                        "Checked": 1
                     },
                     {
                         "Key": "Last 30 days",
@@ -83,14 +83,18 @@
                     },
                     {
                         "Key": "BNV",
-                        "Checked": 1
+                        "Checked": 0
                     },
                     {
                         "Key": "CDF",
-                        "Checked": 1
+                        "Checked": 0
                     },
                     {
                         "Key": "CDF12",
+                        "Checked": 0
+                    },
+                    {
+                        "Key": "CLB",
                         "Checked": 0
                     },
                     {
@@ -98,8 +102,12 @@
                         "Checked": 0
                     },
                     {
+                        "Key": "EPIC",
+                        "Checked": 0
+                    },
+                    {
                         "Key": "GHS",
-                        "Checked": 1
+                        "Checked": 0
                     },
                     {
                         "Key": "KKD",
@@ -111,10 +119,14 @@
                     },
                     {
                         "Key": "LMS",
-                        "Checked": 1
+                        "Checked": 0
                     },
                     {
                         "Key": "PPKD",
+                        "Checked": 0
+                    },
+                    {
+                        "Key": "TEST",
                         "Checked": 0
                     },
                     {
@@ -174,6 +186,10 @@
                     {
                         "Key": "Test Cancelled",
                         "Checked": 0
+                    },
+                    {
+                        "Key": "Discarded Tube",
+                        "Checked": 0
                     }
                 ],
                 "Priority": [
@@ -210,6 +226,10 @@
                     {
                         "Key": "Inconsistent pool",
                         "Checked": 0
+                    },
+                    {
+                        "Key": "Manual barcode entry(M)",
+                        "Checked": 0
                     }
                 ],
                 "PoolingInstrument": [
@@ -231,8 +251,9 @@
                         "Key": "PP101",
                         "Checked": 0
                     }
+                
                 ]
             }
-            
+           
         }
     

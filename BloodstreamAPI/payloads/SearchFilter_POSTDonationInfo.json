@@ -1,15 +1,15 @@
 {
     "gridName": "DonationInformation",
-    "filterName": "Donation123$",
+    "filterName": "123$",
     "layout": {
-               "DateRange": [
+                       "DateRange": [
                     {
                         "Key": "Last 24 hours",
                         "Checked": 0
                     },
                     {
                         "Key": "Last 7 days",
-                        "Checked": 1
+                        "Checked": 0
                     },
                     {
                         "Key": "Last 14 days",
@@ -17,7 +17,7 @@
                     },
                     {
                         "Key": "Last 30 days",
-                        "Checked": 0
+                        "Checked": 1
                     },
                     {
                         "Key": "Custom Range",
@@ -29,15 +29,15 @@
                 "Assays": [
                     {
                         "Key": "Babesia ",
-                        "Checked": 1
+                        "Checked": 0
                     },
                     {
                         "Key": "DENV",
-                        "Checked": 1
+                        "Checked": 0
                     },
                     {
                         "Key": "HEV",
-                        "Checked": 1
+                        "Checked": 0
                     },
                     {
                         "Key": "Parvo/HAV",
@@ -94,11 +94,15 @@
                         "Checked": 0
                     },
                     {
-                        "Key": "COM",
+                        "Key": "CLB",
                         "Checked": 0
                     },
                     {
                         "Key": "D3",
+                        "Checked": 0
+                    },
+                    {
+                        "Key": "EPIC",
                         "Checked": 0
                     },
                     {
@@ -122,7 +126,7 @@
                         "Checked": 0
                     },
                     {
-                        "Key": "UNT",
+                        "Key": "TEST",
                         "Checked": 0
                     },
                     {
@@ -166,6 +170,10 @@
                     {
                         "Key": "All Tests Exported",
                         "Checked": 0
+                    },
+                    {
+                        "Key": "All Tests Cancelled",
+                        "Checked": 0
                     }
                 ],
                 "Priority": [
@@ -202,9 +210,16 @@
                     {
                         "Key": "Inconsistent pool",
                         "Checked": 0
+                    },
+                    {
+                        "Key": "Manual barcode entry(M)",
+                        "Checked": 0
                     }
                 ]
+            
+                
             }
           
         }
+    
     

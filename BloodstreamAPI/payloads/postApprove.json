@@ -1,9 +1,1 @@
-{
-  "credential": "SU1fQURNSU46",
-  "conclusions": [
-    {
-      "conclusionRowId": 11,
-      "conclusionRowVersion": 15
-    }
-  ]
-}
+{"conclusionRowVersion":50,"credential":"SU1fQURNSU46","conclusions":[{"conclusionRowVersion":15,"conclusionRowId":11}],"conclusionRowId":25}

@@ -1,0 +1,24 @@
+{
+  "credential": "SU1fQURNSU46",
+  "testOrders": [
+    {
+      "sample": "",
+      "requestID": "CDF31-20200521",
+      "priority": "Routine",
+      "clientcode": "CDF",
+      "assay": "WNV",
+      "repetitions": 1,
+      "type": "IDT"
+    },
+     {
+      "sample": "",
+      "requestID": "CDF32-20200521",
+      "priority": "Routine",
+      "clientcode": "CDF",
+      "assay": "WNV",
+      "repetitions": 1,
+      "type": "Pool4"
+    }
+    
+  ]
+}

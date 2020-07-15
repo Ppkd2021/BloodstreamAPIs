@@ -9,11 +9,12 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import ReusableCode.auth;
+import bloodstream.Suite;
 import io.restassured.RestAssured;
 import io.restassured.specification.ResponseSpecification;
 import utilities.DataHandler;
 
-public class WorklistOverview {
+public class WorklistOverview extends Suite{ 
 	public static ResponseSpecification responseSpec;	
 
     @BeforeTest

@@ -13,11 +13,12 @@ import org.json.simple.parser.ParseException;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import ReusableCode.auth;
+import bloodstream.Suite;
 import io.restassured.RestAssured;
 import io.restassured.specification.ResponseSpecification;
 import utilities.DataHandler;
 
-public class getPrefixes {
+public class getPrefixes extends Suite{
 	 public static ResponseSpecification responseSpec;
 
 	 @BeforeTest
@@ -39,22 +40,20 @@ public class getPrefixes {
 			// body("data.content.prefixes.lysatePrefix[0]", equalTo( "  \"prefix\" : \"LRG\"  "));
 			 System.out.println("newversion:" +nv);	
 		     try{
-				 FileReader reader = new FileReader(System.getProperty("user.dir")+"//payloads//putPrefixes.json");
+				 FileReader reader = new FileReader(System.getProperty("user.dir")+"//payloads//putPrefixes200.json");
 		         JSONParser jsonParser = new JSONParser();
 			     JSONObject jsonObject = (JSONObject) jsonParser.parse(reader);
 			     jsonObject.put("version", nv);
 			    // System.out.println(jsonObject);
-			     FileWriter fW = new FileWriter(System.getProperty("user.dir")+"//payloads//putPrefixes.json");
+			     FileWriter fW = new FileWriter(System.getProperty("user.dir")+"//payloads//putPrefixes200.json");
 				 fW.write(jsonObject.toString());
 			     fW.close(); 
-			     }
-			        catch (IOException ex) {
-			            ex.printStackTrace();
-			        } catch (ParseException ex) {
-			            ex.printStackTrace();
-			        } 
-
-				}
+		         }catch (IOException ex) {
+		         ex.printStackTrace();
+		         }catch (ParseException ex){
+		         ex.printStackTrace();
+		        } 
+}
 				 @Test(dataProviderClass = DataHandler.class,dataProvider="dataProvider")
 		         public void Assert401(Hashtable<String,String> dataTable) {
 					

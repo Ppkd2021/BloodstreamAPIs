@@ -1,8 +1,8 @@
 {
     "gridName": "ConclusionsToApprove",
-    "filterName": "Custom1@#$^$",
+    "filterName": "124$",
     "layout": {
-    	  "DateRange": [
+       "DateRange": [
                     {
                         "Key": "Last 24 hours",
                         "Checked": 0
@@ -17,13 +17,13 @@
                     },
                     {
                         "Key": "Last 30 days",
-                        "Checked": 0
+                        "Checked": 1
                     },
                     {
                         "Key": "Custom Range",
-                        "Checked": 1,
-                        "FromDate": "2020-04-14",
-                        "ToDate": "2020-04-22"
+                        "Checked": 0,
+                        "FromDate": "",
+                        "ToDate": ""
                     }
                 ],
                 "Assays": [
@@ -75,15 +75,15 @@
                 "Conclusions": [
                     {
                         "Key": "Nonreactive",
-                        "Checked": 1
+                        "Checked": 0
                     },
                     {
                         "Key": "LargePoolReactive",
-                        "Checked": 1
+                        "Checked": 0
                     },
                     {
                         "Key": "PoolReactive",
-                        "Checked": 1
+                        "Checked": 0
                     },
                     {
                         "Key": "Reactive",
@@ -105,7 +105,7 @@
                 "Flags": [
                     {
                         "Key": "Pipetting error(P)",
-                        "Checked": 1
+                        "Checked": 0
                     },
                     {
                         "Key": "Skipped error(S)",
@@ -121,6 +121,10 @@
                     },
                     {
                         "Key": "Inconsistent pool",
+                        "Checked": 0
+                    },
+                    {
+                        "Key": "Manual barcode entry(M)",
                         "Checked": 0
                     }
                 ],
@@ -169,7 +173,9 @@
                         "Key": "Retain Reactive",
                         "Checked": 0
                     }
+                
                 ]
             }
-          
+           
         }
+    

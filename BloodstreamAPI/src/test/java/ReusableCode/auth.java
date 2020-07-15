@@ -1,20 +1,21 @@
 package ReusableCode;
 import static org.hamcrest.Matchers.lessThan;
 import java.util.concurrent.TimeUnit;
+
+import bloodstream.Suite;
 import io.restassured.builder.ResponseSpecBuilder;
 import io.restassured.http.ContentType;
 import io.restassured.specification.ResponseSpecification;
 import utilities.config;
 
-public final class auth {
-	
-	public static String ValidAuth =  config.property.getProperty("LoginToken");
-	public static String InvalidAuth = config.property.getProperty("InvalidToken"); 
+public class auth {
 	public static ResponseSpecification responseSpec;
 	
+	public static  String ValidAuth =  config.property.getProperty("LoginToken");
+	public static String InvalidAuth = config.property.getProperty("InvalidToken"); 
 	
-	
-public static ResponseSpecification reuseAssert200(){
+
+public static  ResponseSpecification reuseAssert200(){
 	
 	ResponseSpecBuilder builder = new ResponseSpecBuilder();	
 	builder.expectStatusCode(200).expectContentType(ContentType.JSON);
@@ -57,6 +58,16 @@ public static ResponseSpecification reuseAssert409(){
 	
 	ResponseSpecBuilder builder = new ResponseSpecBuilder();		
 	builder.expectStatusCode(409);
+	builder.expectResponseTime(lessThan(4000L), TimeUnit.MILLISECONDS);
+	responseSpec = builder.build();
+	return responseSpec;
+	
+}
+
+public static ResponseSpecification reuseAssert500(){
+	
+	ResponseSpecBuilder builder = new ResponseSpecBuilder();		
+	builder.expectStatusCode(500);
 	builder.expectResponseTime(lessThan(4000L), TimeUnit.MILLISECONDS);
 	responseSpec = builder.build();
 	return responseSpec;

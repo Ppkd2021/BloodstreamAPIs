@@ -27,8 +27,8 @@ public class donationwithouttestorder {
 public void Assert200(Hashtable<String,String> dataTable) {
 	
 	responseSpec = auth.reuseAssert200();
-   given().header("Authorization",auth.ValidAuth).when().param("SearchBy",dataTable.get("SearchBy")).
-   param("GroupStatus",dataTable.get("GroupStatus")).
+   given().header("Authorization",auth.ValidAuth).param("SearchBy",dataTable.get("SearchBy")).
+   param("GroupStatus",dataTable.get("GroupStatus")).when().
    get(dataTable.get("EndPoint")).then().body("result",is(true)).spec(responseSpec);
 }
 }

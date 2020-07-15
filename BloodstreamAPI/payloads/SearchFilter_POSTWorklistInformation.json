@@ -1,15 +1,16 @@
 {
     "gridName": "WorklistInformation",
-    "filterName": "WO1234**",
+    "filterName": "123$",
     "layout": {
-       "DateRange": [
+           
+           "DateRange": [
                     {
                         "Key": "Last 24 hours",
                         "Checked": 0
                     },
                     {
                         "Key": "Last 7 days",
-                        "Checked": 1
+                        "Checked": 0
                     },
                     {
                         "Key": "Last 14 days",
@@ -17,7 +18,7 @@
                     },
                     {
                         "Key": "Last 30 days",
-                        "Checked": 0
+                        "Checked": 1
                     },
                     {
                         "Key": "Custom Range",
@@ -158,8 +159,6 @@
                         "Checked": 0
                     }
                 ]
-            }
-           
+    }
         }
-    
     

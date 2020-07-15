@@ -16,11 +16,12 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import ReusableCode.auth;
+import bloodstream.Suite;
 import io.restassured.RestAssured;
 import io.restassured.specification.ResponseSpecification;
 import utilities.DataHandler;
 
-public class getClientSites {
+public class getClientSites extends Suite {
 public static ResponseSpecification responseSpec;
 
 	 @BeforeTest
@@ -39,22 +40,20 @@ public static ResponseSpecification responseSpec;
 		          System.out.println("newversion:" +nv);	
 		
 	     try{
-			 FileReader reader = new FileReader(System.getProperty("user.dir")+"//payloads//putClientSites.json");
+			 FileReader reader = new FileReader(System.getProperty("user.dir")+"//payloads//putClientSites200.json");
 	         JSONParser jsonParser = new JSONParser();
 		     JSONObject jsonObject = (JSONObject) jsonParser.parse(reader);
 		     jsonObject.put("version", nv);
 		    // System.out.println(jsonObject);
-		     FileWriter fW = new FileWriter(System.getProperty("user.dir")+"//payloads//putClientSites.json");
+		     FileWriter fW = new FileWriter(System.getProperty("user.dir")+"//payloads//putClientSites200.json");
 			 fW.write(jsonObject.toString());
 		     fW.close(); 
-		     }
-		        catch (IOException ex) {
-		            ex.printStackTrace();
-		        } catch (ParseException ex) {
-		            ex.printStackTrace();
-		        } 
-
-			}
+	        }catch (IOException ex) {
+	         ex.printStackTrace();
+	         }catch (ParseException ex){
+	         ex.printStackTrace();
+	        } 
+		}
 			 @Test(dataProviderClass = DataHandler.class,dataProvider="dataProvider")
 	         public void Assert401(Hashtable<String,String> dataTable) {
 				
