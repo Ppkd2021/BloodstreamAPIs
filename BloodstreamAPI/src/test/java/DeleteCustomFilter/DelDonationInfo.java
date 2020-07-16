@@ -31,11 +31,12 @@ public class DelDonationInfo  extends Suite{
 public void Assert200(Hashtable<String,String> dataTable) throws Exception {
        
 	    URLDecoderDonationInfo.Encoder();
-	    responseSpec = auth.reuseAssert200();
-        given().header("Authorization",auth.ValidAuth).param("gridName",dataTable.get("gridName")).
-        param("filterName",dataTable.get("filterName")).when().delete(dataTable.get("EndPoint"))
-        .then().body("result",is(true)).spec(responseSpec); 
-}
+	  
+		responseSpec = auth.reuseAssert200();
+	       given().header("Authorization",auth.ValidAuth).param("gridName",dataTable.get("gridName")).
+	       param("filterName",dataTable.get("filterName")).when().delete(dataTable.get("EndPoint")).then().body("result",is(true)).spec(responseSpec);  
+	    
+	}
 
 /*@Test(dataProviderClass = DataHandler.class,dataProvider="dataProvider")
 public void Assert400(Hashtable<String,String> dataTable){

@@ -31,11 +31,19 @@ public static ResponseSpecification responseSpec;
 		
 	File file = new File(System.getProperty("user.dir")+"//payloads//postApprove200.json");
 	responseSpec = auth.reuseAssert200();
-	given().header("Authorization",auth.ValidAuth).body(file).when().post(dataTable.get("EndPoint"))
-	.then().extract().response();
+	given().header("Authorization",auth.ValidAuth).body(file).when().post(dataTable.get("EndPoint")).
+	then().body("result",is(true)).spec(responseSpec);
+}
 	
+	@Test(dataProviderClass = DataHandler.class,dataProvider="dataProvider")
+	public void Assert400(Hashtable<String,String> dataTable) {
 
-	}
+		File file = new File(System.getProperty("user.dir")+"//payloads//postApprove400.json");
+		responseSpec = auth.reuseAssert400(); 
+		given().header("Authorization",auth.ValidAuth).body(file).when().post(dataTable.get("EndPoint")).
+		then().body("result",is(false)).spec(responseSpec);
+}
+	
 	
 
 

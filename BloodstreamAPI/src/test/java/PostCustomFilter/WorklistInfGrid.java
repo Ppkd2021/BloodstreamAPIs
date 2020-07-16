@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.util.Hashtable;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import ReusableCode.Base64WorklistInfo;
+
 import ReusableCode.auth;
 import io.restassured.RestAssured;
 import io.restassured.specification.ResponseSpecification;

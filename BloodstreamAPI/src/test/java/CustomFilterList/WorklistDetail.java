@@ -27,7 +27,7 @@ public class WorklistDetail extends Suite{
 @Test(dataProviderClass = DataHandler.class,dataProvider="dataProvider")
 public void Assert200(Hashtable<String,String> dataTable) {
 	
-	   responseSpec =   auth.reuseAssert200();
+	   responseSpec =auth.reuseAssert200();
         given().header("Authorization",auth.ValidAuth).when().param("gridName",dataTable.get("gridName")).
         get(dataTable.get("EndPoint")).then().body("result",is(true)).spec(responseSpec); 
   

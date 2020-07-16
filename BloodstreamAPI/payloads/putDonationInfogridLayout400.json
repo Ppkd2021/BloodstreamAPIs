@@ -1,0 +1,53 @@
+{
+  "gridName": "",
+  "layout": [
+    {
+                    "columnName": "DonationID",
+                    "columnPosition": 1,
+                    "isVisible": 1,
+                    "isLocked": 1
+                },
+                {
+                    "columnName": "DateTimeOfOrderReceipt",
+                    "columnPosition": 2,
+                    "isVisible": 1,
+                    "isLocked": 0
+                },
+                {
+                    "columnName": "Assays",
+                    "columnPosition": 3,
+                    "isVisible": 1,
+                    "isLocked": 0
+                },
+                {
+                    "columnName": "Client",
+                    "columnPosition": 4,
+                    "isVisible": 1,
+                    "isLocked": 0
+                },
+                {
+                    "columnName": "FlagName",
+                    "columnPosition": 5,
+                    "isVisible": 1,
+                    "isLocked": 0
+                },
+                {
+                    "columnName": "Priority",
+                    "columnPosition": 6,
+                    "isVisible": 1,
+                    "isLocked": 0
+                },
+                {
+                    "columnName": "Site",
+                    "columnPosition": 7,
+                    "isVisible": 1,
+                    "isLocked": 0
+                },
+                {
+                    "columnName": "Status",
+                    "columnPosition": 8,
+                    "isVisible": 1,
+                    "isLocked": 1
+                }
+  ]
+}

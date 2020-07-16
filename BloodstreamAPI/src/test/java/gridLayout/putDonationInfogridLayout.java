@@ -8,11 +8,12 @@ import java.util.Hashtable;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import ReusableCode.auth;
+import bloodstream.Suite;
 import io.restassured.RestAssured;
 import io.restassured.specification.ResponseSpecification;
 import utilities.DataHandler;
 
-public class putDonationInfogridLayout {
+public class putDonationInfogridLayout extends Suite{
 public static ResponseSpecification responseSpec;	
 
 	@BeforeTest
@@ -25,8 +26,8 @@ public static ResponseSpecification responseSpec;
 		public void Assert200(Hashtable<String,String> dataTable) {
 			
 		  responseSpec = auth.reuseAssert200();
-		  File file = new File(System.getProperty("user.dir")+"//payloads//putDonationInfogridLayout.json");
-		  given().header("Authorization",auth.ValidAuth).param("gridName",dataTable.get("gridName")).body(file).
+		  File file = new File(System.getProperty("user.dir")+"//payloads//putDonationInfogridLayout200.json");
+		  given().header("Authorization",auth.ValidAuth).body(file).
 		  when().put(dataTable.get("EndPoint")). then().body("result",is(true)).spec(responseSpec);  
 	  }
 					
@@ -36,8 +37,9 @@ public static ResponseSpecification responseSpec;
 		public void Assert400(Hashtable<String,String> dataTable){
 	
 		 responseSpec = auth.reuseAssert400();	
-		 given().header("Authorization",auth.ValidAuth).param("gridName",dataTable.get("gridName")).
-		 when().put(dataTable.get("EndPoint")). then().body("result",is(false)).spec(responseSpec); 
+		 File file = new File(System.getProperty("user.dir")+"//payloads//putDonationInfogridLayout400.json");
+		 given().header("Authorization",auth.ValidAuth).body(file).
+		 when().put(dataTable.get("EndPoint")).then().body("result",is(false)).spec(responseSpec); 
 		}
 		
 	 

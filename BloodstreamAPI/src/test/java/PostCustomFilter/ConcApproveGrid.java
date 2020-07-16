@@ -1,16 +1,14 @@
 package PostCustomFilter;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.is;
-import static org.hamcrest.Matchers.lessThan;
 
 import java.io.File;
 import java.io.IOException;
 import java.util.Hashtable;
-import java.util.concurrent.TimeUnit;
 
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import ReusableCode.Base64ConcToAprove;
+
 import ReusableCode.auth;
 import bloodstream.Suite;
 import io.restassured.RestAssured;

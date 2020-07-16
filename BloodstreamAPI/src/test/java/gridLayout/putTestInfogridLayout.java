@@ -27,8 +27,8 @@ public static ResponseSpecification responseSpec;
 	public void Assert200(Hashtable<String,String> dataTable) {
 		
 		responseSpec =auth.reuseAssert200();
-		File file = new File(System.getProperty("user.dir")+"//payloads//putTestInfogridLayout.json");
-		given().header("Authorization",auth.ValidAuth).param("gridName",dataTable.get("gridName")).body(file).
+		File file = new File(System.getProperty("user.dir")+"//payloads//putTestInfogridLayout200.json");
+		given().header("Authorization",auth.ValidAuth).body(file).
 		when().put(dataTable.get("EndPoint")). then().body("result",is(true)).spec(responseSpec); 
 	}
 	
@@ -36,8 +36,9 @@ public static ResponseSpecification responseSpec;
 	public void Assert400(Hashtable<String,String> dataTable){
 	
 		responseSpec = auth.reuseAssert400();
-	    given().header("Authorization",auth.ValidAuth).param("gridName",dataTable.get("gridName")).
-	    when().put(dataTable.get("EndPoint")). then().body("result",is(false)).spec(responseSpec); 
+		File file = new File(System.getProperty("user.dir")+"//payloads//putTestInfogridLayout400.json");
+	    given().header("Authorization",auth.ValidAuth).body(file).
+	    when().put(dataTable.get("EndPoint")).then().body("result",is(false)).spec(responseSpec); 
 	}
 	
 	@Test(dataProviderClass = DataHandler.class,dataProvider="dataProvider")

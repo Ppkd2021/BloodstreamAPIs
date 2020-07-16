@@ -11,49 +11,9 @@
  <classes>
  
 <class name="ReusableCode.auth"/>
-<class name="testinfo.groupStatusCount"/>
-<class name="testinfo.groupStatusCount"/>
-<class name="testinfo.orderTests"/>
-<class name="donationInfo.groupStatusCount"/>
-<class name="donationInfo.donations"/>
-<class name="donationInfo.donationShortDetail"/>
-<class name="donationInfo.orderTests"/>
-<class name="donationInfo.orderTestsStatusHistory"/>
-<class name="clientCode.getAssays"/>
-<class name="clientCode.getClientSites"/>
-<class name="clientCode.getPrefixes"/>
-<class name="clientCode.putAssays"/>
-<class name="clientCode.putClientSites"/>
-<class name="clientCode.putPrefixes"/>
-<class name="conclusionInfo.conclusions"/>
 
 <class name="conclusionInfo.conclusions"/>
 <class name="conclusions.approve"/>
-<class name="CustomFilterList.ConclToApprove"/>
-<class name="CustomFilterList.DonationInfo"/>
-<class name="CustomFilterList.TestInfo"/>
-<class name="CustomFilterList.WorklistDetail"/>
-<class name="CustomFilterList.WorklistOverview"/> 
-
-
-<class name="SearchByTabCount.ConclToApprove"/>
-<class name="SearchByTabCount.DonationInfo"/>
-<class name="SearchByTabCount.TestInfo"/>
-<class name="SearchByTabCount.WorklistDetail"/>
-<class name="SearchByTabCount.WorklistOverview"/>
-
-
-<class name="ManualOrderEntry.GET_AutoApproval"/>
-<class name="ManualOrderEntry.PUT_AutoApproval"/>
-<class name="ManualOrderEntry.GET_ClientCodeAssays"/>
-<class name="ManualOrderEntry.GET_VerifiedSamples"/>
-<class name="ManualOrderEntry.POST_CreateOrder"/>
-
-
-<class name="thresholdConfig.ThresholdConfig_GET"/>
-<class name="thresholdConfig.ThresholdConfig_PUT"/>
-
-
 </classes>
 </test> 
 </suite>

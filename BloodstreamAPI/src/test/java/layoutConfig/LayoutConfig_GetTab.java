@@ -45,6 +45,15 @@ public static ResponseSpecification responseSpec;
 	then().spec(responseSpec); 
   }
 	
+	@Test(dataProviderClass = DataHandler.class,dataProvider="dataProvider")
+	 public void Assert409(Hashtable<String,String> dataTable) {
+			
+		
+		responseSpec =   auth.reuseAssert409();
+		given().header("Authorization",auth.ValidAuth).param("tabName",dataTable.get("tabName")).param("version",dataTable.get("version")).when().delete(dataTable.get("EndPoint")). 
+		then().body("result",is(false)).spec(responseSpec); 	
+	 }
+	
 }
 
 
