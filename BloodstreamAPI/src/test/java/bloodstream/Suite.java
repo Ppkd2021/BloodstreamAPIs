@@ -12,7 +12,7 @@ import java.util.concurrent.TimeUnit;
 import org.testng.Assert;
 import org.testng.ITestContext;
 import org.testng.annotations.BeforeSuite;
-
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
@@ -29,7 +29,12 @@ public class Suite
 		login();
 	}
 	
-	
+	@BeforeTest
+	public void BeforeTest(){
+		{
+			RestAssured.useRelaxedHTTPSValidation(); 
+		}
+	}
 	public void login()
 	{
 		RestAssured.baseURI = config.property.getProperty("LocalServer");

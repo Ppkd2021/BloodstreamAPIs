@@ -14,7 +14,9 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
-public class URLDecoderWorklistConc {
+import bloodstream.Suite;
+
+public class URLDecoderWorklistConc { 
 	public static void Encoder() throws IOException {
 
 		  final FileReader reader = new FileReader(System.getProperty("user.dir")+"//payloads//SearchFilter_POSTWorklistConclusions.json");

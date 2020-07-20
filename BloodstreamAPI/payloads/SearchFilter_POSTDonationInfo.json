@@ -1,11 +1,11 @@
 {
     "gridName": "DonationInformation",
-    "filterName": "123$",
+    "filterName": "456$",
     "layout": {
-                       "DateRange": [
+              "DateRange": [
                     {
                         "Key": "Last 24 hours",
-                        "Checked": 0
+                        "Checked": 1
                     },
                     {
                         "Key": "Last 7 days",
@@ -17,7 +17,7 @@
                     },
                     {
                         "Key": "Last 30 days",
-                        "Checked": 1
+                        "Checked": 0
                     },
                     {
                         "Key": "Custom Range",
@@ -94,15 +94,7 @@
                         "Checked": 0
                     },
                     {
-                        "Key": "CLB",
-                        "Checked": 0
-                    },
-                    {
                         "Key": "D3",
-                        "Checked": 0
-                    },
-                    {
-                        "Key": "EPIC",
                         "Checked": 0
                     },
                     {
@@ -123,10 +115,6 @@
                     },
                     {
                         "Key": "PPKD",
-                        "Checked": 0
-                    },
-                    {
-                        "Key": "TEST",
                         "Checked": 0
                     },
                     {

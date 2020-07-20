@@ -23,12 +23,7 @@ import utilities.DataHandler;
 public class ThresholdConfig_GET extends Suite{ 
 public static ResponseSpecification responseSpec;	
 
-	@BeforeTest
-	 public void BeforeTest(){
-		{
-			RestAssured.useRelaxedHTTPSValidation(); 
-		}
-	}	
+	
    @Test(dataProviderClass = DataHandler.class,dataProvider="dataProvider")
 	public void Assert200(Hashtable<String,String> dataTable) {
 	   

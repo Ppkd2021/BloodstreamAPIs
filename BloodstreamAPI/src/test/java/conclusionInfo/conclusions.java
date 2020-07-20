@@ -22,13 +22,7 @@ import utilities.DataHandler;
 public final class conclusions extends Suite{ 
 public static ResponseSpecification responseSpec;
 
-@BeforeTest
-public void BeforeTest(){
-{
-	RestAssured.useRelaxedHTTPSValidation(); 
-}
-}
-	
+
 
 @Test(dataProviderClass = DataHandler.class,dataProvider="dataProvider")
 public void Assert200_pendingtoapprove(Hashtable<String,String> dataTable) {

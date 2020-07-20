@@ -16,12 +16,7 @@ import utilities.DataHandler;
 
 public class Mflag extends Suite{ 
 
-	@BeforeTest
-	public void BeforeTest()
-		{
-		 
-			RestAssured.useRelaxedHTTPSValidation(); 	
-		}
+	
 public static ResponseSpecification responseSpec;
 
 	@Test(dataProviderClass = DataHandler.class,dataProvider="dataProvider")
@@ -32,35 +27,16 @@ public static ResponseSpecification responseSpec;
 	param("GroupStatus",dataTable.get("GroupStatus")).param("Sort",dataTable.get("Sort")).
 	when().get(dataTable.get("EndPoint")).then().body("result",is(true)).spec(responseSpec);
 }		
+	
+
 	@Test(dataProviderClass = DataHandler.class,dataProvider="dataProvider")
-	public void TestsAssert200(Hashtable<String,String> dataTable) {
-		
-    responseSpec = auth.reuseAssert200();	
-	given().header("Authorization",auth.ValidAuth).
-	param("GroupStatus",dataTable.get("GroupStatus")).param("Sort",dataTable.get("Sort")).
-	when().get(dataTable.get("EndPoint")).then().body("result",is(true)).spec(responseSpec);
-}	
-	@Test(dataProviderClass = DataHandler.class,dataProvider="dataProvider")
-	public void WorklistsAssert200(Hashtable<String,String> dataTable) {
+	public void TestAssert200(Hashtable<String,String> dataTable) {
 		
     responseSpec = auth.reuseAssert200();	
 	given().header("Authorization",auth.ValidAuth).
 	param("GroupStatus",dataTable.get("GroupStatus")).param("Sort",dataTable.get("Sort")).
 	when().get(dataTable.get("EndPoint")).then().body("result",is(true)).spec(responseSpec);
 }		
+}
 	
-	 @Test(dataProviderClass = DataHandler.class,dataProvider="dataProvider")
-	 public void Assert400(Hashtable<String,String> dataTable) {
-    responseSpec = auth.reuseAssert400();		 
-	given().header("Authorization",auth.ValidAuth).param("GroupStatus",dataTable.get("GroupStatus")).when().get(dataTable.get("EndPoint")).then().body("result",is(false)).spec(responseSpec);
-	 }	 
- 
-	 
-    @Test(dataProviderClass = DataHandler.class,dataProvider="dataProvider")
-    public void Assert401(Hashtable<String,String> dataTable) {
-    responseSpec = auth.reuseAssert401();		 
-    given().header("Authorization",auth.InvalidAuth).param("GroupStatus",dataTable.get("GroupStatus")).when().get(dataTable.get("EndPoint")).then().spec(responseSpec);
-   }	   	
- }
-
-
+	

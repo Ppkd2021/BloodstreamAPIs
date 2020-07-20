@@ -16,12 +16,7 @@ import utilities.DataHandler;
 
 
 public class donations extends Suite{ 
-	@BeforeTest
-	public void BeforeTest()
-		{
-		 
-			RestAssured.useRelaxedHTTPSValidation(); 	
-		}
+	
 public static ResponseSpecification responseSpec;
 
 	@Test(dataProviderClass = DataHandler.class,dataProvider="dataProvider")

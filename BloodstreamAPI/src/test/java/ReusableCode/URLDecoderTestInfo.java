@@ -14,7 +14,9 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
-public class URLDecoderTestInfo {
+import bloodstream.Suite;
+
+public class URLDecoderTestInfo { 
 
 	public static void Encoder() throws IOException {
 

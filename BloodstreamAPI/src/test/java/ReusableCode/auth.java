@@ -8,7 +8,7 @@ import io.restassured.http.ContentType;
 import io.restassured.specification.ResponseSpecification;
 import utilities.config;
 
-public class auth {
+public class auth { 
 	public static ResponseSpecification responseSpec;
 	
 	public static  String ValidAuth =  config.property.getProperty("LoginToken");
@@ -19,7 +19,7 @@ public static  ResponseSpecification reuseAssert200(){
 	
 	ResponseSpecBuilder builder = new ResponseSpecBuilder();	
 	builder.expectStatusCode(200).expectContentType(ContentType.JSON);
-	builder.expectResponseTime(lessThan(4000L), TimeUnit.MILLISECONDS);
+	builder.expectResponseTime(lessThan(8000L), TimeUnit.MILLISECONDS);
 	responseSpec = builder.build();
 	return responseSpec;
 }
@@ -28,7 +28,7 @@ public static ResponseSpecification reuseAssert401(){
 	
 	ResponseSpecBuilder builder = new ResponseSpecBuilder();	
 	builder.expectStatusCode(401);
-	builder.expectResponseTime(lessThan(4000L), TimeUnit.MILLISECONDS);
+	builder.expectResponseTime(lessThan(8000L), TimeUnit.MILLISECONDS);
 	responseSpec = builder.build();
 	return responseSpec;
 }
@@ -38,7 +38,7 @@ public static ResponseSpecification reuseAssert400(){
 	
 	ResponseSpecBuilder builder = new ResponseSpecBuilder();		
 	builder.expectStatusCode(400);
-	builder.expectResponseTime(lessThan(4000L), TimeUnit.MILLISECONDS);
+	builder.expectResponseTime(lessThan(8000L), TimeUnit.MILLISECONDS);
 	responseSpec = builder.build();
 	return responseSpec;
 	
@@ -48,7 +48,7 @@ public static ResponseSpecification reuseAssert404(){
 	
 	ResponseSpecBuilder builder = new ResponseSpecBuilder();		
 	builder.expectStatusCode(404);
-	builder.expectResponseTime(lessThan(4000L), TimeUnit.MILLISECONDS);
+	builder.expectResponseTime(lessThan(8000L), TimeUnit.MILLISECONDS);
 	responseSpec = builder.build();
 	return responseSpec;
 	
@@ -58,7 +58,7 @@ public static ResponseSpecification reuseAssert409(){
 	
 	ResponseSpecBuilder builder = new ResponseSpecBuilder();		
 	builder.expectStatusCode(409);
-	builder.expectResponseTime(lessThan(4000L), TimeUnit.MILLISECONDS);
+	builder.expectResponseTime(lessThan(8000L), TimeUnit.MILLISECONDS);
 	responseSpec = builder.build();
 	return responseSpec;
 	

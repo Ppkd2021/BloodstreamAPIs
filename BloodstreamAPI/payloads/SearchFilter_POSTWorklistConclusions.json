@@ -1,8 +1,8 @@
 {
     "gridName": "WorklistConclusions",
-    "filterName": "123$",
+    "filterName": "880$",
     "layout": {
-      "DateRange": [
+       "DateRange": [
                     {
                         "Key": "Last 24 hours",
                         "Checked": 0
@@ -103,7 +103,6 @@
                         "Key": "Error",
                         "Checked": 0
                     }
-                
                 ]
             }
  

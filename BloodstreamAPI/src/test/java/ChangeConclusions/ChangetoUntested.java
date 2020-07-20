@@ -2,7 +2,9 @@ package ChangeConclusions;
 
 
 	import static io.restassured.RestAssured.given;
-	import static org.hamcrest.Matchers.is;
+import static org.hamcrest.Matchers.equalTo;
+import static org.hamcrest.Matchers.hasItems;
+import static org.hamcrest.Matchers.is;
 	import java.io.File;
 	import java.io.FileReader;
 	import java.io.FileWriter;
@@ -22,24 +24,27 @@ import io.restassured.RestAssured;
 	public class ChangetoUntested extends Suite{ 
 
 		public static ResponseSpecification responseSpec;
-		@BeforeTest
-		public void BeforeTest()
-			{
-			 
-				RestAssured.useRelaxedHTTPSValidation(); 	
-			}
-			
-			@Test(dataProviderClass = DataHandler.class,dataProvider="dataProvider")
-			public void Assert200(Hashtable<String,String> dataTable) {
+		
+	
+		@Test(dataProviderClass = DataHandler.class,dataProvider="dataProvider")
+		public void Assert200(Hashtable<String,String> dataTable) {
 
-				File file = new File(System.getProperty("user.dir")+"//payloads//postApprove200.json");
-				responseSpec = auth.reuseAssert200(); 
-				given().header("Authorization",auth.ValidAuth).body(file).when().post(dataTable.get("EndPoint")).
-				then().body("result",is(true)).spec(responseSpec);
-		}
+			File file = new File(System.getProperty("user.dir")+"//payloads//untested200.json");
+			responseSpec = auth.reuseAssert200(); 
+		    given().header("Authorization",auth.ValidAuth).body(file).when().post(dataTable.get("EndPoint")).
+			then().body("result",is(true)).spec(responseSpec);
+		   
+		   //then().assertThat().body("messages.message[0]",equalTo("Successful")).extract().path("messages.message[0]");
+		}      
+	
+		/*public void Assert200(Hashtable<String,String> dataTable) {
 
+			File file = new File(System.getProperty("user.dir")+"//payloads//putAssays200.json");
+			responseSpec = auth.reuseAssert200(); 
+			given().header("Authorization",auth.ValidAuth).body(file).when().put(dataTable.get("EndPoint")).then().body("result",is(true)).spec(responseSpec);
+	}*/
 
-			@Test(dataProviderClass = DataHandler.class,dataProvider="dataProvider")
+	@Test(dataProviderClass = DataHandler.class,dataProvider="dataProvider")
 			public void Assert400(Hashtable<String,String> dataTable) {
 
 				File file = new File(System.getProperty("user.dir")+"//payloads//postApprove400.json");

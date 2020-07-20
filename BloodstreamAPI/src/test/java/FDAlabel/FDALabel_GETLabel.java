@@ -3,7 +3,16 @@ package FDAlabel;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.is;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileReader;
 import java.util.Hashtable;
+
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import ReusableCode.auth;
@@ -15,17 +24,16 @@ import utilities.DataHandler;
 public class FDALabel_GETLabel extends Suite{
 public static ResponseSpecification responseSpec;	
 
-	@BeforeTest
-	 public void BeforeTest(){
-		{
-			RestAssured.useRelaxedHTTPSValidation(); 
-		}
-	 }	
+
   
 	@Test(dataProviderClass = DataHandler.class,dataProvider="dataProvider")
 	public void Assert200(Hashtable<String,String> dataTable) {
   
 	 responseSpec = auth.reuseAssert200();		
+	 
+		 
+	     
+	     
 	 given().header("Authorization",auth.ValidAuth).param("screenName",dataTable.get("screenName")).when().get(dataTable.get("EndPoint")).
 	 then().body("result",is(true)).spec(responseSpec); 
 	}	

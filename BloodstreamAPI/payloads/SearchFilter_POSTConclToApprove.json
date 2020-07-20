@@ -1,8 +1,9 @@
 {
     "gridName": "ConclusionsToApprove",
-    "filterName": "124$",
+    "filterName": "678$",
     "layout": {
-       "DateRange": [
+    
+                      "DateRange": [
                     {
                         "Key": "Last 24 hours",
                         "Checked": 0
@@ -173,7 +174,6 @@
                         "Key": "Retain Reactive",
                         "Checked": 0
                     }
-                
                 ]
             }
            

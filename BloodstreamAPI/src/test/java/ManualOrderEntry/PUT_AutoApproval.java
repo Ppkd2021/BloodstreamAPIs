@@ -17,12 +17,6 @@ import utilities.DataHandler;
 
 public class PUT_AutoApproval extends Suite {
 public static ResponseSpecification responseSpec;
-	@BeforeTest
-	public void BeforeTest()
-		{
-		 
-			RestAssured.useRelaxedHTTPSValidation(); 	
-		}
 	
 
 	@Test(dataProviderClass = DataHandler.class,dataProvider="dataProvider")

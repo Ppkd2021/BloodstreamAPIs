@@ -1,9 +1,8 @@
 {
     "gridName": "WorklistInformation",
-    "filterName": "123$",
+    "filterName": "900$",
     "layout": {
-           
-           "DateRange": [
+              "DateRange": [
                     {
                         "Key": "Last 24 hours",
                         "Checked": 0

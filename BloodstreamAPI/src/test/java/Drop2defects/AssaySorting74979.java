@@ -19,12 +19,7 @@ import utilities.DataHandler;
 
 public class AssaySorting74979 extends Suite{
 public static ResponseSpecification responseSpec;	
-	@BeforeTest
-	 public void BeforeTest(){
-		{
-			RestAssured.useRelaxedHTTPSValidation(); 
-		}
-	 }
+	
 	@Test(dataProviderClass = DataHandler.class,dataProvider="dataProvider")
 	public void DonationInfoAssaySort(Hashtable<String,String> dataTable) {
 		

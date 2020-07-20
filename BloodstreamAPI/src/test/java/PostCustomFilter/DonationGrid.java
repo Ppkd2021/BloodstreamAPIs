@@ -17,12 +17,7 @@ import utilities.DataHandler;
 
 public class DonationGrid  extends Suite{ 
 	public static ResponseSpecification responseSpec;
-	@BeforeTest
-	public void BeforeTest()
-		{
-		 
-			RestAssured.useRelaxedHTTPSValidation(); 	
-		}
+	
 		
     @Test(dataProviderClass = DataHandler.class,dataProvider="dataProvider")
 		public void Assert200(Hashtable<String,String> dataTable) throws IOException {
@@ -31,7 +26,7 @@ public class DonationGrid  extends Suite{
 			File file = new File(System.getProperty("user.dir")+"//payloads//SearchFilter_POSTDonationInfo.json");
 			responseSpec = auth.reuseAssert200(); 
 			given().header("Authorization",auth.ValidAuth).body(file).when().post(dataTable.get("EndPoint")).
-			then().body("result",is(true)).spec(responseSpec);
+			then().body("result",is(true)).extract().response();
     }
 /*	@Test(dataProviderClass = DataHandler.class,dataProvider="dataProvider")
 		 	public void GETFilterAssert200(Hashtable<String,String> dataTable) {

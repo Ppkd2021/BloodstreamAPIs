@@ -20,12 +20,7 @@ import utilities.DataHandler;
 public class DelDonationInfo  extends Suite{ 
 	public static ResponseSpecification responseSpec;	
 
-    @BeforeTest
-	 public void BeforeTest(){
-		{
-			RestAssured.useRelaxedHTTPSValidation(); 
-		}
- }	
+   
 	
 @Test(dataProviderClass = DataHandler.class,dataProvider="dataProvider")
 public void Assert200(Hashtable<String,String> dataTable) throws Exception {

@@ -29,52 +29,60 @@ import utilities.DataHandler;
 public class LayoutConfig_GetLayoutList extends Suite{ 
 public static ResponseSpecification responseSpec;	
 
-	@BeforeTest
-	 public void BeforeTest(){
-		{
-			RestAssured.useRelaxedHTTPSValidation(); 
-		}
-	 }	
+
 	
 	@Test(dataProviderClass = DataHandler.class,dataProvider="dataProvider")
 	public void Assert200(Hashtable<String,String> dataTable) throws FileNotFoundException {
 	
 	responseSpec =  auth.reuseAssert200();
 	String tab = given().header("Authorization",auth.ValidAuth).when().get(dataTable.get("EndPoint")).
-    then().spec(responseSpec).extract().path("data.content[0]");
+    then().spec(responseSpec).extract().path("data.content[1]");
 	System.out.println("tab is :" + tab);
+	}
 	
-	final FileReader reader = new FileReader(System.getProperty("user.dir")+"//payloads//postNewTab200.json");
+/*	final FileReader reader = new FileReader(System.getProperty("user.dir")+"//payloads//postNewTab200.json");
 	   
 	 JSONParser jsonParser = new JSONParser();
 	   try {
-	   		JSONObject jsonObject = (JSONObject) jsonParser.parse(reader);
-	   		String tabName = (String) jsonObject.get("tabName");
+	   		//JSONObject jsonObject = (JSONObject) jsonParser.parse(reader);
+	   		//String tabName = (String) jsonObject.get("tabName");
 	   		//String BasicBase64format  = Base64.getEncoder().encodeToString(filterName.getBytes()); 
-	   		FileInputStream fileISP= new FileInputStream(new File(System.getProperty("user.dir")+"//testData//layoutConfig.xlsx"));
+	   		FileInputStream fileISP1= new FileInputStream(new File(System.getProperty("user.dir")+"//testData//layoutConfig.xlsx"));
+	   //		FileInputStream fileISP2= new FileInputStream(new File(System.getProperty("user.dir")+"//testData//PantherARTCard.xlsx"));
 	   			
-	XSSFWorkbook wb= new  XSSFWorkbook(fileISP); 
-    XSSFSheet worksheet1 = wb.getSheetAt(0); 
-    XSSFSheet worksheet2 = wb.getSheetAt(3); 
+	XSSFWorkbook wb1= new  XSSFWorkbook(fileISP1); 
+//	XSSFWorkbook wb2= new  XSSFWorkbook(fileISP2); 
+    XSSFSheet worksheet1 = wb1.getSheetAt(0); 
+    XSSFSheet worksheet2 = wb1.getSheetAt(3); 
+    
+ //   XSSFSheet worksheet1 = wb1.getSheetAt(0); 
+    
 	Cell cell1 = null; 
 	Cell cell2 = null; 
+//	Cell cell1b = null; 
 	cell1 = worksheet1.getRow(2).getCell(1);   
 	cell1.setCellValue(tab); 
     cell2 = worksheet2.getRow(2).getCell(1);   
 	cell2.setCellValue(tab); 
+//	cell1 = worksheet1.getRow(2).getCell(1);   
+	//cell1.setCellValue(tab); 
 	
-	fileISP.close(); 
-	FileOutputStream output_file =new FileOutputStream(new File(System.getProperty("user.dir")+"//testData//layoutConfig.xlsx"));  
-	wb.write(output_file); 
-    output_file.close();  
+	fileISP1.close(); 
+	//fileISP2.close(); 
+	FileOutputStream output_file1 =new FileOutputStream(new File(System.getProperty("user.dir")+"//testData//layoutConfig.xlsx"));  
+//	FileOutputStream output_file2 =new FileOutputStream(new File(System.getProperty("user.dir")+"//testData//PantherARTCard.xlsx"));  
+
+	wb1.write(output_file1); 
+    output_file1.close();  
+  //  wb2.write(output_file2); 
+   // output_file2.close(); 
   } catch (IOException e) {
    	e.printStackTrace();
-}   catch (ParseException e) {
-	e.printStackTrace();
+
 }	
     	
     }
-	
+	*/
 	
 	@Test(dataProviderClass = DataHandler.class,dataProvider="dataProvider")
 	public void Assert401(Hashtable<String,String> dataTable){
