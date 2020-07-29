@@ -1,0 +1,49 @@
+{
+  "programs": [
+  
+{
+      
+                    "numberTests": 500,
+                    "fileNumber": 1,
+                    "reagentCondition": "Frozen",
+                    "minimumTime": 105,
+                    "setPointDegree": 32,
+                    "lowAverageDegree": 30,
+                    "highAverageDegree": 34,
+                    "maximumDegree": 34,
+                     "action":"upd"
+                },
+                {
+                    "numberTests": 500,
+                    "fileNumber": 2,
+                    "reagentCondition": "Refrigerated",
+                    "minimumTime": 60,
+                    "setPointDegree": 32,
+                    "lowAverageDegree": 30,
+                    "highAverageDegree": 34,
+                    "maximumDegree": 34
+                },
+                {
+                    "numberTests": 250,
+                    "fileNumber": 1,
+                    "reagentCondition": "Frozen",
+                    "minimumTime": 60,
+                    "setPointDegree": 32,
+                    "lowAverageDegree": 30,
+                    "highAverageDegree": 34,
+                    "maximumDegree": 34
+                },
+                {
+                    "numberTests": 250,
+                    "fileNumber": 2,
+                    "reagentCondition": "Refrigerated",
+                    "minimumTime": 30,
+                    "setPointDegree": 32,
+                    "lowAverageDegree": 30,
+                    "highAverageDegree": 34,
+                    "maximumDegree": 34
+                }
+            ],
+             "version": 786
+}
+

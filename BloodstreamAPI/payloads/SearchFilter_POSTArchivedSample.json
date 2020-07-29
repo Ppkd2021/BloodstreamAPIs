@@ -1,0 +1,76 @@
+{
+    "gridName": "ArchiveSamples",
+    "filterName": "786$",
+    "layout": {
+              "DateRange": [
+                    {
+                        "Key": "Last 24 hours",
+                        "Checked": 1
+                    },
+                    {
+                        "Key": "Last 7 days",
+                        "Checked": 0
+                    },
+                    {
+                        "Key": "Last 14 days",
+                        "Checked": 0
+                    },
+                    {
+                        "Key": "Last 30 days",
+                        "Checked": 0
+                    },
+                    {
+                        "Key": "Custom Range",
+                        "Checked": 0,
+                        "FromDate": "",
+                        "ToDate": ""
+                    }
+
+                ],
+                "InstrumentID": [
+                    {
+                        "Key": "Pooler Conn1",
+                        "Checked": 1
+                    },
+                    {
+                        "Key": "Pooler Conn2",
+                        "Checked": 0
+                    }
+                ],
+                 "ArchivePlateErrorCode": [
+                    {
+                        "Key": "Duplicate Archive",
+                        "Checked": 1
+                    },
+                    {
+                        "Key": "Inconsistent Archive",
+                        "Checked": 0
+                    },
+                   
+                    {
+                        "Key": "Manual barcode entry(M)",
+                        "Checked": 0
+                    }
+                ],
+                "ArchiveSampleErrorCode": [
+                    {
+                        "Key": "Pipetting error(P)",
+                        "Checked": 1
+                    },
+                    {
+                        "Key": "Skipped error(S)",
+                        "Checked": 0
+                    },
+                   
+                    {
+                        "Key": "Manual barcode entry(M)",
+                        "Checked": 0
+                    }
+                ]
+            
+                
+            }
+          
+        }
+    
+    

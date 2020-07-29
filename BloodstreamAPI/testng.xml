@@ -14,81 +14,8 @@
 <class name="ReusableCode.auth"/>
 
 
+<class name="Drop3defects.SpecialChar"/>
 
-<class name="clientCode.getAssays"/>
-<class name="clientCode.getClientSites"/>
-<class name="clientCode.getPrefixes"/>
-<class name="clientCode.putAssays"/>
-<class name="clientCode.putClientSites"/>
-<class name="clientCode.putPrefixes"/>
-<class name="conclusionInfo.conclusions"/>
-<class name="conclusionInfo.conclusions"/>
-<class name="conclusions.approve"/>
-<class name="ManualOrderEntry.GET_AutoApproval"/>
-<class name="ManualOrderEntry.PUT_AutoApproval"/>
-<class name="ManualOrderEntry.GET_ClientCodeAssays"/>
-<class name="ManualOrderEntry.GET_VerifiedSamples"/>
-<class name="ManualOrderEntry.POST_CreateOrder"/>
-<class name="testinfo.groupStatusCount"/>
-<class name="testinfo.groupStatusCount"/>
-<class name="testinfo.orderTests"/>
-<class name="donationInfo.groupStatusCount"/>
-<class name="donationInfo.donations"/>
-<class name="donationInfo.donationShortDetail"/>
-<class name="donationInfo.orderTests"/>
-<class name="donationInfo.orderTestsStatusHistory"/>
-<class name="thresholdConfig.ThresholdConfig_GET"/>
-<class name="thresholdConfig.ThresholdConfig_PUT"/>
-<class name="SearchByTabCount.ConclToApprove"/>
-<class name="SearchByTabCount.DonationInfo"/>
-<class name="SearchByTabCount.TestInfo"/>
-<class name="SearchByTabCount.WorklistDetail"/>
-<class name="SearchByTabCount.WorklistOverview"/>
-<class name="SearchableColumns.ConclToApprove"/>
-<class name="SearchableColumns.DonationInfo"/>
-<class name="SearchableColumns.TestInfo"/>
-<class name="SearchableColumns.WorklistDetail"/>
-<class name="SearchableColumns.WorklistOverview"/>
-<class name="gridLayout.getDonationInfoGridLayout"/>
-<class name="gridLayout.getTestInfoGridLayout"/>
-<class name="gridLayout.putDonationInfogridLayout"/>
-<class name="gridLayout.putTestInfogridLayout"/>
-
-<class name="layoutConfig.LayoutConfig_GetDeviceType"/>
-<class name="layoutConfig.LayoutConfig_GetLayoutList"/>
-
-<class name="ChangeConclusions.ChangeAnyConclusions"/>
-<class name="ChangeConclusions.ChangetoUntested"/>
-<class name="conclusionInfo.conclusions"/>
-<class name="conclusions.approve"/>
-<class name="PantherARTCard.GetCardDetails"/>
-<class name="PantherARTCard.GET_InstrShift"/>
-<class name="PantherARTCard.PUT_InstrShift"/>
-<class name="worklistInfo.worklistCalibratorsControls"/>
-<class name="ReusableCode.URLDecoderConcToApprove"/>
-<class name="PostCustomFilter.ConcApproveGrid"/>
-<class name="GETCustomFilter.ConclToApprove"/>
-<class name="DeleteCustomFilter.DelConclToApprove"/>
-
-<class name="ReusableCode.URLDecoderDonationInfo"/>
-<class name="PostCustomFilter.DonationGrid"/>
-<class name="GETCustomFilter.DonationInfo"/>
-<class name="DeleteCustomFilter.DelDonationInfo"/>
-
-<class name="ReusableCode.URLDecoderTestInfo"/>
-
-<class name="PostCustomFilter.TestGrid"/>
-<class name="GETCustomFilter.TestInfo"/>
-<class name="DeleteCustomFilter.DelTestInfo"/>
-<class name="ReusableCode.URLDecoderWorklistConc"/>
-<class name="PostCustomFilter.WorklistConcGrid"/>
-<class name="GETCustomFilter.WorklistDetail"/>
-<class name="DeleteCustomFilter.DelWorklistDetail"/>
-
-<class name="ReusableCode.URLDecoderWorklistInfo"/>
-<class name="PostCustomFilter.WorklistInfGrid"/>
-<class name="GETCustomFilter.WorklistOverview"/>
-<class name="DeleteCustomFilter.DelWorklistOverview"/>
 
 
 </classes>

@@ -1,0 +1,19 @@
+{"rpis": [
+                {
+                    "description": "",
+                    "serial": "test1",
+                    "itm": "test_itm1"
+                },
+                {
+                    "description": "",
+                    "serial": "cdf",
+                    "itm": "cdf",
+                     "action":"upd"
+                }
+            ],
+            "usePantherOffloadTime": {
+                "value": true
+            },
+            
+            "version":786
+            }

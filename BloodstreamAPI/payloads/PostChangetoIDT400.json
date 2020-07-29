@@ -1,0 +1,13 @@
+{
+  "credential": "SU1fQURNSU46",
+  "orders": [
+    {
+      "tubeID": "",
+      "requestID": "AVE55515-2020204",
+      "assay": "Babesia",
+      "orderTestRowId": 130,
+      "status": "Pending Lysate"
+    }
+    
+  ]
+}

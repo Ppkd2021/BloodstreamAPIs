@@ -24,7 +24,7 @@ public class DelTestInfo {
 @Test(dataProviderClass = DataHandler.class,dataProvider="dataProvider")
 public void Assert200(Hashtable<String,String> dataTable) throws Exception {
   
-	URLDecoderTestInfo.Encoder();
+	//URLDecoderTestInfo.Encoder();
     responseSpec = auth.reuseAssert200();
    given().header("Authorization",auth.ValidAuth).when().param("gridName",dataTable.get("gridName")).
    param("filterName",dataTable.get("filterName")).delete(dataTable.get("EndPoint"))

@@ -1,0 +1,81 @@
+{
+  "gridName": "ArchiveSamples",
+   "screenName": "Bloodstream",
+  "layout":  [
+                {
+                    "columnName": "DonationID",
+                    "columnPosition": 1,
+                    "isVisible": 1,
+                    "isLocked": 1
+                },
+                {
+                    "columnName": "ArchivePlateID",
+                    "columnPosition": 2,
+                    "isVisible": 1,
+                    "isLocked": 0
+                },
+                {
+                    "columnName": "ArchivePlateLocation",
+                    "columnPosition": 3,
+                    "isVisible": 1,
+                    "isLocked": 0
+                },
+                {
+                    "columnName": "ArchivePlateErrorCode",
+                    "columnPosition": 4,
+                    "isVisible": 1,
+                    "isLocked": 0
+                },
+                {
+                    "columnName": "InstrumentID",
+                    "columnPosition": 5,
+                    "isVisible": 1,
+                    "isLocked": 0
+                },
+                {
+                    "columnName": "TechnicianID",
+                    "columnPosition": 6,
+                    "isVisible": 1,
+                    "isLocked": 0
+                },
+                {
+                    "columnName": "DateTimeOfRunStart",
+                    "columnPosition": 7,
+                    "isVisible": 1,
+                    "isLocked": 0
+                },
+                {
+                    "columnName": "DateTimeOfRunEnd",
+                    "columnPosition": 8,
+                    "isVisible": 1,
+                    "isLocked": 0
+                },
+                {
+                    "columnName": "ArchiveSampleErrorCode",
+                    "columnPosition": 9,
+                    "isVisible": 1,
+                    "isLocked": 0
+                },
+                {
+                    "columnName": "ArchivePlateErrorDescription",
+                    "columnPosition": 10,
+                    "isVisible": 0,
+                    "isLocked": 0
+                },
+                {
+                    "columnName": "ArchiveVolume",
+                    "columnPosition": 11,
+                    "isVisible": 0,
+                    "isLocked": 0
+                },
+                {
+                    "columnName": "RunCounter",
+                    "columnPosition": 12,
+                    "isVisible": 0,
+                    "isLocked": 0
+                }
+            ]
+	
+				
+  
+}
