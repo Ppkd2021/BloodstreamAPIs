@@ -24,17 +24,29 @@ public void DonationsAssert200(Hashtable<String,String> dataTable) {
 	
 responseSpec = auth.reuseAssert200();	
 given().header("Authorization",auth.ValidAuth).
-param("GroupStatus",dataTable.get("GroupStatus")).param("Sort",dataTable.get("Sort")).
+param("GroupStatus",dataTable.get("GroupStatus")).param("SearchBy",dataTable.get("SearchBy")).
+when().get(dataTable.get("EndPoint")).then().body("result",is(true)).spec(responseSpec);
+}		
+
+@Test(dataProviderClass = DataHandler.class,dataProvider="dataProvider")
+public void DonationsOrdersAssert200(Hashtable<String,String> dataTable) {
+	
+responseSpec = auth.reuseAssert200();	
+given().header("Authorization",auth.ValidAuth).
+param("GroupStatus",dataTable.get("GroupStatus")).param("donationId",dataTable.get("donationId")).
+param("requestId",dataTable.get("requestId")).
 when().get(dataTable.get("EndPoint")).then().body("result",is(true)).spec(responseSpec);
 }		
 
 
+
+
 @Test(dataProviderClass = DataHandler.class,dataProvider="dataProvider")
-public void TestAssert200(Hashtable<String,String> dataTable) {
+public void TestsAssert200(Hashtable<String,String> dataTable) {
 	
 responseSpec = auth.reuseAssert200();	
 given().header("Authorization",auth.ValidAuth).
-param("GroupStatus",dataTable.get("GroupStatus")).param("Sort",dataTable.get("Sort")).
+param("GroupStatus",dataTable.get("GroupStatus")).param("SearchBy",dataTable.get("SearchBy")).
 when().get(dataTable.get("EndPoint")).then().body("result",is(true)).spec(responseSpec);
 }		
 }
